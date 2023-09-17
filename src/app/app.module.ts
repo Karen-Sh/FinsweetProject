@@ -20,6 +20,7 @@ import { AuthorComponent } from './pages/author/author.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 
 let routhes: Routes=[
   {
@@ -61,6 +62,11 @@ let routhes: Routes=[
     path:'privacyPolicy',
     component: PrivacyPolicyComponent,
     title: 'Privacy Policy'
+  },
+  {
+    path: '**',
+    component: PageNotFountComponent,
+    title: 'Error'
   }
 ]
 @NgModule({
@@ -83,6 +89,7 @@ let routhes: Routes=[
     AuthorComponent,
     ContactComponent,
     PrivacyPolicyComponent,
+    PageNotFountComponent,
   ],
   imports: [
     BrowserModule,
