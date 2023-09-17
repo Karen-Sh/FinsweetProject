@@ -1,0 +1,134 @@
+.logoBlock{
+    background-color:  var(--black, #232536);
+    padding: 25px 10px;
+}
+a{
+    color: #ffffff;
+}
+.logoBlock-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoBlock-nav{
+    display: none;
+    /* display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center; */
+}
+.logoBlock-ul{
+    visibility: hidden;
+    position: absolute;
+    top: -250px;
+    left: -101px;
+    right: 27px;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 10px 0;
+    text-align: center;
+}
+.logoBlock-mobail{
+    display: block;
+    position: relative;
+}
+.logoBlock-mobail-img{
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+.logoBlock-mobail:hover>.logoBlock-ul{
+    visibility: visible;
+    background-color:gray;
+    scale: 1.5;
+    top: 100px;
+    left: -101px;
+    right: 27px;
+}
+.logoBlock-img{
+    display: block;
+}
+.logoBlock-links{
+    color: var(--light, black);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    display: block;
+    transition: 0.8s;
+}
+.logoBlock-links:hover{
+    scale: 1.2;
+    border-radius: 5px;
+}
+.logoBlock-nav-button{
+    display: inline-flex;
+    padding: 16px 48px;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--light, #FFF);
+    color: var(--black, #232536);
+    font-family: Sen;
+    font-size: 18px;   /*18px*/
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 24px */    
+}
+@media screen and (min-width: 768px) {
+    .logoBlock-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .logoBlock-nav{
+        display: none;
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoBlock-mobail{
+        display: none;
+    }
+    .logoBlock-links{
+        color: #ffffff;
+    }
+}
+@media screen and (min-width: 992px) {
+    .logoBlock-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .logoBlock-nav{
+        width: 600px;   
+    }
+    .logoBlock-nav-button{
+        display: inline-flex;
+        padding: 16px 48px;
+        align-items: flex-start;
+        gap: 12px;
+        background: var(--light, #FFF);
+        color: var(--black, #232536);
+        font-family: Sen;
+        font-size: 18px;   /*18px*/
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 24px */       
+    }
+   
+}
+@media screen and (min-width: 1280px) {
+    .logoBlock-container{
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .logoBlock-nav-button{
+        margin: 12px 0;
+    }
+    .logoBlock{
+        padding: 0;
+    }
+}
+.active{
+    color: red;
+}

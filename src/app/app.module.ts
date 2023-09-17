@@ -1,0 +1,94 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
+import { HeaderNavComponent } from './header-footer/header-nav/header-nav.component';
+import { FooterComponent } from './header-footer/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { JoinComponent } from './pages/join/join.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { ListOfAuthorsComponent } from './pages/list-of-authors/list-of-authors.component';
+import { ChooseACatagoryComponent } from './pages/choose-a-catagory/choose-a-catagory.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BlogHeaderComponent } from './pages/blog-header/blog-header.component';
+import { BlogAllCategoriesComponent } from './pages/blog-all-categories/blog-all-categories.component';
+import { BlogPostComponent } from './pages/blog-post/blog-post.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { AboutListOfAuthersComponent } from './pages/about-list-of-authers/about-list-of-authers.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { AuthorComponent } from './pages/author/author.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { Routes, RouterModule } from '@angular/router';
+
+let routhes: Routes=[
+  {
+    path: '',
+    component: HomeComponent,
+    title: 'Home'
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
+    title: 'Blog'
+  },
+  {
+    path: 'blogPost',
+    component: BlogPostComponent,
+    title: 'Blog post'
+  },
+  {
+    path: 'aboutUs',
+    component: AboutUsComponent,
+    title: 'Abouth Us'
+  },
+  {
+    path: 'category',
+    component: CategoryComponent,
+    title: 'Category'
+  },
+  {
+    path: 'author',
+    component: AuthorComponent,
+    title: 'Author'
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    title: 'Contact'
+  },
+  {
+    path:'privacyPolicy',
+    component: PrivacyPolicyComponent,
+    title: 'Privacy Policy'
+  }
+]
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeaderNavComponent,
+    FooterComponent,
+    HomeComponent,
+    JoinComponent,
+    HeaderComponent,
+    ListOfAuthorsComponent,
+    ChooseACatagoryComponent,
+    BlogComponent,
+    BlogHeaderComponent,
+    BlogAllCategoriesComponent,
+    BlogPostComponent,
+    AboutUsComponent,
+    AboutListOfAuthersComponent,
+    CategoryComponent,
+    AuthorComponent,
+    ContactComponent,
+    PrivacyPolicyComponent,
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routhes)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

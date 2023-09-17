@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    list-style: none;
+}
+button{
+    border: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+button:hover{
+    scale: 1.2;
+}
+.header-block{
+    background: var(--lavender, #F4F0F8);    
+}
+.header-container{
+   padding: 80px 0;
+}
+.header-container-title{
+    color: var(--black, #232536);
+    text-align: center;
+    font-family: Sen;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    letter-spacing: -2px;
+}
+.header-container-text{
+    color: var(--black, #232536);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */    
+}
+.section{
+    padding: 50px 0;
+}
+.section-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.section-container-title1{
+    color: var(--black, #232536);
+    font-family: Sen;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+    letter-spacing: -2px;
+    margin-bottom: 32px;
+}
+.section-container-text1{
+    color: var(--dark-grey, #4C4C4C);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    margin-bottom: 32px;
+}
+.section-container-title2{
+    color: var(--black, #232536);
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+.section-container-text2{
+    color: var(--dark-grey, #4C4C4C);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    margin-bottom: 24px;
+}
+.section-container-text3{
+    color: var(--dark-grey, #4C4C4C);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+@media screen and (min-width: 768px) {
+    .section{
+        padding: 80px 0;
+    }
+    .section-container{
+        width: 680px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    .section{
+        padding: 128px 0;
+    }
+    .section-container{
+        width: 768px;
+        margin: 0 auto;
+    }
+}

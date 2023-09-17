@@ -1,0 +1,111 @@
+.section3{
+    padding-bottom: 30px;
+}
+.section3-container{
+    margin: auto;
+}
+.section3-container-title{
+    color: var(--black, #232536);
+    font-family: Sen;
+    font-size: 30px; /*36px*/
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 48px*/
+    letter-spacing: -2px;
+    text-align: center; 
+    margin-bottom: 48px;   
+}
+.section3-container-blocks-img{
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color:  #FBF6EA; 
+    border-radius: 10px;   
+}
+.section3-container-blocks-img1{
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color:  #FBF6EA; 
+    border-radius: 10px; 
+    padding: 13px;
+}
+.section3-container-blocks-title{
+    color: var(--black, #232536);
+    font-family: Sen;
+    font-size: 28px; /* 28px*/
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 40px*/
+    letter-spacing: -1px;    
+}
+.section3-container-blocks-text{
+    width: 232px;
+    color: var(--medium-grey, #6D6E76);
+    font-family: Inter;
+    font-size: 16px; /* 16px*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 28px */
+}
+.section3-container-blocks-block1{
+    padding: 32px;
+    width: 270px;
+    margin-bottom: 15px; /* 0px */
+    border: 1px solid var(--medium-grey, #6D6E76); 
+    margin: 0 auto 10px;
+    transition: 1s;
+}
+.section3-container-blocks-block1:hover{
+    background: var(--yellow, #FFD050);
+    scale: 1.1;
+}  
+@media screen and (min-width: 540px){
+    .section3{
+        padding: 128px 0;
+    }
+    .section3-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .section3-container-blocks-block1{
+        width: 296px;
+        margin: 0 0 10px;
+    }
+    .section3-container-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .section3-container-title{
+        font-size: 36px; 
+    }
+}  
+@media screen and (min-width: 768px){
+    .section3-container{
+        width: 88%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 992px){
+    .section3-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section3-container-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1280px){
+    .section3-container{
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .section3-container-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
