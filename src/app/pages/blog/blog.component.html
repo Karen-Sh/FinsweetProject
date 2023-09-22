@@ -92,11 +92,21 @@
             </div>
             <div class="header-container-buttonBlock">
                 <button class="header-container-buttonPrev">
-                    < Prev </button>
-                        <button class="header-container-buttonNext"> Next > </button>
+                    < Prev 
+                </button>
+                <button class="header-container-buttonNext"> Next > </button>
             </div>
         </div>
     </div>
 </section>
-<app-blog-all-categories></app-blog-all-categories>
+<section class="section3">
+    <div class="section3-container">
+        <h2 class="section3-container-title">All Categories</h2>
+        <div class="section3-container-blocks">
+            <div *ngFor="let it of category">
+                <app-choose-a-catagory [item]="it" routerLink="/category"></app-choose-a-catagory>
+            </div>
+        </div>
+    </div>
+</section>
 <app-join></app-join>

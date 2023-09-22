@@ -41,6 +41,7 @@
     line-height: 24px; /* 24px */    
     margin: auto;
     display: block;
+    width: 175px;
 }
 @media screen and (min-width: 540px){
     .section8{

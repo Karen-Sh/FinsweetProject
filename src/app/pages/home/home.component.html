@@ -4,7 +4,7 @@
         <div class="section1-container-block1">
             <p  class="section1-container-block1-text1">Featured Post</p>
             <p  class="section1-container-block1-text1">All Posts</p>
-            <a href="#" class="section1-container-block1-text3">View All</a>
+            <a routerLink="blog" class="section1-container-block1-text3">View All</a>
         </div>
         <div class="section1-container-blocks">
             <div class="section1-container-blocks-block1">
@@ -23,10 +23,10 @@
                     eu fugiat nulla pariatur. Excepteur 
                     sint occaecat cupidatat non proident.
                 </p>
-                <button class="section1-container-blocks-block1-button">Read More ></button>
+                <button class="section1-container-blocks-block1-button" routerLink="blogPost">Read More ></button>
             </div>
             <div class="section1-container-blocks-block2">
-                <div class="section1-container-blocks-block2-block">
+                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
                     <p class="section1-container-blocks-block2-text1">
                         By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
                     </p>
@@ -35,7 +35,7 @@
                          you can download for free today.
                     </p>
                 </div>
-                <div class="section1-container-blocks-block2-block">
+                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
                     <p class="section1-container-blocks-block2-text1">
                         By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
                     </p>
@@ -44,7 +44,7 @@
                          you can download for free today.
                     </p>
                 </div>
-                <div class="section1-container-blocks-block2-block">
+                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
                     <p class="section1-container-blocks-block2-text1">
                         By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
                     </p>
@@ -53,7 +53,7 @@
                          you can download for free today.
                     </p>
                 </div>
-                <div class="section1-container-blocks-block2-block">
+                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
                     <p class="section1-container-blocks-block2-text1">
                         By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
                     </p>
@@ -88,7 +88,7 @@
                     sed do eiusmod tempor incididunt 
                     ut labore et dolore magna aliqua.
                 </p>
-                <button class="section2-container-block1-button">
+                <button routerLink="aboutUs" class="section2-container-block1-button">
                     Read More >
                 </button>
             </div>
@@ -113,7 +113,16 @@
         </div>
     </div>
 </section>
-<app-choose-a-catagory></app-choose-a-catagory>
+<section class="section3">
+    <div class="section3-container">
+        <h2  class="section3-container-title">Choose A Catagory</h2>
+        <div class="section3-container-blocks">
+            <div *ngFor="let val of category">
+                <app-choose-a-catagory [item]="val" routerLink="category"></app-choose-a-catagory>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="section4">
     <div class="section4-container">
         <img  class="section4-container-img" src="assets/img/close-up.png" alt="photo">
@@ -133,7 +142,7 @@
                 Ut enim ad minim veniam, quis nostrud 
                 exercitation ullamco laboris nisi ut aliquip.
             </p>
-            <button class="section4-container-block-button">
+            <button class="section4-container-block-button" routerLink="aboutUs">
                 Discover our story >
             </button>
         </div>
