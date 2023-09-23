@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Authers } from 'src/app/models/authers';
 
 @Component({
   selector: 'app-list-of-authors',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-of-authors.component.css']
 })
 export class ListOfAuthorsComponent {
-
+    @Input('item') item!:Authers
 }

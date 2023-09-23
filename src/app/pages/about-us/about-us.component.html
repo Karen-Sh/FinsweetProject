@@ -150,5 +150,16 @@
         </div>
     </div>
 </section>
-<app-about-list-of-authers></app-about-list-of-authers>
+<section class="section5">
+    <div class="section5-container">
+        <h2 class="section5-container-title">
+            List of Authors
+        </h2>
+        <div class="section5-container-blocks">
+            <div *ngFor="let val of authers">
+                <app-list-of-authors [item]="val"></app-list-of-authors>
+            </div> 
+        </div>
+    </div>
+</section>
 <app-join></app-join>

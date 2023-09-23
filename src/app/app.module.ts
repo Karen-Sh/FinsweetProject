@@ -11,7 +11,6 @@ import { ListOfAuthorsComponent } from './pages/list-of-authors/list-of-authors.
 import { ChooseACatagoryComponent } from './pages/choose-a-catagory/choose-a-catagory.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogHeaderComponent } from './pages/blog-header/blog-header.component';
-import { BlogAllCategoriesComponent } from './pages/blog-all-categories/blog-all-categories.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { AboutListOfAuthersComponent } from './pages/about-list-of-authers/about-list-of-authers.component';
@@ -93,7 +92,6 @@ let routhes: Routes=[
     ChooseACatagoryComponent,
     BlogComponent,
     BlogHeaderComponent,
-    BlogAllCategoriesComponent,
     BlogPostComponent,
     AboutUsComponent,
     AboutListOfAuthersComponent,

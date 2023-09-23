@@ -148,7 +148,18 @@
         </div>
     </div>
 </section>
-<app-list-of-authors></app-list-of-authors>
+<section class="section5">
+    <div class="section5-container">
+        <h2 class="section5-container-title">
+            List of Authors
+        </h2>
+        <div class="section5-container-blocks">
+            <div *ngFor="let val of authers">
+                <app-list-of-authors [item]="val"></app-list-of-authors>
+            </div> 
+        </div>
+    </div>
+</section>
 <section class="section6">
     <div class="section6-container">
         <div  class="section6-container-titleBlock">
