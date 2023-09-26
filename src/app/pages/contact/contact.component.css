@@ -150,11 +150,11 @@ select{
 }
 .inputInvalid{
     color: red;
-    font-size: 18px;
-    font-family: Inter;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     display: none;
+    font-style: italic;
     
 }
 

@@ -17,73 +17,8 @@
 <section class="section1">
     <div class="section1-container">
         <div class="section1-container-blocks">
-            <div class="section1-container-blocks-block1">
-                <img class="section1-container-blocks-block1-img" src="assets/img/two.png" alt="photo">
-                <div class="section1-container-blocks-block1-textBlock">
-                    <p class="section1-container-blocks-block1-text1">
-                        Business
-                    </p>
-                    <h2 class="section1-container-blocks-block1-title">
-                        Top 6 free website mockup tools 2022
-                    </h2>
-                    <p class="section1-container-blocks-block1-text2">
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. 
-                        Non blandit massa enim nec.
-                    </p>
-                </div>
-            </div>
-            <div class="section1-container-blocks-block1">
-                <img class="section1-container-blocks-block1-img" src="assets/img/two.png" alt="photo">
-                <div class="section1-container-blocks-block1-textBlock">
-                    <p class="section1-container-blocks-block1-text1">
-                        Business
-                    </p>
-                    <h2 class="section1-container-blocks-block1-title">
-                        Step-by-step guide to choosing great font pairs
-                    </h2>
-                    <p class="section1-container-blocks-block1-text2">
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. 
-                        Non blandit massa enim nec.
-                    </p>
-                </div>
-            </div>
-            <div class="section1-container-blocks-block1">
-                <img class="section1-container-blocks-block1-img" src="assets/img/two.png" alt="photo">
-                <div class="section1-container-blocks-block1-textBlock">
-                    <p class="section1-container-blocks-block1-text1">
-                        Business
-                    </p>
-                    <h2 class="section1-container-blocks-block1-title">
-                        Ten free foogle fonts that you should use
-                    </h2>
-                    <p class="section1-container-blocks-block1-text2">
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. 
-                        Non blandit massa enim nec.
-                    </p>
-                </div>
-            </div>
-            <div class="section1-container-blocks-block1 margin">
-                <img class="section1-container-blocks-block1-img" src="assets/img/two.png" alt="photo">
-                <div class="section1-container-blocks-block1-textBlock">
-                    <p class="section1-container-blocks-block1-text1">
-                        Business
-                    </p>
-                    <h2 class="section1-container-blocks-block1-title">
-                        What did I learn from doing 50+ design sprints?
-                    </h2>
-                    <p class="section1-container-blocks-block1-text2">
-                        Lorem ipsum dolor sit amet, consectetur 
-                        adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. 
-                        Non blandit massa enim nec.
-                    </p>
-                </div>
+            <div *ngFor="let item of post">
+                <app-cotegorypost [post]="item"></app-cotegorypost>
             </div>
         </div>
         <div class="section1-container-blocks1">

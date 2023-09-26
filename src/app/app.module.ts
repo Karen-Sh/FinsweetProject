@@ -13,7 +13,6 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { BlogHeaderComponent } from './pages/blog-header/blog-header.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { AboutListOfAuthersComponent } from './pages/about-list-of-authers/about-list-of-authers.component';
 import { CategoryComponent } from './pages/category/category.component';
 import { AuthorComponent } from './pages/author/author.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -22,6 +21,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PostsComponent } from './pages/posts/posts.component';
+import { CotegorypostComponent } from './pages/cotegorypost/cotegorypost.component';
 
 let routhes: Routes=[
   {
@@ -95,13 +96,14 @@ let routhes: Routes=[
     BlogHeaderComponent,
     BlogPostComponent,
     AboutUsComponent,
-    AboutListOfAuthersComponent,
     CategoryComponent,
     AuthorComponent,
     ContactComponent,
     PrivacyPolicyComponent,
     PageNotFountComponent,
     LayoutComponent,
+    PostsComponent,
+    CotegorypostComponent,
   ],
   imports: [
     BrowserModule,

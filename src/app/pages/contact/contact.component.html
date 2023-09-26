@@ -56,9 +56,11 @@
                 <option selected>Query Related</option>
             </select>
             <textarea class="section2-container-textarea input" formControlName="textarea" name="textarea"
-                placeholder="Message" cols="20" rows="6.5"></textarea>
-            <button class="section2-container-button input" [disabled]="form.invalid" type="submit">Send
-                Message</button>
+                placeholder="Message" cols="20" rows="6.5" 
+                [ngStyle]="{'border': form.get('textarea')?.invalid ? '3px solid red' : '2px solid green'}">
+            </textarea>
+            <span class="inputInvalid" [ngStyle]="{'display': form.get('textarea')?.invalid ? 'inline' : 'none'}"> Enter a message!</span>
+            <button class="section2-container-button input" [disabled]="form.invalid" type="submit">Send Message</button>
         </form>
     </div>
 </section>
