@@ -7,10 +7,10 @@
             Let’s Start a Conversation
         </h1>
         <p class="header-container-text2">
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. 
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.
             Ut enim ad minim.
         </p>
     </div>
@@ -25,7 +25,7 @@
                 Monday To Friday
             </h5>
             <h5 class="section1-container-block1-title1">
-                9:00 AM to 8:00 PM 
+                9:00 AM to 8:00 PM
             </h5>
             <address class="section1-container-block1-text2">
                 Our Support Team is available 24/7
@@ -42,12 +42,23 @@
 </section>
 <section class="section2">
     <div class="section2-container">
-        <form method="post">
-            <input class="section2-container-fullName input"  type="text" placeholder="Full Name" name="full_nume">
-            <input class="section2-container-Email input" type="email" placeholder="Your Email" name="e_mail">
-            <input class="section2-container-Query input" type="text" placeholder="Query Related" name="Query_Related">
-            <textarea class="section2-container-textarea input" name="" placeholder="Message" cols="20" rows="6.5"></textarea>
-            <button class="section2-container-button input">Send Message</button>
+        <form [formGroup]="form" (ngSubmit)="save()">
+            <input class="section2-container-fullName input" formControlName="full_nume" type="text"
+                placeholder="Full Name" name="full_nume" [ngStyle]="{'border': form.get('full_nume')?.invalid ? '3px solid red' : '2px solid green'}">
+                <span class="inputInvalid" [ngStyle]="{'display': form.get('full_nume')?.invalid ? 'inline' : 'none'}">
+                    This form filed!
+                </span>
+            <input class="section2-container-Email input" formControlName="e_mail" type="email" placeholder="Your Email" name="e_mail" [ngStyle]="{'border': form.get('e_mail')?.invalid ? '3px solid red' : '2px solid green'}">
+            <span class="inputInvalid" [ngStyle]="{'display': form.get('e_mail')?.invalid ? 'inline' : 'none'}">
+                Enter a your email "test@mail.com"!
+            </span>
+            <select formControlName="select" type="text">
+                <option selected>Query Related</option>
+            </select>
+            <textarea class="section2-container-textarea input" formControlName="textarea" name="textarea"
+                placeholder="Message" cols="20" rows="6.5"></textarea>
+            <button class="section2-container-button input" [disabled]="form.invalid" type="submit">Send
+                Message</button>
         </form>
     </div>
 </section>

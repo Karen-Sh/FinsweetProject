@@ -21,6 +21,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 import { LayoutComponent } from './layout/layout.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 let routhes: Routes=[
   {
@@ -104,7 +105,8 @@ let routhes: Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routhes)
+    RouterModule.forRoot(routhes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
