@@ -1,13 +1,13 @@
-<div class="section1-container-block1">
-    <img class="section1-container-block1-img" [src]="post.img" alt="photo">
-    <div class="section1-container-block1-textBlock">
-        <p class="section1-container-block1-textBlock-text1">
+<div  [class]="{'section1-container-block1':true, '.section1-container-blocks-block1':true}">
+    <img [class]="{'section1-container-block1-img':false, 'section1-container-blocks-block1-img': true}" [src]="post.img" alt="photo">
+    <div [class]="{'section1-container-block1-textBlock':false , 'section1-container-blocks-block1-textBlock':true}">
+        <p [class]="{'section1-container-block1-textBlock-text1':false , 'section1-container-blocks-block1-text1':true}">
             {{post.cotegory}}
         </p>
-        <h2 class="section1-container-block1-textBlock-title">
+        <h2 [class]="{'section1-container-block1-textBlock-title':false, 'section1-container-blocks-block1-title': true}">
             {{post.title}}
         </h2>
-        <p class="section1-container-block1-textBlock-text2">
+        <p [class]="{'section1-container-block1-textBlock-text2':false ,'section1-container-blocks-block1-text2':true}">
             {{post.post}}
         </p>
     </div>

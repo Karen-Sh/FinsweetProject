@@ -13,28 +13,28 @@ export class CategoryComponent {
       img: 'assets/img/two.png',
       cotegory:'BUSINESS',
       title :'Top 6 free website mockup tools 2022',
-      post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+      post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
    },
    { 
     id: 2,
     img: 'assets/img/two.png',
     cotegory:'BUSINESS',
     title :'Step-by-step guide to choosing great font pairs',
-    post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+    post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
     },
     { 
       id: 3,
       img: 'assets/img/two.png',
       cotegory:'BUSINESS',
       title :'Ten free foogle fonts that you should use',
-      post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+      post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
     },
     { 
       id: 4,
       img: 'assets/img/two.png',
       cotegory:'BUSINESS',
       title :'What did I learn from doing 50+ design sprints?',
-      post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
+      post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.'
     },
   ]
 }

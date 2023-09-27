@@ -22,7 +22,6 @@ import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.com
 import { LayoutComponent } from './layout/layout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PostsComponent } from './pages/posts/posts.component';
-import { CotegorypostComponent } from './pages/cotegorypost/cotegorypost.component';
 
 let routhes: Routes=[
   {
@@ -103,7 +102,6 @@ let routhes: Routes=[
     PageNotFountComponent,
     LayoutComponent,
     PostsComponent,
-    CotegorypostComponent,
   ],
   imports: [
     BrowserModule,

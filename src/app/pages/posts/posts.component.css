@@ -90,12 +90,12 @@
 @media screen and (min-width: 1280px) {
     .section1-container-block1{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         margin-bottom: 64px;
     }
     .section1-container-block1-img{
-        width: 490px;
+        max-width: 290px;
     }
     .section1-container-block1-textBlock-title{
         width: 602.892px;

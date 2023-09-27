@@ -57,13 +57,6 @@ export class BlogComponent {
       post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
     },
     { 
-      id: 3,
-      img: 'assets/img/photo-of1.png',
-      cotegory:'Startup',
-      title :'Logo design trends to avoid in 2022',
-      post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
-    },
-    { 
       id: 4,
       img: 'assets/img/photo-of2.png',
       cotegory:'TECHNOLOGY',
@@ -72,7 +65,7 @@ export class BlogComponent {
     },
     { 
       id: 5,
-      img: 'assets/img/photo-of2.png',
+      img: 'assets/img/two.png',
       cotegory:'ECONOMY',
       title :'Font sizes in UI design: The complete guide to follow',
       post: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
