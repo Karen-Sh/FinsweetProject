@@ -43,23 +43,41 @@
 <section class="section2">
     <div class="section2-container">
         <form [formGroup]="form" (ngSubmit)="save()">
-            <input class="section2-container-fullName input" formControlName="full_nume" type="text"
-                placeholder="Full Name" name="full_nume" [ngStyle]="{'border': form.get('full_nume')?.invalid ? '3px solid red' : '2px solid green'}">
-                <span class="inputInvalid" [ngStyle]="{'display': form.get('full_nume')?.invalid ? 'inline' : 'none'}">
-                    This form filed!
+            <input class="section2-container-fullName input" formControlName="full_name" type="text" placeholder="Full Name" name="full_name">
+            <div>
+                <span class="inputInvalid" *ngIf="form.get('full_name')?.hasError('required') && (form.get('full_name')?.touched || form.get('full_name')?.dirty)">
+                    Full Name is required!
                 </span>
-            <input class="section2-container-Email input" formControlName="e_mail" type="email" placeholder="Your Email" name="e_mail" [ngStyle]="{'border': form.get('e_mail')?.invalid ? '3px solid red' : '2px solid green'}">
-            <span class="inputInvalid" [ngStyle]="{'display': form.get('e_mail')?.invalid ? 'inline' : 'none'}">
-                Enter a your email "test@mail.com"!
-            </span>
+                <span class="inputInvalid" *ngIf="form.get('full_name')?.hasError('minlength') && (form.get('full_name')?.touched || form.get('full_name')?.dirty)">
+                    Full Name is minlength 3 symbol!
+                </span>
+            </div>
+            <input class="section2-container-Email input" formControlName="e_mail" type="email" placeholder="Your Email" name="e_mail">
+            <div>
+                <span class="inputInvalid" *ngIf="form.get('e_mail')?.hasError('required') && (form.get('e_mail')?.touched || form.get('e_mail')?.dirty)">
+                    Enter a your email "test@mail.com"!
+                </span>
+                <span class="inputInvalid" *ngIf="form.get('e_mail')?.hasError('pattern') && (form.get('e_mail')?.touched || form.get('e_mail')?.dirty)">
+                    Email is invalid!
+                </span>
+            </div>
             <select formControlName="select" type="text">
                 <option selected>Query Related</option>
             </select>
+            <span *ngIf="form.get('select')?.hasError('required') && (form.get('select')?.touched || form.get('select')?.dirty)">
+                Select is required!
+            </span>
             <textarea class="section2-container-textarea input" formControlName="textarea" name="textarea"
-                placeholder="Message" cols="20" rows="6.5" 
-                [ngStyle]="{'border': form.get('textarea')?.invalid ? '3px solid red' : '2px solid green'}">
+                placeholder="Message" cols="20" rows="6.5">
             </textarea>
-            <span class="inputInvalid" [ngStyle]="{'display': form.get('textarea')?.invalid ? 'inline' : 'none'}"> Enter a message!</span>
+            <div>
+                <span *ngIf="form.get('textarea')?.hasError('required') && (form.get('textarea')?.touched || form.get('textarea')?.dirty)">
+                    Massage is required!
+                </span>
+                <span *ngIf="form.get('textarea')?.hasError('minlength') && (form.get('textarea')?.touched || form.get('textarea')?.dirty)">
+                    Massage is minlength 3 symbol!
+                </span>
+            </div>
             <button class="section2-container-button input" [disabled]="form.invalid" type="submit">Send Message</button>
         </form>
     </div>

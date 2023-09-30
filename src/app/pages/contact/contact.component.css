@@ -148,14 +148,30 @@ select{
     font-weight: 400;
     line-height: 28px; /* 175% */    
 }
-.inputInvalid{
+span{
     color: red;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    display: none;
     font-style: italic;
-    
+}
+input.ng-dirty.ng-invalid {
+    border: 3px solid red;
+}
+input.ng-dirty.ng-valid {
+    border: 3px solid green;
+}
+textarea.ng-dirty.ng-invalid{
+    border: 3px solid red;
+}
+textarea.ng-dirty.ng-valid {
+    border: 3px solid green;
+}
+select.ng-dirty.ng-invalid{
+    border: 3px solid red;
+}
+select.ng-dirty.ng-valid {
+    border: 3px solid green;
 }
 
 @media screen and (min-width: 540px) {

@@ -11,9 +11,9 @@ export class ContactComponent implements OnInit {
   form!:FormGroup
       ngOnInit(): void {
         this.form= new FormGroup({
-          full_nume:     new FormControl('',[Validators.required,Validators.minLength(3)]),
+          full_name:     new FormControl('',[Validators.required,Validators.minLength(3)]),
           e_mail:        new FormControl('',[Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
-          select:        new FormControl('Query Related',[Validators.required]),
+          select:        new FormControl('',[Validators.required]),
           textarea:      new FormControl('',[Validators.required, Validators.minLength(3)])
       });
       }
