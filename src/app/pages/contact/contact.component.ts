@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormControl, Validators } from '@angular/forms';
+import {FormGroup, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -8,14 +8,17 @@ import {FormGroup, FormControl, Validators } from '@angular/forms';
 })
 
 export class ContactComponent implements OnInit {
-  form!:FormGroup
-      ngOnInit(): void {
-        this.form= new FormGroup({
-          full_name:     new FormControl('',[Validators.required,Validators.minLength(3)]),
-          e_mail:        new FormControl('',[Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
-          select:        new FormControl('',[Validators.required]),
-          textarea:      new FormControl('',[Validators.required, Validators.minLength(3)])
+      form: FormGroup = this.fb.group({
+        full_name: ['',[Validators.required,Validators.minLength(3)]],
+        e_mail:    ['',[Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
+        select:    ['',[Validators.required]],
+        textarea:  ['',[Validators.required, Validators.minLength(3)]]
       });
+      constructor(public fb:FormBuilder){
+      
+      }
+      ngOnInit(): void {
+      
       }
       save(){
         this.form.reset() 

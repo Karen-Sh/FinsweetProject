@@ -8,4 +8,5 @@ import { Post } from 'src/app/models/post';
 })
 export class PostsComponent {
   @Input('post') post!:Post
+
 }
