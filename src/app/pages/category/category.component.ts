@@ -10,6 +10,7 @@ export class CategoryComponent {
   post:Post[]=[
     { 
       id: 1,
+      class:'category',
       img: 'assets/img/two.png',
       cotegory:'BUSINESS',
       title :'Top 6 free website mockup tools 2022',
@@ -17,6 +18,7 @@ export class CategoryComponent {
    },
    { 
     id: 2,
+    class:'category',
     img: 'assets/img/two.png',
     cotegory:'BUSINESS',
     title :'Step-by-step guide to choosing great font pairs',
@@ -24,6 +26,7 @@ export class CategoryComponent {
     },
     { 
       id: 3,
+      class:'category',
       img: 'assets/img/two.png',
       cotegory:'BUSINESS',
       title :'Ten free foogle fonts that you should use',
@@ -31,6 +34,7 @@ export class CategoryComponent {
     },
     { 
       id: 4,
+      class:'category',
       img: 'assets/img/two.png',
       cotegory:'BUSINESS',
       title :'What did I learn from doing 50+ design sprints?',

@@ -1,13 +1,13 @@
-<div  [ngClass]="post.class=='blog'? '.section1-container-block1': '.section1-container-blocks-block1'">
-    <img *ngclass="post.class=='blog'?'.section1-container-block1-img': '.section1-container-blocks-block1-img' " [src]="post.img" alt="photo">
-    <div ngclass="post.class=='blog'?'.section1-container-block1-textBlock': '.section1-container-blocks-block1-textBlock'">
-        <p *ngclass="post.class=='blog'?'.section1-container-block1-textBlock-text1': '.section1-container-blocks-block1-text1'">
+<div  [ngClass]=" post.class == 'blog'? 'section1-container-block1':null" [ngClass]="post.class=='category'? 'section1-container-blocks-block1':null">
+    <img  [ngClass]="post.class == 'blog'? 'section1-container-block1-img' : null" [ngClass]="post.class=='category' ? 'section1-container-blocks-block1-img': null" [src]="post.img" alt="photo">
+    <div [ngClass]=" post.class == 'blog'? 'section1-container-block1-textBlock': null" [ngClass]="post.class=='category'?'section1-container-blocks-block1-textBlock':null">
+        <p [ngClass]="post.class == 'blog' ? 'section1-container-block1-textBlock-text1': null" [ngClass]="post.class=='category'?'section1-container-blocks-block1-text1':null">
             {{post.cotegory}}
         </p>
-        <h2 *ngclass="post.class=='blog'?'.section1-container-block1-textBlock-title': '.section1-container-blocks-block1-title'">
+        <h2 [ngClass]="post.class == 'blog' ? 'section1-container-block1-textBlock-title' : null"  [ngClass]="post.class=='category'?'section1-container-blocks-block1-title':null">
             {{post.title}}
         </h2>
-        <p *ngclass=" post.class=='blog' ? '.section1-container-block1-textBlock-text2':'.section1-container-blocks-block1-text2'">
+        <p [ngClass]=" post.class == 'blog'? 'section1-container-block1-textBlock-text2' : null" [ngClass]="post.class=='category' ? 'section1-container-blocks-block1-text2':null">
             {{post.post}}
         </p>
     </div>

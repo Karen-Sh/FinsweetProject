@@ -37,7 +37,7 @@ export class BlogComponent {
   post:Post[]=[
     { 
       id: 1,
-      class:'glog',
+      class:'blog',
       img: 'assets/img/two.png',
       cotegory:'Startup',
       title :'Design tips for designers that cover everything you need',
@@ -45,7 +45,7 @@ export class BlogComponent {
    },
    { 
     id: 2,
-    class:'glog',
+    class:'blog',
     img: 'assets/img/photo-of.png',
     cotegory:'BUSINESS',
     title :'How to build rapport with your web design clients',
@@ -53,7 +53,7 @@ export class BlogComponent {
     },
     { 
       id: 3,
-      class:'glog',
+      class:'blog',
       img: 'assets/img/photo-of1.png',
       cotegory:'Startup',
       title :'Logo design trends to avoid in 2022',
@@ -61,7 +61,7 @@ export class BlogComponent {
     },
     { 
       id: 4,
-      class:'glog',
+      class:'blog',
       img: 'assets/img/photo-of2.png',
       cotegory:'TECHNOLOGY',
       title :'8 Figma design systems you can download for free today',
@@ -69,7 +69,7 @@ export class BlogComponent {
     },
     { 
       id: 5,
-      class:'glog',
+      class:'blog',
       img: 'assets/img/two.png',
       cotegory:'ECONOMY',
       title :'Font sizes in UI design: The complete guide to follow',
