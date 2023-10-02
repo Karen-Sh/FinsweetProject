@@ -1,11 +1,19 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Authers } from 'src/app/models/authers';
 import { Category } from 'src/app/models/category';
+import { HeaderComponent } from '../header/header.component';
+import { ListOfAuthorsComponent } from '../list-of-authors/list-of-authors.component';
+import { JoinComponent } from '../join/join.component';
+import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  standalone: true,
+  imports: [RouterModule,NgFor,HeaderComponent,ListOfAuthorsComponent,JoinComponent,ChooseACatagoryComponent]
 })
 export class HomeComponent {
   category:Category[]=[

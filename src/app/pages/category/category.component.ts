@@ -1,10 +1,14 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Post } from 'src/app/models/post';
+import { PostsComponent } from '../posts/posts.component';
 
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
+  styleUrls: ['./category.component.css'],
+  standalone: true,
+  imports: [NgFor,PostsComponent]
 })
 export class CategoryComponent {
   post:Post[]=[

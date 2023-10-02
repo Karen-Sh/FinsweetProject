@@ -1,11 +1,16 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Category } from 'src/app/models/category';
 import { Post } from 'src/app/models/post';
+import { AuthorsComponent } from './authors/authors.component';
+import { PostsComponent } from '../posts/posts.component';
 
 @Component({
   selector: 'app-author',
   templateUrl: './author.component.html',
-  styleUrls: ['./author.component.css']
+  styleUrls: ['./author.component.css'],
+  standalone: true,
+  imports:[NgFor,AuthorsComponent,PostsComponent]
 })
 export class AuthorComponent {
   authers:Post[]=[

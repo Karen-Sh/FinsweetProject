@@ -1,10 +1,13 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, Validators, FormBuilder } from '@angular/forms';
+import {FormGroup, Validators, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
+  standalone: true,
+  imports:[NgIf,ReactiveFormsModule]
 })
 
 export class ContactComponent implements OnInit {
