@@ -4,7 +4,7 @@ import { Post } from 'src/app/models/post';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css','./post.css']
+  styleUrls: ['./posts.component.css']
 })
 export class PostsComponent {
   @Input('post') post!:Post
