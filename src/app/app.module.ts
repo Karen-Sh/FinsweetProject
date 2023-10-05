@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -78,9 +78,9 @@ let routhes: Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routhes, {initialNavigation: 'enabledBlocking'}),
+    RouterModule.forRoot(routhes),
   ],
-  providers: [provideClientHydration()],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
