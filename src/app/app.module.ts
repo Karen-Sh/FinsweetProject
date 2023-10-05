@@ -2,17 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { BlogComponent } from './pages/blog/blog.component';
-import { BlogPostComponent } from './pages/blog-post/blog-post.component';
-import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { CategoryComponent } from './pages/category/category.component';
-import { AuthorComponent } from './pages/author/author.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { Routes, RouterModule } from '@angular/router';
-import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
-import { LayoutComponent } from './layout/layout.component';
 
 let routhes: Routes=[
   {
@@ -88,11 +78,9 @@ let routhes: Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routhes, {
-    initialNavigation: 'enabledBlocking'
-}),
+    RouterModule.forRoot(routhes, {initialNavigation: 'enabledBlocking'}),
   ],
-  providers: [provideClientHydration() ],
+  providers: [provideClientHydration()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
