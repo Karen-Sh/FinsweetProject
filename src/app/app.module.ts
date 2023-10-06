@@ -72,7 +72,7 @@ let routhes: Routes=[
     RouterModule.forRoot(routhes, {initialNavigation: 'enabledBlocking'}),
     HttpClientModule
   ],
-  providers: [],
+  providers: [provideClientHydration()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
