@@ -1,0 +1,246 @@
+{
+    "category":[
+        { 
+            "id": 1,
+            "img":"assets/img/Icon (3).png",
+            "title": "Business",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+       },
+       { 
+            "id": 2,
+            "img":   "assets/img/shuttle (1).png",
+            "title": "Startup",
+            "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+       },
+       { 
+            "id": 3,
+            "img":"assets/img/economy (1).png",
+            "title": "Economy",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+       },
+       { 
+            "id": 4,
+            "img":"assets/img/cyborg (1).png",
+            "title": "Technology",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+       }
+      ],
+    "homeAuthers":[
+        {
+            "userid":1,
+            "img":   "assets/img/man-in.png",
+            "title": "Floyd Miles",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+        },
+        { 
+            "userid":2,
+            "img":   "assets/img/woman-in.png",
+            "title": "Dianne Russell",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+        },
+        {
+            "userid":3,
+            "img":    "assets/img/fashion.png",
+            "title":  "Jenny Wilson",
+            "text":   "Content Writer @Company",
+            "img1":   "assets/img/Negative2.png",
+            "img2":   "assets/img/Negative.png",
+            "img3":   "assets/img/Negative3.png",
+            "img4":   "assets/img/Negative1.png"
+        },
+        {
+            "userid":4,
+            "img":   "assets/img/content.png",
+            "title": "Leslie Alexander",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+        }
+      ],
+    "authers":[
+        {
+            "userid":1,
+            "img":   "assets/img/man-in.png",
+            "title": "Floyd Miles",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+        },
+        { 
+            "userid":2,
+            "img":   "assets/img/woman-in.png",
+            "title": "Dianne Russell",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+        },
+        {
+            "userid":3,
+            "img":    "assets/img/fashion.png",
+            "title":  "Jenny Wilson",
+            "text":   "Content Writer @Company",
+            "img1":   "assets/img/Negative2.png",
+            "img2":   "assets/img/Negative.png",
+            "img3":   "assets/img/Negative3.png",
+            "img4":   "assets/img/Negative1.png"
+        },
+        {
+            "userid":4,
+            "img":   "assets/img/content.png",
+            "title": "Leslie Alexander",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+        },
+        {
+            "userid":5,
+            "img":   "assets/img/man-in (3).png",
+            "title": "Guy Hawkins",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+          },
+          {
+            "userid":6,
+            "img":   "assets/img/woman-in (2).png",
+            "title": "Eleanor Pena",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+          },
+          {
+            "userid":7,
+            "img":   "assets/img/content (2).png",
+            "title": "Robert Fox",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+          },
+          {
+            "userid":8,
+            "img":   "assets/img/cheerful.png",
+            "title": "Jacob Jones",
+            "text":  "Content Writer @Company",
+            "img1":  "assets/img/Negative2.png",
+            "img2":  "assets/img/Negative.png",
+            "img3":  "assets/img/Negative3.png",
+            "img4":  "assets/img/Negative1.png"
+          }
+        ],
+      "blog":[
+          { 
+            "id": 1,
+            "class":    "blog",
+            "img":      "assets/img/two.png",
+            "cotegory": "Startup",
+            "title" :   "Design tips for designers that cover everything you need",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 2,
+            "class":    "blog",
+            "img":      "assets/img/photo-of.png",
+            "cotegory": "BUSINESS",
+            "title" :   "How to build rapport with your web design clients",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 3,
+            "class":    "blog",
+            "img":      "assets/img/photo-of1.png",
+            "cotegory": "Startup",
+            "title" :   "Logo design trends to avoid in 2022",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 4,
+            "class":    "blog",
+            "img":      "assets/img/photo-of2.png",
+            "cotegory": "TECHNOLOGY",
+            "title" :   "8 Figma design systems you can download for free today",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 5,
+            "class":    "blog",
+            "img":      "assets/img/two.png",
+            "cotegory": "ECONOMY",
+            "title" :   "Font sizes in UI design: The complete guide to follow",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          }
+        ],
+      "categorys":[
+          { 
+            "id": 1,
+            "class":    "category",
+            "img":      "assets/img/two.png",
+            "cotegory": "BUSINESS",
+            "title" :   "Top 6 free website mockup tools 2022",
+            "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          },
+          { 
+            "id":2,
+            "class":    "category",
+            "img":      "assets/img/two.png",
+            "cotegory": "BUSINESS",
+            "title" :   "Step-by-step guide to choosing great font pairs",
+            "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          },
+          { 
+            "id": 3,
+            "class":    "category",
+            "img":      "assets/img/two.png",
+            "cotegory": "BUSINESS",
+            "title" :   "Ten free foogle fonts that you should use",
+            "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          },
+          { 
+            "id": 4,
+            "class":    "category",
+            "img":      "assets/img/two.png",
+            "cotegory": "BUSINESS",
+            "title" :   "What did I learn from doing 50+ design sprints?",
+            "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+          }
+        ],
+      "authot":[
+          { 
+            "id": 1,
+            "class":    "authers",
+            "img":      "assets/img/stained.png",
+            "cotegory": "BUSINESS",
+            "title" :   "Font sizes in UI design: The complete guide to follow",
+            "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          },
+          { 
+            "id": 2,
+            "class":    "authers",
+            "img":      "assets/img/main-in.png",
+            "cotegory": "ECONOMY",
+            "title" :   "How to build rapport with your web design clients",
+            "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+      ]
+}

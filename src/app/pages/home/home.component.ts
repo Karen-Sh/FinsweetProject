@@ -1,12 +1,13 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Authers } from 'src/app/models/authers';
-import { Category } from 'src/app/models/category';
 import { HeaderComponent } from '../header/header.component';
 import { ListOfAuthorsComponent } from '../list-of-authors/list-of-authors.component';
 import { JoinComponent } from '../join/join.component';
 import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory.component';
+import { DataService } from 'src/app/service/data.service';
+import { Category } from 'src/app/models/category';
 
 @Component({
   selector: 'app-home',
@@ -15,69 +16,18 @@ import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory
   standalone: true,
   imports: [RouterModule,NgFor,HeaderComponent,ListOfAuthorsComponent,JoinComponent,ChooseACatagoryComponent]
 })
-export class HomeComponent {
-  category:Category[]=[
-    { 
-     id: 1,
-     img:'assets/img/Icon (3).png',
-     title: 'Business',
-     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-   },
-   { 
-     id: 2,
-     img:'assets/img/shuttle (1).png',
-     title: 'Startup',
-     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-   },
-   { 
-     id: 3,
-     img:'assets/img/economy (1).png',
-     title: 'Economy',
-     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-   },
-   { 
-     id: 4,
-     img:'assets/img/cyborg (1).png',
-     title: 'Technology',
-     text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
-   }
-  ]
-  authers:Authers[]=[
-    {
-        img: 'assets/img/man-in.png',
-        title: 'Floyd Miles',
-        text: 'Content Writer @Company',
-        img1: 'assets/img/Negative2.png',
-        img2: 'assets/img/Negative.png',
-        img3: 'assets/img/Negative3.png',
-        img4: 'assets/img/Negative1.png'
-    },
-    {
-      img: 'assets/img/woman-in.png',
-      title: 'Dianne Russell',
-      text: 'Content Writer @Company',
-      img1: 'assets/img/Negative2.png',
-      img2: 'assets/img/Negative.png',
-      img3: 'assets/img/Negative3.png',
-      img4: 'assets/img/Negative1.png'
-    },
-    {
-      img: 'assets/img/fashion.png',
-      title: 'Jenny Wilson',
-      text: 'Content Writer @Company',
-      img1: 'assets/img/Negative2.png',
-      img2: 'assets/img/Negative.png',
-      img3: 'assets/img/Negative3.png',
-      img4: 'assets/img/Negative1.png'
-    },
-    {
-      img: 'assets/img/content.png',
-      title: 'Leslie Alexander',
-      text: 'Content Writer @Company',
-      img1: 'assets/img/Negative2.png',
-      img2: 'assets/img/Negative.png',
-      img3: 'assets/img/Negative3.png',
-      img4: 'assets/img/Negative1.png'
-    },
-  ]
+export class HomeComponent implements OnInit{
+  categorys: any = []
+  Authers:any=[]
+  constructor(private service: DataService){
+    
+  }
+  ngOnInit(): void {
+    this.service.GetJsonCategori().subscribe(data=>{
+      this.categorys= data;
+    });
+    this.service.GetJsonHomeAuth().subscribe(date=>{
+      this.Authers = date
+    })
+  }
 }

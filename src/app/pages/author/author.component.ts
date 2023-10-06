@@ -1,9 +1,10 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/category';
 import { Post } from 'src/app/models/post';
 import { AuthorsComponent } from './authors/authors.component';
 import { PostsComponent } from '../posts/posts.component';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-author',
@@ -12,25 +13,17 @@ import { PostsComponent } from '../posts/posts.component';
   standalone: true,
   imports:[NgFor,AuthorsComponent,PostsComponent]
 })
-export class AuthorComponent {
-  authers:Post[]=[
-    { 
-      id: 1,
-      class:'authers',
-      img: 'assets/img/stained.png',
-      cotegory:'BUSINESS',
-      title :'Font sizes in UI design: The complete guide to follow',
-      post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    { 
-      id: 2,
-      class:'authers',
-      img: 'assets/img/main-in.png',
-      cotegory:'ECONOMY',
-      title :'How to build rapport with your web design clients',
-      post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-  ]
+export class AuthorComponent implements OnInit {
+  Author:any=[]
+    constructor(public service: DataService){
+
+    }
+  ngOnInit(): void {
+    this.service.GetJsonAuthor().subscribe(date=>{
+      this.Author = date
+    })
+  }
+
   auther:Category[]=[
     { 
       id: 1,

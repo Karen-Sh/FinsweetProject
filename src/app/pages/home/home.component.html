@@ -117,7 +117,7 @@
     <div class="section3-container">
         <h2  class="section3-container-title">Choose A Catagory</h2>
         <div class="section3-container-blocks">
-            <div *ngFor="let val of category">
+            <div *ngFor="let val of categorys">
                 <app-choose-a-catagory [item]="val" routerLink="category"></app-choose-a-catagory>
             </div>
         </div>
@@ -154,7 +154,7 @@
             List of Authors
         </h2>
         <div class="section5-container-blocks">
-            <div *ngFor="let val of authers">
+            <div *ngFor="let val of Authers">
                 <app-list-of-authors [item]="val"></app-list-of-authors>
             </div> 
         </div>

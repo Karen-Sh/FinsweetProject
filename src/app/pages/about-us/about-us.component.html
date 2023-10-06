@@ -156,8 +156,8 @@
             List of Authors
         </h2>
         <div class="section5-container-blocks">
-            <div *ngFor="let val of authers">
-                <app-list-of-authors [item]="val"></app-list-of-authors>
+            <div *ngFor="let val of Aut">
+                <app-list-of-authors [item]="val" routerLink="/author"></app-list-of-authors>
             </div> 
         </div>
     </div>
