@@ -8,17 +8,19 @@ import { JoinComponent } from '../join/join.component';
 import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory.component';
 import { DataService } from 'src/app/service/data.service';
 import { Category } from 'src/app/models/category';
+import { PostsComponent } from '../posts/posts.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports: [RouterModule,NgFor,HeaderComponent,ListOfAuthorsComponent,JoinComponent,ChooseACatagoryComponent]
+  imports: [RouterModule,NgFor,HeaderComponent,ListOfAuthorsComponent,JoinComponent,ChooseACatagoryComponent,PostsComponent]
 })
 export class HomeComponent implements OnInit{
-  categorys: any = []
-  Authers:any=[]
+  categorys: any = [];
+  Authers:any=[];
+  Post: any=[];
   constructor(private service: DataService){
     
   }
@@ -28,6 +30,9 @@ export class HomeComponent implements OnInit{
     });
     this.service.GetJsonHomeAuth().subscribe(date=>{
       this.Authers = date
+    })
+    this.service.GetJsonHomePost().subscribe(post=>{
+        this.Post= post
     })
   }
 }

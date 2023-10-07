@@ -1,4 +1,4 @@
-<div [ngSwitch]="post.class">
+<div [ngSwitch]="type">
     <div *ngSwitchCase="'blog'">
         <div  class="section1-container-block1" >
             <img  class="section1-container-block1-img" [src]="post.img" alt="photo">
@@ -45,6 +45,16 @@
                     {{post.post}}
                 </p>
             </div>
+        </div>
+    </div>
+    <div *ngSwitchCase="'homePost'" >
+        <div class="section1-container-blocks-block2-block">
+            <p class="section1-container-blocks-block2-text1">
+                By <span style="color:#592EA9;">{{post.userName}}</span>   {{post.data}} 
+            </p>
+            <p class="section1-container-blocks-block2-text2">
+                {{post.post}}
+            </p>
         </div>
     </div>
 </div>

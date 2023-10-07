@@ -34,4 +34,7 @@ export class DataService {
   GetJsonHomeAuthers(){
     return this.http.get(this.url+'/authers');
   }
+  GetJsonHomePost(){
+    return this.http.get(this.url+'/post');
+  }
 }

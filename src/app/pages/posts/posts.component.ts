@@ -7,9 +7,9 @@ import { Post } from 'src/app/models/post';
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.css'],
   standalone: true,
-  imports:[NgSwitch,NgSwitchCase]
+  imports: [NgSwitch, NgSwitchCase]
 })
 export class PostsComponent {
-  @Input('post') post!:Post
-
+  @Input('post') post!: Post
+  @Input('type') type!: string;
 }

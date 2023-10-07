@@ -152,7 +152,6 @@
       "blog":[
           { 
             "id": 1,
-            "class":    "blog",
             "img":      "assets/img/two.png",
             "cotegory": "Startup",
             "title" :   "Design tips for designers that cover everything you need",
@@ -160,7 +159,6 @@
           },
           { 
             "id": 2,
-            "class":    "blog",
             "img":      "assets/img/photo-of.png",
             "cotegory": "BUSINESS",
             "title" :   "How to build rapport with your web design clients",
@@ -168,7 +166,6 @@
           },
           { 
             "id": 3,
-            "class":    "blog",
             "img":      "assets/img/photo-of1.png",
             "cotegory": "Startup",
             "title" :   "Logo design trends to avoid in 2022",
@@ -176,7 +173,6 @@
           },
           { 
             "id": 4,
-            "class":    "blog",
             "img":      "assets/img/photo-of2.png",
             "cotegory": "TECHNOLOGY",
             "title" :   "8 Figma design systems you can download for free today",
@@ -184,7 +180,6 @@
           },
           { 
             "id": 5,
-            "class":    "blog",
             "img":      "assets/img/two.png",
             "cotegory": "ECONOMY",
             "title" :   "Font sizes in UI design: The complete guide to follow",
@@ -194,7 +189,6 @@
       "categorys":[
           { 
             "id": 1,
-            "class":    "category",
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
             "title" :   "Top 6 free website mockup tools 2022",
@@ -202,7 +196,6 @@
           },
           { 
             "id":2,
-            "class":    "category",
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
             "title" :   "Step-by-step guide to choosing great font pairs",
@@ -210,7 +203,6 @@
           },
           { 
             "id": 3,
-            "class":    "category",
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
             "title" :   "Ten free foogle fonts that you should use",
@@ -218,7 +210,6 @@
           },
           { 
             "id": 4,
-            "class":    "category",
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
             "title" :   "What did I learn from doing 50+ design sprints?",
@@ -228,7 +219,6 @@
       "authot":[
           { 
             "id": 1,
-            "class":    "authers",
             "img":      "assets/img/stained.png",
             "cotegory": "BUSINESS",
             "title" :   "Font sizes in UI design: The complete guide to follow",
@@ -236,11 +226,48 @@
           },
           { 
             "id": 2,
-            "class":    "authers",
             "img":      "assets/img/main-in.png",
             "cotegory": "ECONOMY",
             "title" :   "How to build rapport with your web design clients",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        ],
+      "post":[
+        { 
+            "id": 1,
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     "8 Figma design systems that you can download for free today."
+          },
+          { 
+            "id": 2,
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   " ",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     "8 Figma design systems that you can download for free today."
+          },
+          { 
+            "id": 3,
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   " ",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     "8 Figma design systems that you can download for free today."
+          },
+          { 
+            "id": 4,
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     "8 Figma design systems that you can download for free today."
           }
       ]
 }

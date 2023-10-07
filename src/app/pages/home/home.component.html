@@ -23,45 +23,12 @@
                     eu fugiat nulla pariatur. Excepteur 
                     sint occaecat cupidatat non proident.
                 </p>
-                <button class="section1-container-blocks-block1-button" routerLink="blogPost">Read More ></button>
+                <a class="section1-container-blocks-block1-button" routerLink="blogPost">Read More ></a>
             </div>
             <div class="section1-container-blocks-block2">
-                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
-                    <p class="section1-container-blocks-block2-text1">
-                        By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
-                    </p>
-                    <p class="section1-container-blocks-block2-text2">
-                        8 Figma design systems that
-                         you can download for free today.
-                    </p>
-                </div>
-                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
-                    <p class="section1-container-blocks-block2-text1">
-                        By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
-                    </p>
-                    <p class="section1-container-blocks-block2-text2">
-                        8 Figma design systems that
-                         you can download for free today.
-                    </p>
-                </div>
-                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
-                    <p class="section1-container-blocks-block2-text1">
-                        By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
-                    </p>
-                    <p class="section1-container-blocks-block2-text2">
-                        8 Figma design systems that
-                         you can download for free today.
-                    </p>
-                </div>
-                <div class="section1-container-blocks-block2-block" routerLink="blogPost">
-                    <p class="section1-container-blocks-block2-text1">
-                        By <span style="color:#592EA9;">John Doe</span>   l   Aug 23, 2021 
-                    </p>
-                    <p class="section1-container-blocks-block2-text2">
-                        8 Figma design systems that
-                         you can download for free today.
-                    </p>
-                </div>
+                <a class="a_block" routerLink="blogPost" *ngFor="let item of Post">
+                    <app-posts [post]="item" [type]="'homePost'"></app-posts>
+                </a>          
             </div>
         </div>
     </div>

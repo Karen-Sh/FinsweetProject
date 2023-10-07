@@ -6,7 +6,7 @@
         </h1>
         <div class="section1-containerblocks">
             <div *ngFor="let po of Blog">
-                <app-posts [post]="po"></app-posts>
+                <app-posts [post]="po" [type]="'blog'"></app-posts>
             </div>
             <div class="header-container-buttonBlock">
                 <button class="header-container-buttonPrev">
@@ -22,7 +22,7 @@
         <h2 class="section3-container-title">All Categories</h2>
         <div class="section3-container-blocks">
             <div *ngFor="let it of Categorys">
-                <app-choose-a-catagory [item]="it" routerLink="/category"></app-choose-a-catagory>
+                <app-choose-a-catagory [item]="it"  routerLink="/category"></app-choose-a-catagory>
             </div>
         </div>
     </div>
