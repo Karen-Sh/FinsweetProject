@@ -41,6 +41,9 @@
     background: var(--yellow, #FFD050);
     scale: 1.1;
 }  
+.category_block{
+    display: block;
+}
 @media screen and (min-width: 540px){
  
     .section3-container-blocks-block1{

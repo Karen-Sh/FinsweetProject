@@ -83,6 +83,9 @@
 .a_block{
     display: block;
 }
+.category_block{
+    display: block;
+}
 .section2-container{
     padding: 50px 10px;
     background: var(--lavender, #F4F0F8);

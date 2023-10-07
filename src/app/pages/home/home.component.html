@@ -85,7 +85,9 @@
         <h2  class="section3-container-title">Choose A Catagory</h2>
         <div class="section3-container-blocks">
             <div *ngFor="let val of categorys">
-                <app-choose-a-catagory [item]="val" routerLink="category"></app-choose-a-catagory>
+                <a class="category_block" routerLink="/category">
+                <app-choose-a-catagory [item]="val"></app-choose-a-catagory>
+                </a>
             </div>
         </div>
     </div>
@@ -109,9 +111,9 @@
                 Ut enim ad minim veniam, quis nostrud 
                 exercitation ullamco laboris nisi ut aliquip.
             </p>
-            <button class="section4-container-block-button" routerLink="aboutUs">
+            <a class="section4-container-block-button" routerLink="aboutUs">
                 Discover our story >
-            </button>
+            </a>
         </div>
     </div>
 </section>
@@ -122,7 +124,9 @@
         </h2>
         <div class="section5-container-blocks">
             <div *ngFor="let val of Authers">
-                <app-list-of-authors [item]="val"></app-list-of-authors>
+                <a class="category_block" routerLink="/author">
+                    <app-list-of-authors [item]="val"></app-list-of-authors>
+                </a>
             </div> 
         </div>
     </div>
