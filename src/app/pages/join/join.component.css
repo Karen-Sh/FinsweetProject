@@ -42,6 +42,10 @@
     margin: auto;
     display: block;
     width: 175px;
+    transition: 1.3s;
+}
+.section8-conrainer-button:hover{
+    scale: 1.2;
 }
 @media screen and (min-width: 540px){
     .section8{
