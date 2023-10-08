@@ -8,26 +8,30 @@
         </div>
         <div class="section1-container-blocks">
             <div class="section1-container-blocks-block1">
-                <img  class="section1-container-blocks-block1-img" src="assets/img/white.png" alt="Photo">
-                <p class="section1-container-blocks-block1-text1">
-                    By <span style="color:#592EA9;">John Doe</span>   l   May 23, 2022
-                </p>
-                <p class="section1-container-blocks-block1-text2">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor.
-                </p>
-                <p class="section1-container-blocks-block1-text3">
-                    Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore
-                    eu fugiat nulla pariatur. Excepteur 
-                    sint occaecat cupidatat non proident.
-                </p>
-                <a class="section1-container-blocks-block1-button" routerLink="blogPost">Read More ></a>
+                <div *ngFor="let item of singlPost">
+                    <img  class="section1-container-blocks-block1-img" src="assets/img/white.png" alt="Photo">
+                    <p class="section1-container-blocks-block1-text1">
+                        By <span style="color:#592EA9;">{{item.userName}}</span>   {{item.data}}
+                    </p>
+                    <p class="section1-container-blocks-block1-text2">
+                        {{item.title}}
+                    </p>
+                    <p class="section1-container-blocks-block1-text3">
+                        {{item.post}}
+                    </p>
+                    <a class="section1-container-blocks-block1-button" routerLink="blogPost">Read More ></a>
+               </div>
             </div>
             <div class="section1-container-blocks-block2">
-                <a class="a_block" routerLink="blogPost" *ngFor="let item of Post">
-                    <app-posts [post]="item" [type]="'homePost'"></app-posts>
+                <a class="a_block" routerLink="blogPost" *ngFor="let item of post">
+                    <div class="section1-container-blocks-block2-block">
+                        <p class="section1-container-blocks-block2-text1">
+                            <span style="color:#592EA9;">{{item.userName}}</span>   {{item.data}} 
+                        </p>
+                        <p class="section1-container-blocks-block2-text2">
+                            {{item.title}}
+                        </p>
+                    </div>
                 </a>          
             </div>
         </div>
@@ -123,7 +127,7 @@
             List of Authors
         </h2>
         <div class="section5-container-blocks">
-            <div *ngFor="let val of Authers">
+            <div *ngFor="let val of authers">
                 <a class="category_block" routerLink="/author">
                     <app-list-of-authors [item]="val"></app-list-of-authors>
                 </a>

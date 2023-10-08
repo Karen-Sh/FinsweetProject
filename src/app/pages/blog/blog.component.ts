@@ -7,6 +7,7 @@ import { PostsComponent } from '../posts/posts.component';
 import { NgFor } from '@angular/common';
 import { BlogHeaderComponent } from '../blog-header/blog-header.component';
 import { DataService } from 'src/app/service/data.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-blog',
@@ -16,17 +17,17 @@ import { DataService } from 'src/app/service/data.service';
   imports: [JoinComponent,ChooseACatagoryComponent,PostsComponent,NgFor,BlogHeaderComponent]
 })
 export class BlogComponent implements OnInit {
-  Blog:any=[]
-  Categorys:any= []
+  blog:Post[]=[]
+  Category:Category[]= []
   constructor(public service: DataService){
 
   }
   ngOnInit(): void {
-    this.service.GetJsonBlog().subscribe(data=>{
-      this.Blog = data
+    this.service.GetJsonPost<Post[]>(`${environment.post.get}?_start=8&_end=13`).subscribe(data=>{
+      this.blog = data
     });
-    this.service.GetJsonCategori().subscribe(date=>{
-      this.Categorys = date
+    this.service.GetJsonCategory<Category[]>(environment.category.get).subscribe(date=>{
+      this.Category = date
     })
   }
 }

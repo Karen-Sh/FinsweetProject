@@ -11,30 +11,16 @@ export class DataService {
     
   }
 
-  GetJsonCategory(){
-    return this.http.get(this.url+'/categorys');
+  GetJsonCategory<Type>(url:string){
+    return this.http.get<Type>(url);
+  }
+  
+
+  GetJsonHomeAuthers<T>(url:string){
+    return this.http.get<T>(url);
   }
 
-  GetJsonAuthor(){
-    return this.http.get(this.url+'/authot');
-  }
-
-  GetJsonBlog(){
-    return this.http.get(this.url+'/blog');
-  }
-
-  GetJsonCategori(){
-    return this.http.get(this.url+'/category');
-  }
-
-  GetJsonHomeAuth(){
-    return this.http.get(this.url+'/homeAuthers');
-  }
-
-  GetJsonHomeAuthers(){
-    return this.http.get(this.url+'/authers');
-  }
-  GetJsonHomePost(){
-    return this.http.get(this.url+'/post');
+  GetJsonPost<T>(url:string){
+    return this.http.get<T>(url);
   }
 }

@@ -5,6 +5,7 @@ import { JoinComponent } from '../join/join.component';
 import { ListOfAuthorsComponent } from '../list-of-authors/list-of-authors.component';
 import { NgFor } from '@angular/common';
 import { DataService } from 'src/app/service/data.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-about-us',
@@ -14,13 +15,13 @@ import { DataService } from 'src/app/service/data.service';
   imports: [RouterModule,JoinComponent,ListOfAuthorsComponent,NgFor]
 })
 export class AboutUsComponent implements OnInit {
-  Aut:any=[]
+  authers:any=[]
     constructor(public service :DataService){
 
     }
   ngOnInit(): void {
-    this.service.GetJsonHomeAuthers().subscribe(data=>{
-      this.Aut = data
+    this.service.GetJsonHomeAuthers<Authers[]>(environment.authers.get).subscribe(date=>{
+      this.authers = date
     })
   }
 }

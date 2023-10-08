@@ -5,6 +5,7 @@ import { Post } from 'src/app/models/post';
 import { AuthorsComponent } from './authors/authors.component';
 import { PostsComponent } from '../posts/posts.component';
 import { DataService } from 'src/app/service/data.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-author',
@@ -14,13 +15,13 @@ import { DataService } from 'src/app/service/data.service';
   imports:[NgFor,AuthorsComponent,PostsComponent]
 })
 export class AuthorComponent implements OnInit {
-  Author:any=[]
+  post:Post[]=[]
     constructor(public service: DataService){
 
     }
   ngOnInit(): void {
-    this.service.GetJsonAuthor().subscribe(date=>{
-      this.Author = date
+    this.service.GetJsonPost<Post[]>(`${environment.post.get}?_start=13&_end=15`).subscribe(date=>{
+      this.post = date
     })
   }
 

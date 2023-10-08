@@ -9,6 +9,8 @@ import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory
 import { DataService } from 'src/app/service/data.service';
 import { Category } from 'src/app/models/category';
 import { PostsComponent } from '../posts/posts.component';
+import { environment } from 'src/environment/environment';
+import { Post } from 'src/app/models/post';
 
 @Component({
   selector: 'app-home',
@@ -18,21 +20,25 @@ import { PostsComponent } from '../posts/posts.component';
   imports: [RouterModule,NgFor,HeaderComponent,ListOfAuthorsComponent,JoinComponent,ChooseACatagoryComponent,PostsComponent]
 })
 export class HomeComponent implements OnInit{
-  categorys: any = [];
-  Authers:any=[];
-  Post: any=[];
+  categorys: Category[] = [];
+  authers:Authers[]=[];
+  post: Post[]=[];
+  singlPost: Post[]=[];
   constructor(private service: DataService){
     
   }
   ngOnInit(): void {
-    this.service.GetJsonCategori().subscribe(data=>{
-      this.categorys= data;
+    this.service.GetJsonCategory<Category[]>(environment.category.get).subscribe((data)=>{
+      this.categorys = data;
     });
-    this.service.GetJsonHomeAuth().subscribe(date=>{
-      this.Authers = date
+    this.service.GetJsonHomeAuthers<Authers[]>(`${environment.authers.get}?_end=4`).subscribe(date=>{
+      this.authers = date
     })
-    this.service.GetJsonHomePost().subscribe(post=>{
-        this.Post= post
+    this.service.GetJsonPost<Post[]>(`${environment.post.get}?_and=30`).subscribe(post=>{
+        this.post= post
     })
+    this.service.GetJsonPost<Post[]>(`${environment.post.get}?_start=15&_end=16`).subscribe(post=>{
+      this.singlPost= post
+  })
   }
 }

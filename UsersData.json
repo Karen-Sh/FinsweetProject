@@ -25,48 +25,6 @@
             "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        }
       ],
-    "homeAuthers":[
-        {
-            "userid":1,
-            "img":   "assets/img/man-in.png",
-            "title": "Floyd Miles",
-            "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
-        },
-        { 
-            "userid":2,
-            "img":   "assets/img/woman-in.png",
-            "title": "Dianne Russell",
-            "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
-        },
-        {
-            "userid":3,
-            "img":    "assets/img/fashion.png",
-            "title":  "Jenny Wilson",
-            "text":   "Content Writer @Company",
-            "img1":   "assets/img/Negative2.png",
-            "img2":   "assets/img/Negative.png",
-            "img3":   "assets/img/Negative3.png",
-            "img4":   "assets/img/Negative1.png"
-        },
-        {
-            "userid":4,
-            "img":   "assets/img/content.png",
-            "title": "Leslie Alexander",
-            "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
-        }
-      ],
     "authers":[
         {
             "userid":1,
@@ -149,125 +107,150 @@
             "img4":  "assets/img/Negative1.png"
           }
         ],
-      "blog":[
-          { 
+      "post":[
+         { 
             "id": 1,
-            "img":      "assets/img/two.png",
-            "cotegory": "Startup",
-            "title" :   "Design tips for designers that cover everything you need",
-            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "8 Figma design systems that you can download for free today.",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     ""
           },
           { 
             "id": 2,
-            "img":      "assets/img/photo-of.png",
-            "cotegory": "BUSINESS",
-            "title" :   "How to build rapport with your web design clients",
-            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "8 Figma design systems that you can download for free today.",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     ""
           },
           { 
             "id": 3,
-            "img":      "assets/img/photo-of1.png",
-            "cotegory": "Startup",
-            "title" :   "Logo design trends to avoid in 2022",
-            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "8 Figma design systems that you can download for free today.",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     ""
           },
           { 
             "id": 4,
-            "img":      "assets/img/photo-of2.png",
-            "cotegory": "TECHNOLOGY",
-            "title" :   "8 Figma design systems you can download for free today",
-            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+            "img":      "",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "8 Figma design systems that you can download for free today.",
+            "data":     "l   Aug 23, 2021 ",
+            "post":     ""
           },
           { 
             "id": 5,
             "img":      "assets/img/two.png",
-            "cotegory": "ECONOMY",
-            "title" :   "Font sizes in UI design: The complete guide to follow",
-            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-          }
-        ],
-      "categorys":[
-          { 
-            "id": 1,
-            "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
+            "userName": "",
             "title" :   "Top 6 free website mockup tools 2022",
+            "data":     "",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
           },
           { 
-            "id":2,
+            "id":6,
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
+            "userName": "",
             "title" :   "Step-by-step guide to choosing great font pairs",
+            "data":     "",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
           },
           { 
-            "id": 3,
+            "id": 7,
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
+            "userName": "",
             "title" :   "Ten free foogle fonts that you should use",
+            "data":     "",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
           },
           { 
-            "id": 4,
+            "id": 8,
             "img":      "assets/img/two.png",
             "cotegory": "BUSINESS",
+            "userName": "",
             "title" :   "What did I learn from doing 50+ design sprints?",
+            "data":     "",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
-          }
-        ],
-      "authot":[
+          },
           { 
-            "id": 1,
+            "id": 9,
+            "img":      "assets/img/two.png",
+            "cotegory": "Startup",
+            "userName": "",
+            "title" :   "Design tips for designers that cover everything you need",
+            "data":     "",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 10,
+            "img":      "assets/img/photo-of.png",
+            "cotegory": "BUSINESS",
+            "userName": "",
+            "title" :   "How to build rapport with your web design clients",
+            "data":     "",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 11,
+            "img":      "assets/img/photo-of1.png",
+            "cotegory": "Startup",
+            "userName": "",
+            "title" :   "Logo design trends to avoid in 2022",
+            "data":     "",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 12,
+            "img":      "assets/img/photo-of2.png",
+            "cotegory": "TECHNOLOGY",
+            "userName": "",
+            "title" :   "8 Figma design systems you can download for free today",
+            "data":     "",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 13,
+            "img":      "assets/img/two.png",
+            "cotegory": "ECONOMY",
+            "userName": "",
+            "title" :   "Font sizes in UI design: The complete guide to follow",
+            "data":     "",
+            "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 14,
             "img":      "assets/img/stained.png",
             "cotegory": "BUSINESS",
+            "userName": "",
             "title" :   "Font sizes in UI design: The complete guide to follow",
+            "data":     "",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           },
           { 
-            "id": 2,
+            "id": 15,
             "img":      "assets/img/main-in.png",
             "cotegory": "ECONOMY",
+            "userName": "",
             "title" :   "How to build rapport with your web design clients",
+            "data":     "",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          }
-        ],
-      "post":[
-        { 
-            "id": 1,
-            "img":      "",
-            "cotegory": "",
-            "userName": "John Doe",
-            "title" :   "",
-            "data":     "l   Aug 23, 2021 ",
-            "post":     "8 Figma design systems that you can download for free today."
           },
           { 
-            "id": 2,
-            "img":      "",
-            "cotegory": "",
+            "id": 16,
+            "img":      "assets/img/white.png",
+            "cotegory": "ECONOMY",
             "userName": "John Doe",
-            "title" :   " ",
-            "data":     "l   Aug 23, 2021 ",
-            "post":     "8 Figma design systems that you can download for free today."
-          },
-          { 
-            "id": 3,
-            "img":      "",
-            "cotegory": "",
-            "userName": "John Doe",
-            "title" :   " ",
-            "data":     "l   Aug 23, 2021 ",
-            "post":     "8 Figma design systems that you can download for free today."
-          },
-          { 
-            "id": 4,
-            "img":      "",
-            "cotegory": "",
-            "userName": "John Doe",
-            "title" :   "",
-            "data":     "l   Aug 23, 2021 ",
-            "post":     "8 Figma design systems that you can download for free today."
+            "title" :   "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor.",
+            "data":     "l   May 23, 2022",
+            "post":     "Duis aute irure dolor in reprehenderitin voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
           }
       ]
 }

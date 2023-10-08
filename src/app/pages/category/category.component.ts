@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post';
 import { PostsComponent } from '../posts/posts.component';
 import { DataService } from 'src/app/service/data.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-category',
@@ -12,13 +13,13 @@ import { DataService } from 'src/app/service/data.service';
   imports: [NgFor,PostsComponent]
 })
 export class CategoryComponent  implements OnInit{
-  Data: any=[]
+  post: Post[]=[]
   constructor(public service:DataService){
 
   }
   ngOnInit(): void {
-    this.service.GetJsonCategory().subscribe(data=>{
-      this.Data = data;
+    this.service.GetJsonPost<Post[]>(`${environment.post.get}?_start=4&_end=8`).subscribe(data=>{
+      this.post = data;
     })  
   }
 }
