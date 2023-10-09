@@ -251,6 +251,33 @@
             "title" :   "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor.",
             "data":     "l   May 23, 2022",
             "post":     "Duis aute irure dolor in reprehenderitin voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 17,
+            "img":      "assets/img/two.png",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "A UX Case Study Creating a Studious Environment for Students:",
+            "data":     "l   May 23, 2022",
+            "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 18,
+            "img":      "assets/img/photo-of.png",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "A UX Case Study Creating a Studious Environment for Students:",
+            "data":     "l   May 23, 2022",
+            "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 19,
+            "img":      "assets/img/photo-of1.png",
+            "cotegory": "",
+            "userName": "John Doe",
+            "title" :   "A UX Case Study Creating a Studious Environment for Students:",
+            "data":     "l   May 23, 2022",
+            "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
           }
       ]
 }

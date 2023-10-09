@@ -93,47 +93,19 @@
             What to read next
         </h2>
         <div class="section2-container-blocks">
-            <div class="section2-container-blocks-block1">
-                <img  class="section2-container-blocks-block1-img" src="assets/img/two.png" alt="photo">
-                <p class="section2-container-blocks-block1-text1">
-                    By <span style="color: #592EA9;">John Doe</span>   l   Aug 23, 2021 
-                </p>
-                <h3 class="section2-container-blocks-block1-title">
-                    A UX Case Study Creating a Studious Environment for Students: 
-                </h3>
-                <p class="section2-container-blocks-block1-text2">
-                    Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident.
-                </p>
-            </div>
-            <div class="section2-container-blocks-block1">
-                <img  class="section2-container-blocks-block1-img" src="assets/img/photo-of.png" alt="photo">
-                <p class="section2-container-blocks-block1-text1">
-                    By <span style="color: #592EA9;">John Doe</span>   l   Aug 23, 2021 
-                </p>
-                <h3 class="section2-container-blocks-block1-title">
-                    A UX Case Study Creating a Studious Environment for Students: 
-                </h3>
-                <p class="section2-container-blocks-block1-text2">
-                    Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident.
-                </p>
-            </div>
-            <div class="section2-container-blocks-block1">
-                <img  class="section2-container-blocks-block1-img" src="assets/img/photo-of1.png" alt="photo">
-                <p class="section2-container-blocks-block1-text1">
-                    By <span style="color: #592EA9;">John Doe</span>   l   Aug 23, 2021 
-                </p>
-                <h3 class="section2-container-blocks-block1-title">
-                    A UX Case Study Creating a Studious Environment for Students: 
-                </h3>
-                <p class="section2-container-blocks-block1-text2">
-                    Duis aute irure dolor in reprehenderit in voluptate 
-                    velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident.
-                </p>
+            <div *ngFor="let item of post">
+                <div class="section2-container-blocks-block1">
+                    <img  class="section2-container-blocks-block1-img" [src]="item.img" alt="photo">
+                    <p class="section2-container-blocks-block1-text1">
+                        By <span style="color: #592EA9;">{{item.userName}}</span>   {{item.data}} 
+                    </p>
+                    <h3 class="section2-container-blocks-block1-title">
+                        {{item.title}} 
+                    </h3>
+                    <p class="section2-container-blocks-block1-text2">
+                        {{item.post}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
