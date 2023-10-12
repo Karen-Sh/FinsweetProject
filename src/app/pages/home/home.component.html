@@ -89,7 +89,7 @@
         <h2  class="section3-container-title">Choose A Catagory</h2>
         <div class="section3-container-blocks">
             <div *ngFor="let val of categorys">
-                <a class="category_block" routerLink="/category">
+                <a class="category_block" [routerLink]="['/category',val.id]">
                 <app-choose-a-catagory [item]="val"></app-choose-a-catagory>
                 </a>
             </div>
@@ -128,7 +128,7 @@
         </h2>
         <div class="section5-container-blocks">
             <div *ngFor="let val of authers">
-                <a class="category_block" routerLink="/author">
+                <a class="category_block" [routerLink]="['/author', val.id]">
                     <app-list-of-authors [item]="val"></app-list-of-authors>
                 </a>
             </div> 

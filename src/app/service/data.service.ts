@@ -11,16 +11,7 @@ export class DataService {
     
   }
 
-  GetJsonCategory<Type>(url:string){
+  GetJsonItem<Type>(url:string){
     return this.http.get<Type>(url);
-  }
-  
-
-  GetJsonHomeAuthers<T>(url:string){
-    return this.http.get<T>(url);
-  }
-
-  GetJsonPost<T>(url:string){
-    return this.http.get<T>(url);
   }
 }

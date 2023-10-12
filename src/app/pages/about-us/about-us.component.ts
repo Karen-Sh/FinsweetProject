@@ -20,7 +20,7 @@ export class AboutUsComponent implements OnInit {
 
     }
   ngOnInit(): void {
-    this.service.GetJsonHomeAuthers<Authers[]>(environment.authers.get).subscribe(date=>{
+    this.service.GetJsonItem<Authers[]>(environment.authers.get).subscribe(date=>{
       this.authers = date
     })
   }

@@ -1,4 +1,4 @@
-<div class="header-container-block1">
+<div class="header-container-block1" *ngIf="auther">
     <img class="header-container-block1-img" [src]="auther.img" alt="photo">
     <div>
         <h1 class="header-container-block1-title">
@@ -9,16 +9,16 @@
         </p>
         <div class="header-container-block1-socialLinks">
             <a class="header-container-block1-socialLinks1" href="https://ru-ru.facebook.com/">
-                <img src="assets/img/Negative2.png" alt="photo">
+                <img [src]="auther.img1" alt="photo">
             </a>
             <a class="header-container-block1-socialLinks1" href="https://twitter.com/">
-                <img src="assets/img/Negative.png" alt="photo">
+                <img [src]="auther.img2" alt="photo">
             </a>
             <a class="header-container-block1-socialLinks1" href="https://www.instagram.com/">
-                <img src="assets/img/Negative3.png" alt="photo">
+                <img [src]="auther.img3" alt="photo">
             </a>
             <a class="header-container-block1-socialLinks1" href="https://www.linkedin.com/">
-                <img src="assets/img/Negative1.png" alt="photo">
+                <img [src]="auther.img4" alt="photo">
             </a>
         </div>
     </div>

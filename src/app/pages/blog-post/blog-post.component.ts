@@ -18,7 +18,7 @@ export class BlogPostComponent implements OnInit {
 
     }
   ngOnInit(): void {
-    this.service.GetJsonPost<Post[]>(`${environment.post.get}?_start=16&_end=19`).subscribe(data=>{
+    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=16&_end=19`).subscribe(data=>{
       this.post =data
     })
   }

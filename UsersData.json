@@ -2,109 +2,109 @@
     "category":[
         { 
             "id": 1,
-            "img":"assets/img/Icon (3).png",
+            "img":   "../../../assets/img/Icon (3).png",
             "title": "Business",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        },
        { 
             "id": 2,
-            "img":   "assets/img/shuttle (1).png",
+            "img":   "../../../assets/img/shuttle (1).png",
             "title": "Startup",
             "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        },
        { 
             "id": 3,
-            "img":"assets/img/economy (1).png",
+            "img":   "../../../assets/img/economy (1).png",
             "title": "Economy",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
+            "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
        },
        { 
             "id": 4,
-            "img":"assets/img/cyborg (1).png",
+            "img":   "../../../assets/img/cyborg (1).png",
             "title": "Technology",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        }
       ],
     "authers":[
         {
-            "userid":1,
-            "img":   "assets/img/man-in.png",
+            "id":1,
+            "img":   "../../../assets/img/man-in.png",
             "title": "Floyd Miles",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
         },
         { 
-            "userid":2,
-            "img":   "assets/img/woman-in.png",
+            "id":2,
+            "img":   "../../../assets/img/woman-in.png",
             "title": "Dianne Russell",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
         },
         {
-            "userid":3,
-            "img":    "assets/img/fashion.png",
+            "id":3,
+            "img":    "../../../assets/img/fashion.png",
             "title":  "Jenny Wilson",
             "text":   "Content Writer @Company",
-            "img1":   "assets/img/Negative2.png",
-            "img2":   "assets/img/Negative.png",
-            "img3":   "assets/img/Negative3.png",
-            "img4":   "assets/img/Negative1.png"
+            "img1":   "../../../assets/img/Negative2.png",
+            "img2":   "../../../assets/img/Negative.png",
+            "img3":   "../../../assets/img/Negative3.png",
+            "img4":   "../../../assets/img/Negative1.png"
         },
         {
-            "userid":4,
-            "img":   "assets/img/content.png",
+            "id":4,
+            "img":   "../../../assets/img/content.png",
             "title": "Leslie Alexander",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
         },
         {
-            "userid":5,
-            "img":   "assets/img/man-in (3).png",
+            "id":5,
+            "img":   "../../../assets/img/man-in (3).png",
             "title": "Guy Hawkins",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
           },
           {
-            "userid":6,
-            "img":   "assets/img/woman-in (2).png",
+            "id":6,
+            "img":   "../../../assets/img/woman-in (2).png",
             "title": "Eleanor Pena",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
           },
           {
-            "userid":7,
-            "img":   "assets/img/content (2).png",
+            "id":7,
+            "img":   "../../../assets/img/content (2).png",
             "title": "Robert Fox",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
           },
           {
-            "userid":8,
-            "img":   "assets/img/cheerful.png",
+            "id":8,
+            "img":   "../../../assets/img/cheerful.png",
             "title": "Jacob Jones",
             "text":  "Content Writer @Company",
-            "img1":  "assets/img/Negative2.png",
-            "img2":  "assets/img/Negative.png",
-            "img3":  "assets/img/Negative3.png",
-            "img4":  "assets/img/Negative1.png"
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
           }
         ],
       "post":[
@@ -146,7 +146,7 @@
           },
           { 
             "id": 5,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "BUSINESS",
             "userName": "",
             "title" :   "Top 6 free website mockup tools 2022",
@@ -155,7 +155,7 @@
           },
           { 
             "id":6,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "BUSINESS",
             "userName": "",
             "title" :   "Step-by-step guide to choosing great font pairs",
@@ -164,7 +164,7 @@
           },
           { 
             "id": 7,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "BUSINESS",
             "userName": "",
             "title" :   "Ten free foogle fonts that you should use",
@@ -173,7 +173,7 @@
           },
           { 
             "id": 8,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "BUSINESS",
             "userName": "",
             "title" :   "What did I learn from doing 50+ design sprints?",
@@ -182,7 +182,7 @@
           },
           { 
             "id": 9,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "Startup",
             "userName": "",
             "title" :   "Design tips for designers that cover everything you need",
@@ -191,7 +191,7 @@
           },
           { 
             "id": 10,
-            "img":      "assets/img/photo-of.png",
+            "img":      "../../../assets/img/photo-of.png",
             "cotegory": "BUSINESS",
             "userName": "",
             "title" :   "How to build rapport with your web design clients",
@@ -200,7 +200,7 @@
           },
           { 
             "id": 11,
-            "img":      "assets/img/photo-of1.png",
+            "img":      "../../../assets/img/photo-of1.png",
             "cotegory": "Startup",
             "userName": "",
             "title" :   "Logo design trends to avoid in 2022",
@@ -209,7 +209,7 @@
           },
           { 
             "id": 12,
-            "img":      "assets/img/photo-of2.png",
+            "img":      "../../../assets/img/photo-of2.png",
             "cotegory": "TECHNOLOGY",
             "userName": "",
             "title" :   "8 Figma design systems you can download for free today",
@@ -218,7 +218,7 @@
           },
           { 
             "id": 13,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "ECONOMY",
             "userName": "",
             "title" :   "Font sizes in UI design: The complete guide to follow",
@@ -227,7 +227,7 @@
           },
           { 
             "id": 14,
-            "img":      "assets/img/stained.png",
+            "img":      "../../../assets/img/stained.png",
             "cotegory": "BUSINESS",
             "userName": "",
             "title" :   "Font sizes in UI design: The complete guide to follow",
@@ -236,7 +236,7 @@
           },
           { 
             "id": 15,
-            "img":      "assets/img/main-in.png",
+            "img":      "../../../assets/img/main-in.png",
             "cotegory": "ECONOMY",
             "userName": "",
             "title" :   "How to build rapport with your web design clients",
@@ -245,7 +245,7 @@
           },
           { 
             "id": 16,
-            "img":      "assets/img/white.png",
+            "img":      "../../../assets/img/white.png",
             "cotegory": "ECONOMY",
             "userName": "John Doe",
             "title" :   "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor.",
@@ -254,7 +254,7 @@
           },
           { 
             "id": 17,
-            "img":      "assets/img/two.png",
+            "img":      "../../../assets/img/two.png",
             "cotegory": "",
             "userName": "John Doe",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
@@ -263,7 +263,7 @@
           },
           { 
             "id": 18,
-            "img":      "assets/img/photo-of.png",
+            "img":      "../../../assets/img/photo-of.png",
             "cotegory": "",
             "userName": "John Doe",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
@@ -272,7 +272,7 @@
           },
           { 
             "id": 19,
-            "img":      "assets/img/photo-of1.png",
+            "img":      "../../../assets/img/photo-of1.png",
             "cotegory": "",
             "userName": "John Doe",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",

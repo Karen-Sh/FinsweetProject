@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -36,12 +36,12 @@ let routhes: Routes=[
         title: 'Abouth Us'
       },
       {
-        path: 'category',
+        path: 'category/:id',
         loadComponent: () =>import('./pages/category/category.component').then(m=>m.CategoryComponent),
         title: 'Category'
       },
       {
-        path: 'author',
+        path: 'author/:id',
         loadComponent: () =>import('./pages/author/author.component').then(m=>m.AuthorComponent),
         title: 'Author'
       },
