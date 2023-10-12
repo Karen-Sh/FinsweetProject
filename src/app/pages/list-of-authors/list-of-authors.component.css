@@ -45,6 +45,11 @@
 .section5-container-blocks-block1-socialLinks1:hover{
     scale: 1.5;
 }
+.img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 @media screen and (min-width: 540px){
     .section5-container-blocks-block1{
         margin: 10px 0;

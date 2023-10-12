@@ -1,7 +1,7 @@
 <header class="header">
-    <div class="header-container">
+    <div class="header-container" *ngIf="cotegory">
         <h1 class="header-container-title">
-            {{cotegory.title}}
+            {{categorys.toUpperCase()}}
         </h1>
         <p   class="header-container-text1">
             Lorem ipsum dolor sit amet, 
@@ -10,7 +10,7 @@
             ut labore.
         </p>
         <p   class="header-container-text2">
-            Blog > {{cotegory.title}}
+            Blog > {{categorys}}
         </p>
     </div>
 </header>
@@ -27,25 +27,25 @@
                     Categories
                 </h2>
                 <div class="section1-container-blocks1-block1">
-                    <img src="assets/img/shuttle (1).png" alt="photo">
+                    <img src="../../../assets/img/shuttle (1).png" alt="photo">
                     <p class="section1-container-blocks1-block1-text">
                         Startup
                     </p>
                 </div>
                 <div class="section1-container-blocks1-block1">
-                    <img src="assets/img/Icon (3).png" alt="photo">
+                    <img src="../../../assets/img/Icon (3).png" alt="photo">
                     <p class="section1-container-blocks1-block1-text">
                         Business
                     </p>
                 </div>
                 <div class="section1-container-blocks1-block1">
-                    <img src="assets/img/economy (1).png" alt="photo">
+                    <img src="../../../assets/img/economy (1).png" alt="photo">
                     <p class="section1-container-blocks1-block1-text">
                         Economy
                     </p>
                 </div>
                 <div class="section1-container-blocks1-block1">
-                    <img src="assets/img/cyborg (1).png" alt="photo">
+                    <img src="../../../assets/img/cyborg (1).png" alt="photo">
                     <p class="section1-container-blocks1-block1-text">
                         Technology
                     </p>

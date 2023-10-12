@@ -1,10 +1,10 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post';
 import { PostsComponent } from '../posts/posts.component';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
-import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Category } from 'src/app/models/category';
 
 @Component({
@@ -12,21 +12,21 @@ import { Category } from 'src/app/models/category';
   templateUrl: './category.component.html',
   styleUrls: ['./category.component.css'],
   standalone: true,
-  imports: [NgFor,PostsComponent]
+  imports: [NgFor,PostsComponent,NgIf]
 })
 export class CategoryComponent  implements OnInit{
   post: Post[]=[];
-  id!:number|null
+  categorys!:string
   cotegory!:Category
   constructor(public service:DataService, private routhe: ActivatedRoute){
-    this.id = this.routhe.snapshot.params['id']
+    this.categorys = this.routhe.snapshot.params['categoty'].toLowerCase()
   }
   ngOnInit(): void {
-    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=4&_end=8`).subscribe(data=>{
-      this.post = data;
+    this.service.GetJsonItem<Post[]>(`${environment.post.get}`).subscribe(data=>{
+      this.post = data.filter(post=>post.cotegory.toLowerCase()===this.categorys);
     })  
-    this.service.GetJsonItem<Category>(`${environment.category.get}/${this.id}`).subscribe(date=>{
-      this.cotegory= date
+    this.service.GetJsonItem<Category>(`${environment.category.get}?categoty=${this.categorys}`).subscribe(date=>{
+      this.cotegory= date;
     })
   }
 }
