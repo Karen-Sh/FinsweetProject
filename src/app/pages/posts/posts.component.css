@@ -87,6 +87,7 @@
 .section-container-block1-img{
     width: 100%;
     margin-bottom: 20px;
+    object-fit: contain;
 }
 .section-container-block1-text1{
     color: var(--purple, #592EA9);
