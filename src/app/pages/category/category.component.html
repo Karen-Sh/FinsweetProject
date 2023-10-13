@@ -27,7 +27,7 @@
                     Categories
                 </h2>
                 <a class="block" [routerLink]="['/category', item.category]"  *ngFor="let item of clickCategory">
-                    <div class="section1-container-blocks1-block1">
+                    <div class="section1-container-blocks1-block1" [ngClass]="{'active':isActive(item.category.toLowerCase())}">
                         <img [src]="item.img" alt="photo">
                         <p class="section1-container-blocks1-block1-text">
                             {{item.category}}

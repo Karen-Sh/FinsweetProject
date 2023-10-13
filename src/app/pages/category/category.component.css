@@ -154,13 +154,14 @@
     border-radius: 28px;
     border: 2px solid var(--medium-grey, #6D6E76); 
     margin-bottom: 5px;  
-    transition: 1.5s;
+    transition: 1.3s;
 }
 .active{
     background-color: #FFD050;
+    /* scale: 1; */
 }
 .section1-container-blocks1-blocks-text:hover{
-    scale: 1.2;
+    scale: 1.1;
     background: var(--yellow, #FFD050);
 }
 .block{

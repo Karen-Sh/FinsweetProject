@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
-import {HttpClientModule}  from '@angular/common/http';
+import { HttpClientModule }  from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 let routhes: Routes=[
   {
@@ -70,7 +72,9 @@ let routhes: Routes=[
   imports: [
     BrowserModule,
     RouterModule.forRoot(routhes, {initialNavigation: 'enabledBlocking'}),
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
