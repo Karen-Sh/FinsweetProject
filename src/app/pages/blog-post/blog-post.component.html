@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" *ngIf="postId">
     <div class="header-container">
         <div class="header-container-block1">
             <img class="header-container-block1-img" [src]="postId.userImg" alt="photo">
@@ -16,7 +16,7 @@
         </div>
     </div>
 </header>
-<section class="section1">
+<section class="section1"*ngIf="postId">
     <div class="section1-container">
         <img class="section1-container-img" [src]="postId.img" alt="photo">
         <div class="section1-container-block">

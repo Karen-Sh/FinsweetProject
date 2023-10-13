@@ -1,4 +1,4 @@
-<header class="header-block">
+<header class="header-block" *ngIf="post">
     <div class="header-container">
         <div class="header-container-block">
             <p class="header-container-block-text">Posted on <b>{{post.cotegory}}</b></p>
@@ -10,7 +10,7 @@
             <p class="header-container-block-text3">
                 {{post.post}}
             </p>
-            <button class="header-container-block-button" [routerLink]="['/blogPost',post.id]">Read More ></button>
+            <a class="header-container-block-button" [routerLink]="['/blogPost',post.id]">Read More ></a>
         </div>
     </div>
 </header>

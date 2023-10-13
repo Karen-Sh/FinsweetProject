@@ -3,7 +3,7 @@ import { JoinComponent } from '../join/join.component';
 import { Post } from 'src/app/models/post';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './blog-post.component.html',
   styleUrls: ['./blog-post.component.css'],
   standalone: true,
-  imports:[JoinComponent,NgForOf]
+  imports:[JoinComponent,NgForOf,NgIf]
 })
 export class BlogPostComponent implements OnInit {
   post: Post[]=[]

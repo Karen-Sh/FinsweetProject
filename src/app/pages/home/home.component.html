@@ -89,7 +89,7 @@
         <h2  class="section3-container-title">Choose A Catagory</h2>
         <div class="section3-container-blocks">
             <div *ngFor="let val of categorys">
-                <a class="category_block" [routerLink]="['/category',val.categoty]">
+                <a class="category_block" [routerLink]="['/category',val.category]">
                 <app-choose-a-catagory [item]="val"></app-choose-a-catagory>
                 </a>
             </div>

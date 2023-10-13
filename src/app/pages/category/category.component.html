@@ -26,11 +26,11 @@
                 <h2 class="section1-container-blocks1-title">
                     Categories
                 </h2>
-                <a [routerLink]="['/category', item.categoty]"  *ngFor="let item of clickCategory">
+                <a class="block" [routerLink]="['/category', item.category]"  *ngFor="let item of clickCategory">
                     <div class="section1-container-blocks1-block1">
                         <img [src]="item.img" alt="photo">
                         <p class="section1-container-blocks1-block1-text">
-                            {{item.categoty}}
+                            {{item.category}}
                         </p>
                     </div>
                 </a>   

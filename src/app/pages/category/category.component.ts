@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post';
 import { PostsComponent } from '../posts/posts.component';
 import { DataService } from 'src/app/service/data.service';
@@ -20,13 +20,13 @@ export class CategoryComponent  implements OnInit{
   categorys!:string;
   cotegory!:Category;
   constructor(public service:DataService, private routhe: ActivatedRoute){
-    this.categorys = this.routhe.snapshot.params['categoty'].toLowerCase()
+    this.categorys = this.routhe.snapshot.params['category'].toLowerCase(); 
   }
   ngOnInit(): void {
     this.service.GetJsonItem<Post[]>(`${environment.post.get}`).subscribe(data=>{
       this.post = data.filter(post=>post.cotegory.toLowerCase()===this.categorys);
     })  
-    this.service.GetJsonItem<Category>(`${environment.category.get}?categoty=${this.categorys}`).subscribe(date=>{
+    this.service.GetJsonItem<Category>(`${environment.category.get}?category=${this.categorys}`).subscribe(date=>{
       this.cotegory= date;
     })
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(data => {

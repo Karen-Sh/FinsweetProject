@@ -1,3 +1,4 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Post } from 'src/app/models/post';
@@ -9,7 +10,7 @@ import { environment } from 'src/environment/environment';
   templateUrl: './blog-header.component.html',
   styleUrls: ['./blog-header.component.css'],
   standalone: true,
-  imports: [RouterModule]
+  imports: [RouterModule,NgIf]
 })
 export class BlogHeaderComponent implements OnInit {
   post!:Post;

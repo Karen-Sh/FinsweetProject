@@ -36,7 +36,7 @@ let routhes: Routes=[
         title: 'Abouth Us'
       },
       {
-        path: 'category/:categoty',
+        path: 'category/:category',
         loadComponent: () =>import('./pages/category/category.component').then(m=>m.CategoryComponent),
         title: 'Category'
       },

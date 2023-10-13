@@ -3,25 +3,25 @@
         { 
             "id": 1,
             "img":   "../../../assets/img/Icon (3).png",
-            "categoty": "Business",
+            "category": "Business",
             "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        },
        { 
             "id": 2,
             "img":   "../../../assets/img/shuttle (1).png",
-            "categoty": "Startup",
+            "category": "Startup",
             "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        },
        { 
             "id": 3,
             "img":   "../../../assets/img/economy (1).png",
-            "categoty": "Economy",
+            "category": "Economy",
             "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
        },
        { 
             "id": 4,
             "img":   "../../../assets/img/cyborg (1).png",
-            "categoty": "Technology",
+            "category": "Technology",
             "text":  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
        }
       ],

@@ -163,6 +163,9 @@
     scale: 1.2;
     background: var(--yellow, #FFD050);
 }
+.block{
+    display: block;
+}
 @media screen and (min-width: 540px) {
     .header-container-text1{
         width: 515px;  
