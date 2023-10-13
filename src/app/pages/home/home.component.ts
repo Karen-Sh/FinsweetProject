@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit{
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe((data)=>{
       this.categorys = data;
     });
-    this.service.GetJsonItem<Authers[]>(`${environment.authers.get}?_end=4`).subscribe(date=>{
+    this.service.GetJsonItem<Authers[]>(`${environment.authers.get}?_start=1&_end=5`).subscribe(date=>{
       this.authers = date
     })
     this.service.GetJsonItem<Post[]>(`${environment.post.get}?_and=30`).subscribe(post=>{

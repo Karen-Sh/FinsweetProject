@@ -7,8 +7,9 @@
 }
 .header-container-block1-img{
     margin-bottom: 20px;
-    width: 250px;
-    height: 280px;
+    width: 251px;
+    height: 294px;
+    object-fit: cover;
 }
 .header-container-block1-title{
     color: var(--black, #232536);

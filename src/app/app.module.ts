@@ -26,7 +26,7 @@ let routhes: Routes=[
         title: 'Blog'
       },
       {
-        path: 'blogPost',
+        path: 'blogPost/:id',
         loadComponent: () =>import('./pages/blog-post/blog-post.component').then(m=>m.BlogPostComponent),
         title: 'Blog post'
       },

@@ -4,6 +4,7 @@ import { Post } from 'src/app/models/post';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 import { NgForOf } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-blog-post',
@@ -14,12 +15,17 @@ import { NgForOf } from '@angular/common';
 })
 export class BlogPostComponent implements OnInit {
   post: Post[]=[]
-    constructor(private service: DataService){
-
+  id!:string|null
+  postId!:Post
+    constructor(private service: DataService, private routh:ActivatedRoute){
+      this.id = this.routh.snapshot.params['id']
     }
   ngOnInit(): void {
     this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=16&_end=19`).subscribe(data=>{
-      this.post =data
+      this.post =data;
+    });
+    this.service.GetJsonItem<Post>(`${environment.post.get}/${this.id}`).subscribe(date=>{
+      this.postId= date;
     })
   }
 

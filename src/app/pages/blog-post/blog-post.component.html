@@ -1,24 +1,24 @@
 <header class="header">
     <div class="header-container">
         <div class="header-container-block1">
-            <img class="header-container-block1-img" src="assets/img/Profile picture.png" alt="photo">
+            <img class="header-container-block1-img" [src]="postId.userImg" alt="photo">
             <div class="header-container-block1-text">
-                <h3 class="header-container-block1-title">Andrew Jonson</h3>
-                <p class="header-container-block1-text1">Posted on 27th January 2022</p>
+                <h3 class="header-container-block1-title">{{postId.userName}}</h3>
+                <p class="header-container-block1-text1">{{postId.data}}</p>
             </div>
         </div>
         <h1 class="header-container-title">
             Step-by-step guide to choosing great font pairs
         </h1>
         <div class="header-container-block2">
-            <img  class="header-container-block2-img" src="assets/img/shuttle (1).png" alt="photo">
-            <h4 class="header-container-block2-title">Startup</h4>
+            <img  class="header-container-block2-img" [src]="postId.categoryImg" alt="photo">
+            <h4 class="header-container-block2-title">{{postId.cotegory}}</h4>
         </div>
     </div>
 </header>
 <section class="section1">
     <div class="section1-container">
-        <img class="section1-container-img" src="assets/img/photo-of3.png" alt="photo">
+        <img class="section1-container-img" [src]="postId.img" alt="photo">
         <div class="section1-container-block">
             <h2 class="section1-container-block-title1 margin1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.

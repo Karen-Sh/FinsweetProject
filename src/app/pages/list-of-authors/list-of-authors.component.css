@@ -23,7 +23,7 @@
 }
 .section5-container-blocks-block1{
     background: var(--light-grey, #F4F4F4);
-    padding: 50px 20px; 
+    padding: 48px 20px; 
     width: 250px; /*296px*/
     margin: 0 auto 10px;
     transition: 1s;
@@ -46,10 +46,12 @@
     scale: 1.5;
 }
 .img{
-    width: 150px;
-    height: 150px;
+    width: 128px;
+    height: 128px;
     border-radius: 50%;
+    object-fit: cover;
 }
+
 @media screen and (min-width: 540px){
     .section5-container-blocks-block1{
         margin: 10px 0;

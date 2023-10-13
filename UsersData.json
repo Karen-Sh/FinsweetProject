@@ -26,8 +26,18 @@
        }
       ],
     "authers":[
+        { 
+            "id": 1,
+            "img":   "../../../assets/img/close-up (2).png",
+            "title": "Hey there, I’m Andrew Jonhson and welcome to my Blog",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Non blandit massa enim nec. Scelerisque viverra mauris  in aliquam sem. At risus viverra adipiscing at in tellus.",
+            "img1":  "../../../assets/img/Negative2.png",
+            "img2":  "../../../assets/img/Negative.png",
+            "img3":  "../../../assets/img/Negative3.png",
+            "img4":  "../../../assets/img/Negative1.png"
+        },
         {
-            "id":1,
+            "id":2,
             "img":   "../../../assets/img/man-in.png",
             "title": "Floyd Miles",
             "text":  "Content Writer @Company",
@@ -37,7 +47,7 @@
             "img4":  "../../../assets/img/Negative1.png"
         },
         { 
-            "id":2,
+            "id":3,
             "img":   "../../../assets/img/woman-in.png",
             "title": "Dianne Russell",
             "text":  "Content Writer @Company",
@@ -47,7 +57,7 @@
             "img4":  "../../../assets/img/Negative1.png"
         },
         {
-            "id":3,
+            "id":4,
             "img":    "../../../assets/img/fashion.png",
             "title":  "Jenny Wilson",
             "text":   "Content Writer @Company",
@@ -57,7 +67,7 @@
             "img4":   "../../../assets/img/Negative1.png"
         },
         {
-            "id":4,
+            "id":5,
             "img":   "../../../assets/img/content.png",
             "title": "Leslie Alexander",
             "text":  "Content Writer @Company",
@@ -67,7 +77,7 @@
             "img4":  "../../../assets/img/Negative1.png"
         },
         {
-            "id":5,
+            "id":6,
             "img":   "../../../assets/img/man-in (3).png",
             "title": "Guy Hawkins",
             "text":  "Content Writer @Company",
@@ -77,7 +87,7 @@
             "img4":  "../../../assets/img/Negative1.png"
           },
           {
-            "id":6,
+            "id":7,
             "img":   "../../../assets/img/woman-in (2).png",
             "title": "Eleanor Pena",
             "text":  "Content Writer @Company",
@@ -87,7 +97,7 @@
             "img4":  "../../../assets/img/Negative1.png"
           },
           {
-            "id":7,
+            "id":8,
             "img":   "../../../assets/img/content (2).png",
             "title": "Robert Fox",
             "text":  "Content Writer @Company",
@@ -97,7 +107,7 @@
             "img4":  "../../../assets/img/Negative1.png"
           },
           {
-            "id":8,
+            "id":9,
             "img":   "../../../assets/img/cheerful.png",
             "title": "Jacob Jones",
             "text":  "Content Writer @Company",
@@ -111,7 +121,9 @@
          { 
             "id": 1,
             "img":      "",
+            "userImg":  "",
             "cotegory": "",
+            "categoryImg": "",
             "userName": "John Doe",
             "title" :   "8 Figma design systems that you can download for free today.",
             "data":     "l   Aug 23, 2021 ",
@@ -120,7 +132,9 @@
           { 
             "id": 2,
             "img":      "",
+            "userImg":  "",
             "cotegory": "",
+            "categoryImg": "",
             "userName": "John Doe",
             "title" :   "8 Figma design systems that you can download for free today.",
             "data":     "l   Aug 23, 2021 ",
@@ -129,7 +143,9 @@
           { 
             "id": 3,
             "img":      "",
+            "userImg":  "",
             "cotegory": "",
+            "categoryImg": "",
             "userName": "John Doe",
             "title" :   "8 Figma design systems that you can download for free today.",
             "data":     "l   Aug 23, 2021 ",
@@ -138,6 +154,7 @@
           { 
             "id": 4,
             "img":      "",
+            "userImg":  "",
             "cotegory": "",
             "userName": "John Doe",
             "title" :   "8 Figma design systems that you can download for free today.",
@@ -147,7 +164,9 @@
           { 
             "id": 5,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "BUSINESS",
+            "categoryImg": "../../../assets/img/Icon (3).png",
             "userName": "",
             "title" :   "Top 6 free website mockup tools 2022",
             "data":     "",
@@ -156,7 +175,9 @@
           { 
             "id":6,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "BUSINESS",
+            "categoryImg": "../../../assets/img/Icon (3).png",
             "userName": "",
             "title" :   "Step-by-step guide to choosing great font pairs",
             "data":     "",
@@ -165,7 +186,9 @@
           { 
             "id": 7,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "BUSINESS",
+            "categoryImg": "../../../assets/img/Icon (3).png",
             "userName": "",
             "title" :   "Ten free foogle fonts that you should use",
             "data":     "",
@@ -174,7 +197,9 @@
           { 
             "id": 8,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "BUSINESS",
+            "categoryImg": "../../../assets/img/Icon (3).png",
             "userName": "",
             "title" :   "What did I learn from doing 50+ design sprints?",
             "data":     "",
@@ -183,7 +208,9 @@
           { 
             "id": 9,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "Startup",
+            "categoryImg": "../../../assets/img/shuttle (1).png",
             "userName": "",
             "title" :   "Design tips for designers that cover everything you need",
             "data":     "",
@@ -192,7 +219,9 @@
           { 
             "id": 10,
             "img":      "../../../assets/img/photo-of.png",
+            "userImg":  "",
             "cotegory": "BUSINESS",
+            "categoryImg": "../../../assets/img/Icon (3).png",
             "userName": "",
             "title" :   "How to build rapport with your web design clients",
             "data":     "",
@@ -201,7 +230,9 @@
           { 
             "id": 11,
             "img":      "../../../assets/img/photo-of1.png",
+            "userImg":  "",
             "cotegory": "Startup",
+            "categoryImg": "../../../assets/img/shuttle (1).png",
             "userName": "",
             "title" :   "Logo design trends to avoid in 2022",
             "data":     "",
@@ -210,7 +241,9 @@
           { 
             "id": 12,
             "img":      "../../../assets/img/photo-of2.png",
+            "userImg":  "",
             "cotegory": "TECHNOLOGY",
+            "categoryImg": "../../../assets/img/cyborg (1).png",
             "userName": "",
             "title" :   "8 Figma design systems you can download for free today",
             "data":     "",
@@ -219,7 +252,9 @@
           { 
             "id": 13,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "ECONOMY",
+            "categoryImg": "../../../assets/img/economy (1).png",
             "userName": "",
             "title" :   "Font sizes in UI design: The complete guide to follow",
             "data":     "",
@@ -228,7 +263,9 @@
           { 
             "id": 14,
             "img":      "../../../assets/img/stained.png",
+            "userImg":  "",
             "cotegory": "BUSINESS",
+            "categoryImg": "../../../assets/img/Icon (3).png",
             "userName": "",
             "title" :   "Font sizes in UI design: The complete guide to follow",
             "data":     "",
@@ -237,7 +274,9 @@
           { 
             "id": 15,
             "img":      "../../../assets/img/main-in.png",
+            "userImg":  "",
             "cotegory": "ECONOMY",
+            "categoryImg": "../../../assets/img/economy (1).png",
             "userName": "",
             "title" :   "How to build rapport with your web design clients",
             "data":     "",
@@ -246,7 +285,9 @@
           { 
             "id": 16,
             "img":      "../../../assets/img/white.png",
+            "userImg":  "../../../assets/img/Profile picture.png",
             "cotegory": "ECONOMY",
+            "categoryImg": "../../../assets/img/economy (1).png",
             "userName": "John Doe",
             "title" :   "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor.",
             "data":     "l   May 23, 2022",
@@ -255,7 +296,9 @@
           { 
             "id": 17,
             "img":      "../../../assets/img/two.png",
+            "userImg":  "",
             "cotegory": "",
+            "categoryImg": "",
             "userName": "John Doe",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
             "data":     "l   May 23, 2022",
@@ -264,7 +307,9 @@
           { 
             "id": 18,
             "img":      "../../../assets/img/photo-of.png",
+            "userImg":  "",
             "cotegory": "",
+            "categoryImg": "",
             "userName": "John Doe",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
             "data":     "l   May 23, 2022",
@@ -273,11 +318,35 @@
           { 
             "id": 19,
             "img":      "../../../assets/img/photo-of1.png",
+            "userImg":  "",
             "cotegory": "",
+            "categoryImg": "",
             "userName": "John Doe",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
             "data":     "l   May 23, 2022",
             "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 20,
+            "img":      "../../../assets/img/photo-of1.png",
+            "userImg":  "",
+            "cotegory": "",
+            "categoryImg": "",
+            "userName": "John Doe",
+            "title" :   "A UX Case Study Creating a Studious Environment for Students:",
+            "data":     "l   May 23, 2022",
+            "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
+          },
+          { 
+            "id": 21,
+            "img":      "../../../assets/img/photo-of1.png",
+            "userImg":  "",
+            "cotegory": "STARTUP",
+            "categoryImg": "",
+            "userName": "James West",
+            "title" :   "Step-by-step guide to choosing great font pairs",
+            "data":     "|  May 23, 2022",
+            "post":     " Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
           }
       ]
 }

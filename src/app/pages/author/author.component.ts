@@ -32,16 +32,4 @@ export class AuthorComponent implements OnInit {
       
     })
   }
-
-  // auther:Category[]=[
-  //   { 
-  //     id: 1,
-  //     img: 'assets/img/close-up (2).png',
-  //     title :'Hey there, I’m Andrew Jonhson and welcome to my Blog',
-  //     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-  //            sed do eiusmod tempor incididunt ut labore et dolore magna 
-  //            aliqua. Non blandit massa enim nec. Scelerisque viverra mauris 
-  //            in aliquam sem. At risus viverra adipiscing at in tellus.`
-  //   }
-  // ]
 }
