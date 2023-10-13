@@ -21,9 +21,9 @@
     <div class="section3-container">
         <h2 class="section3-container-title">All Categories</h2>
         <div class="section3-container-blocks">
-            <div *ngFor="let it of Category">
-                <app-choose-a-catagory [item]="it"  routerLink="/category"></app-choose-a-catagory>
-            </div>
+                <a class="block" *ngFor="let it of Category"  [routerLink]="['/category', it.categoty]">
+                    <app-choose-a-catagory [item]="it"></app-choose-a-catagory>
+                </a>
         </div>
     </div>
 </section>

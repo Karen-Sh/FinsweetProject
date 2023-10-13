@@ -70,6 +70,9 @@
     margin-bottom: 48px;   
     padding-left: 32px;
 } 
+.block{
+    display: block;
+}
 @media screen and (min-width: 540px){
     .section3{
         padding: 128px 0;

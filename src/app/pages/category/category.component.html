@@ -26,30 +26,14 @@
                 <h2 class="section1-container-blocks1-title">
                     Categories
                 </h2>
-                <div class="section1-container-blocks1-block1">
-                    <img src="../../../assets/img/shuttle (1).png" alt="photo">
-                    <p class="section1-container-blocks1-block1-text">
-                        Startup
-                    </p>
-                </div>
-                <div class="section1-container-blocks1-block1">
-                    <img src="../../../assets/img/Icon (3).png" alt="photo">
-                    <p class="section1-container-blocks1-block1-text">
-                        Business
-                    </p>
-                </div>
-                <div class="section1-container-blocks1-block1">
-                    <img src="../../../assets/img/economy (1).png" alt="photo">
-                    <p class="section1-container-blocks1-block1-text">
-                        Economy
-                    </p>
-                </div>
-                <div class="section1-container-blocks1-block1">
-                    <img src="../../../assets/img/cyborg (1).png" alt="photo">
-                    <p class="section1-container-blocks1-block1-text">
-                        Technology
-                    </p>
-                </div>
+                <a [routerLink]="['/category', item.categoty]"  *ngFor="let item of clickCategory">
+                    <div class="section1-container-blocks1-block1">
+                        <img [src]="item.img" alt="photo">
+                        <p class="section1-container-blocks1-block1-text">
+                            {{item.categoty}}
+                        </p>
+                    </div>
+                </a>   
             </div>
             <div class="section1-container-blocks1-blocks">
                 <h2 class="section1-container-blocks1-blocks-title">

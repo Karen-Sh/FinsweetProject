@@ -156,6 +156,9 @@
     margin-bottom: 5px;  
     transition: 1.5s;
 }
+.active{
+    background-color: #FFD050;
+}
 .section1-container-blocks1-blocks-text:hover{
     scale: 1.2;
     background: var(--yellow, #FFD050);

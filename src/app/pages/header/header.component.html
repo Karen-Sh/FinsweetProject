@@ -5,12 +5,12 @@
             <h1 class="header-container-block-title">{{post.title}}</h1>
             <p  class="header-container-block-text1">
                 By <span style="color:#FFD050;">{{post.userName}}</span> 
-                <time>|  {{post.data}}</time>
+                <time>{{post.data}}</time>
             </p>
             <p class="header-container-block-text3">
                 {{post.post}}
             </p>
-            <button class="header-container-block-button" routerLink="blogPost">Read More ></button>
+            <button class="header-container-block-button" [routerLink]="['/blogPost',post.id]">Read More ></button>
         </div>
     </div>
 </header>

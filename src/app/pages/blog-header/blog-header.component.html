@@ -1,20 +1,17 @@
 <header class="header">
     <div class="header-container">
         <div class="header-container-block">
-            <p class="header-container-block-text">Posted on <b>STARTUP</b></p>
-            <h1 class="header-container-block-title">Step-by-step guide to choosing great font pairs</h1>
+            <p class="header-container-block-text">Posted on <b>{{post.cotegory}}</b></p>
+            <h1 class="header-container-block-title">{{post.title}}</h1>
             <p class="header-container-block-text1">
-                By <span style="color:#592EA9;">James West</span>
-                <time>| May 23, 2022</time>
+                By <span style="color:#592EA9;">{{post.userName}}</span>
+                <time>{{post.data}}</time>
             </p>
             <p class="header-container-block-text3">
-                Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident.
+                {{post.post}}
             </p>
-            <button class="header-container-block-button" routerLink="/blogPost">Read More ></button>
+            <a class="header-container-block-button" [routerLink]="['/blogPost',post.id]">Read More ></a>
         </div>
-        <img class="header-container-img" src="assets/img/man-in (2).png" alt="photo">
+        <img class="header-container-img" [src]="post.img" alt="photo">
     </div>
 </header>
