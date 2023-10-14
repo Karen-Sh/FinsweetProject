@@ -23,7 +23,7 @@
                </div>
             </div>
             <div class="section1-container-blocks-block2">
-                <a class="a_block" routerLink="blogPost" *ngFor="let item of post">
+                <a class="a_block" [routerLink]="['/blogPost',item.id]" *ngFor="let item of post">
                     <div class="section1-container-blocks-block2-block">
                         <p class="section1-container-blocks-block2-text1">
                             <span style="color:#592EA9;">{{item.userName}}</span>   {{item.data}} 

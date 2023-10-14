@@ -25,10 +25,11 @@ export class BlogComponent implements OnInit {
   }
   ngOnInit(): void {
     this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=8&_end=13`).subscribe(data=>{
-      this.blog = data
+      this.blog = data;
     });
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(date=>{
       this.Category = date
     })
   }
+ 
 }

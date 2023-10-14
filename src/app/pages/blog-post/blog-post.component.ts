@@ -21,7 +21,7 @@ export class BlogPostComponent implements OnInit {
       this.id = this.routh.snapshot.params['id']
     }
   ngOnInit(): void {
-    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=16&_end=19`).subscribe(data=>{
+    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=13&_end=16`).subscribe(data=>{
       this.post =data;
     });
     this.service.GetJsonItem<Post>(`${environment.post.get}/${this.id}`).subscribe(date=>{

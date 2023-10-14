@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit{
   post!:Post;
   constructor(private service: DataService){}
   ngOnInit(): void {
-    this.service.GetJsonItem<Post>(`${environment.post.get}/21`).subscribe(data=>{
+    this.service.GetJsonItem<Post>(`${environment.post.get}/17`).subscribe(data=>{
       this.post =data;
     })
   }
