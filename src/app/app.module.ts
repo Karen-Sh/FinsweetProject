@@ -6,6 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule }  from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { AdminLayoutComponent } from './admin/admin-layout/admin-layout.component';
+import { AutherAdminComponent } from './admin/auther-admin/auther-admin.component';
+import { CategoryAdminComponent } from './admin/category-admin/category-admin.component';
+import { BlogAdminComponent } from './admin/blog-admin/blog-admin.component';
 
 let routhes: Routes=[
   {
@@ -68,6 +72,10 @@ let routhes: Routes=[
 @NgModule({
   declarations: [
     AppComponent,
+    AdminLayoutComponent,
+    AutherAdminComponent,
+    CategoryAdminComponent,
+    BlogAdminComponent,
   ],
   imports: [
     BrowserModule,

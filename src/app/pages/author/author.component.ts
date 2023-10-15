@@ -23,13 +23,13 @@ export class AuthorComponent implements OnInit {
         this.id = this.routhe.snapshot.params['id']
     }
   ngOnInit(): void {
-    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=13&_end=15`).subscribe(date=>{
-      this.post = date
-    })
     this.service.GetJsonItem<Authers>(`${environment.authers.get}/${this.id}`).subscribe(data=>{
       this.author = data
       console.log(this.author);
       
+    })
+    this.service.GetJsonItem<Post[]>(`${environment.post.get}`).subscribe((date)=>{
+      this.post = date.filter(post=>post.userName==this.author.title)
     })
   }
 }

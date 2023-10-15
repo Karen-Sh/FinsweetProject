@@ -5,9 +5,9 @@
             All posts
         </h1>
         <div class="section1-containerblocks">
-            <div *ngFor="let po of blog">
+            <a class="block" [routerLink]="['/blogPost',po.id]" *ngFor="let po of blog">
                 <app-posts [post]="po" [type]="'blog'"></app-posts>
-            </div>
+            </a>
             <div class="header-container-buttonBlock">
                 <button class="header-container-buttonPrev">
                     < Prev 

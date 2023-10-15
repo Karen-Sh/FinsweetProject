@@ -17,16 +17,16 @@
 <section class="section1">
     <div class="section1-container">
         <div class="section1-container-blocks">
-            <div *ngFor="let item of post">
+            <a class="block" [routerLink]="['/blogPost', item.id]" *ngFor="let item of post">
                 <app-posts [post]="item" [type]="'category'"></app-posts>
-            </div>
+            </a>
         </div>
         <div class="section1-container-blocks1">
             <div class="section1-container-blocks1-block">
                 <h2 class="section1-container-blocks1-title">
                     Categories
                 </h2>
-                <a class="block" [routerLink]="['/category', item.category]"  *ngFor="let item of clickCategory">
+                <a class="block" [routerLink]="['/category', item.category]"  *ngFor="let item of clickCategory" (click)="categoryGet()">
                     <div class="section1-container-blocks1-block1" [ngClass]="{'active':isActive(item.category.toLowerCase())}">
                         <img [src]="item.img" alt="photo">
                         <p class="section1-container-blocks1-block1-text">

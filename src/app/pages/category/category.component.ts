@@ -19,6 +19,7 @@ export class CategoryComponent  implements OnInit{
   clickCategory:Category[]=[]
   categorys!:string;
   cotegory!:Category;
+  catPost: Post[]=[];
   constructor(public service:DataService, private routhe: ActivatedRoute){ 
   }
   ngOnInit(): void {
@@ -38,5 +39,12 @@ export class CategoryComponent  implements OnInit{
   }
   isActive(active:string):boolean{
     return active==this.categorys;
+  }
+  categoryGet(){
+    // this.service.GetJsonItem<Post[]>(`${environment.post.get}`).subscribe(data=>{
+    //   this.catPost = data.filter(post=>
+    //     this.clickCategory.forEach(par=>post.cotegory== par.category))
+    //   console.log(data.filter(post=>this.clickCategory.some(par=>post.cotegory== par.category)));     
+    // }) 
   }
 }

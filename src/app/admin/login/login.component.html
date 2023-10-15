@@ -1,0 +1,13 @@
+<section>
+    <form [formGroup]="form">
+        <label>
+            Login
+            <input type="email" formControlName="e_mail" placeholder="Enter a Yuor Email" name="e_mail">
+        </label>
+        <label >
+            Login
+            <input type="password" formControlName="pass" placeholder="Enet a Yuor password" name="pass">
+        </label>
+        <button [disabled]="form.invalid"></button>
+    </form>
+</section>
