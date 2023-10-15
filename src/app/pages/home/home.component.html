@@ -128,7 +128,7 @@
         </h2>
         <div class="section5-container-blocks">
             <div *ngFor="let val of authers">
-                <a class="category_block" [routerLink]="['/author', val.id]">
+                <a class="category_block" [routerLink]="['/author', val.title]">
                     <app-list-of-authors [item]="val"></app-list-of-authors>
                 </a>
             </div> 

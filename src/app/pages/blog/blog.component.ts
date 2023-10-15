@@ -4,7 +4,7 @@ import { Post } from 'src/app/models/post';
 import { JoinComponent } from '../join/join.component';
 import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory.component';
 import { PostsComponent } from '../posts/posts.component';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { BlogHeaderComponent } from '../blog-header/blog-header.component';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
@@ -15,21 +15,34 @@ import { RouterLink } from '@angular/router';
   templateUrl: './blog.component.html',
   styleUrls: ['./blog.component.css'],
   standalone: true,
-  imports: [JoinComponent,ChooseACatagoryComponent,PostsComponent,NgFor,BlogHeaderComponent,RouterLink]
+  imports: [JoinComponent,ChooseACatagoryComponent,PostsComponent,NgFor,BlogHeaderComponent,RouterLink,NgIf]
 })
 export class BlogComponent implements OnInit {
-  blog:Post[]=[]
-  Category:Category[]= []
+  blog:Post[]=[];
+  Category:Category[]= [];
+  pagesNumber:number=1;
   constructor(public service: DataService){
 
   }
   ngOnInit(): void {
-    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_start=8&_end=13`).subscribe(data=>{
-      this.blog = data;
-    });
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(date=>{
       this.Category = date
     })
+    this.reset()
   }
- 
+  reset(){
+    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_page=${this.pagesNumber}&_limit=5`).subscribe(data=>{
+      this.blog = data;
+    });
+  }
+  prev(){
+    if (this.pagesNumber > 1) {
+      this.pagesNumber--;
+      this.reset()
+    }
+  }
+  next(){
+    this.pagesNumber++;
+    this.reset()
+  }
 }

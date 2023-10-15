@@ -39,7 +39,7 @@
         {
             "id":2,
             "img":   "../../../assets/img/man-in.png",
-            "title": "Floyd Miles",
+            "title": "Floyd_Miles",
             "text":  "Content Writer @Company",
             "img1":  "../../../assets/img/Negative2.png",
             "img2":  "../../../assets/img/Negative.png",
@@ -49,7 +49,7 @@
         { 
             "id":3,
             "img":   "../../../assets/img/woman-in.png",
-            "title": "Dianne Russell",
+            "title": "Dianne_Russell",
             "text":  "Content Writer @Company",
             "img1":  "../../../assets/img/Negative2.png",
             "img2":  "../../../assets/img/Negative.png",
@@ -59,7 +59,7 @@
         {
             "id":4,
             "img":    "../../../assets/img/fashion.png",
-            "title":  "Jenny Wilson",
+            "title":  "Jenny_Wilson",
             "text":   "Content Writer @Company",
             "img1":   "../../../assets/img/Negative2.png",
             "img2":   "../../../assets/img/Negative.png",
@@ -79,7 +79,7 @@
         {
             "id":6,
             "img":   "../../../assets/img/man-in (3).png",
-            "title": "Guy Hawkins",
+            "title": "Guy_Hawkins",
             "text":  "Content Writer @Company",
             "img1":  "../../../assets/img/Negative2.png",
             "img2":  "../../../assets/img/Negative.png",
@@ -89,7 +89,7 @@
           {
             "id":7,
             "img":   "../../../assets/img/woman-in (2).png",
-            "title": "Eleanor Pena",
+            "title": "Eleanor_Pena",
             "text":  "Content Writer @Company",
             "img1":  "../../../assets/img/Negative2.png",
             "img2":  "../../../assets/img/Negative.png",
@@ -99,7 +99,7 @@
           {
             "id":8,
             "img":   "../../../assets/img/content (2).png",
-            "title": "Robert Fox",
+            "title": "Robert_Fox",
             "text":  "Content Writer @Company",
             "img1":  "../../../assets/img/Negative2.png",
             "img2":  "../../../assets/img/Negative.png",
@@ -109,7 +109,7 @@
           {
             "id":9,
             "img":   "../../../assets/img/cheerful.png",
-            "title": "Jacob Jones",
+            "title": "Jacob_Jones",
             "text":  "Content Writer @Company",
             "img1":  "../../../assets/img/Negative2.png",
             "img2":  "../../../assets/img/Negative.png",
@@ -124,7 +124,7 @@
             "userImg":  "../../../assets/img/man-in.png",
             "cotegory": "BUSINESS",
             "categoryImg": "../../../assets/img/Icon (3).png",
-            "userName": "Floyd Miles",
+            "userName": "Floyd_Miles",
             "title" :   "Top 6 free website mockup tools 2022",
             "data":     "l   Jul 11, 2022",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
@@ -135,7 +135,7 @@
             "userImg":  "../../../assets/img/man-in.png",
             "cotegory": "BUSINESS",
             "categoryImg": "../../../assets/img/Icon (3).png",
-            "userName": "Floyd Miles",
+            "userName": "Floyd_Miles",
             "title" :   "Step-by-step guide to choosing great font pairs",
             "data":     "l   Jan 18, 2023",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
@@ -146,7 +146,7 @@
             "userImg":  "../../../assets/img/woman-in.png",
             "cotegory": "BUSINESS",
             "categoryImg": "../../../assets/img/Icon (3).png",
-            "userName": "Dianne Russell",
+            "userName": "Dianne_Russell",
             "title" :   "Ten free foogle fonts that you should use",
             "data":     "l   May 23, 2022",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
@@ -157,7 +157,7 @@
             "userImg":  "../../../assets/img/woman-in.png",
             "cotegory": "BUSINESS",
             "categoryImg": "../../../assets/img/Icon (3).png",
-            "userName": "Dianne Russell",
+            "userName": "Dianne_Russell",
             "title" :   "What did I learn from doing 50+ design sprints?",
             "data":     "l   Apr 17, 2021",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
@@ -168,7 +168,7 @@
             "userImg":  "../../../assets/img/man-in.png",
             "cotegory": "Startup",
             "categoryImg": "../../../assets/img/shuttle (1).png",
-            "userName": "Floyd Miles",
+            "userName": "Floyd_Miles",
             "title" :   "Design tips for designers that cover everything you need",
             "data":     "l   Nov 36, 2023",
             "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -179,7 +179,7 @@
             "userImg":  "../../../assets/img/fashion.png",
             "cotegory": "BUSINESS",
             "categoryImg": "../../../assets/img/Icon (3).png",
-            "userName": "Jenny Wilson",
+            "userName": "Jenny_Wilson",
             "title" :   "How to build rapport with your web design clients",
             "data":     "l   May 23, 2022",
             "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -190,7 +190,7 @@
             "userImg":  "../../../assets/img/woman-in.png",
             "cotegory": "Startup",
             "categoryImg": "../../../assets/img/shuttle (1).png",
-            "userName": "Dianne Russell",
+            "userName": "Dianne_Russell",
             "title" :   "Logo design trends to avoid in 2022",
             "data":     "l   Apr 19, 2023",
             "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -201,7 +201,7 @@
             "userImg":  "../../../assets/img/fashion.png",
             "cotegory": "TECHNOLOGY",
             "categoryImg": "../../../assets/img/cyborg (1).png",
-            "userName": "Jenny Wilson",
+            "userName": "Jenny_Wilson",
             "title" :   "8 Figma design systems you can download for free today",
             "data":     "l   Dec 23, 2018",
             "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -212,7 +212,7 @@
             "userImg":  "../../../assets/img/content.png",
             "cotegory": "ECONOMY",
             "categoryImg": "../../../assets/img/economy (1).png",
-            "userName": "Leslie Alexander",
+            "userName": "Leslie_Alexander",
             "title" :   "Font sizes in UI design: The complete guide to follow",
             "data":     "l   Dec 22, 2022",
             "post":     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -223,7 +223,7 @@
             "userImg":  "../../../assets/img/content.png",
             "cotegory": "BUSINESS",
             "categoryImg": "../../../assets/img/Icon (3).png",
-            "userName": "Leslie Alexander",
+            "userName": "Leslie_Alexander",
             "title" :   "Font sizes in UI design: The complete guide to follow",
             "data":     "l   May 23, 2022",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -234,7 +234,7 @@
             "userImg":  "../../../assets/img/man-in (3).png",
             "cotegory": "ECONOMY",
             "categoryImg": "../../../assets/img/economy (1).png",
-            "userName": "Guy Hawkins",
+            "userName": "Guy_Hawkins",
             "title" :   "How to build rapport with your web design clients",
             "data":     "l   Jan 25, 2022",
             "post":     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -245,7 +245,7 @@
             "userImg":  "../../../assets/img/woman-in (2).png",
             "cotegory": "ECONOMY",
             "categoryImg": "../../../assets/img/economy (1).png",
-            "userName": "Eleanor Pena",
+            "userName": "Eleanor_Pena",
             "title" :   "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor.",
             "data":     "l   Aug 7, 2022",
             "post":     "Duis aute irure dolor in reprehenderitin voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -256,7 +256,7 @@
             "userImg":  "../../../assets/img/woman-in (2).png",
             "cotegory": "ECONOMY",
             "categoryImg": "../../../assets/img/economy (1).png",
-            "userName": "Eleanor Pena",
+            "userName": "Eleanor_Pena",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
             "data":     "l   Feb 14, 2022",
             "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
@@ -267,7 +267,7 @@
             "userImg":  "../../../assets/img/man-in (3).png",
             "cotegory": "TECHNOLOGY",
             "categoryImg": "../../../assets/img/cyborg (1).png",
-            "userName": "Guy Hawkins",
+            "userName": "Guy_Hawkins",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
             "data":     "l   May 23, 2022",
             "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
@@ -278,7 +278,7 @@
             "userImg":  "../../../assets/img/content (2).png",
             "cotegory": "TECHNOLOGY",
             "categoryImg": "../../../assets/img/cyborg (1).png",
-            "userName": "Robert Fox",
+            "userName": "Robert_Fox",
             "title" :   "A UX Case Study Creating a Studious Environment for Students:",
             "data":     "l   Jun 26, 2022",
             "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
@@ -289,7 +289,7 @@
             "userImg":  "../../../assets/img/content (2).png",
             "cotegory": "STARTUP",
             "categoryImg": "../../../assets/img/shuttle (1).png",
-            "userName": "Robert Fox",
+            "userName": "Robert_Fox",
             "title" :   "Step-by-step guide to choosing great font pairs",
             "data":     "l   Nov 5, 2022",
             "post":     " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
@@ -300,7 +300,7 @@
             "userImg":  "../../../assets/img/cheerful.png",
             "cotegory": "STARTUP",
             "categoryImg": "../../../assets/img/shuttle (1).png",
-            "userName": "Jacob Jones",
+            "userName": "Jacob_Jones",
             "title" :   "Step-by-step guide to choosing great font pairs",
             "data":     "|  Apr 15, 2022",
             "post":     " Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."

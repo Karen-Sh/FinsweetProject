@@ -9,10 +9,10 @@
                 <app-posts [post]="po" [type]="'blog'"></app-posts>
             </a>
             <div class="header-container-buttonBlock">
-                <button class="header-container-buttonPrev">
+                <button class="header-container-buttonPrev" (click)="prev()" *ngIf="pagesNumber>1">
                     < Prev 
                 </button>
-                <button class="header-container-buttonNext"> Next > </button>
+                <button class="header-container-buttonNext" (click)="next()" *ngIf="blog.length >= 5"> Next > </button>
             </div>
         </div>
     </div>

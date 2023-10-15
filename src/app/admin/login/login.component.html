@@ -1,13 +1,32 @@
 <section>
-    <form [formGroup]="form">
-        <label>
-            Login
+    <form [formGroup]="form" (ngSubmit)="save()">
+        <label class="mrg">
+           <span class="lnputName"> Login</span>
             <input type="email" formControlName="e_mail" placeholder="Enter a Yuor Email" name="e_mail">
+            <div>
+                <span class="inputInvalid" *ngIf="form.get('e_mail')?.hasError('required') && (form.get('e_mail')?.touched || form.get('e_mail')?.dirty)">
+                    Enter a your email "test@mail.com"!
+                </span>
+                <span class="inputInvalid" *ngIf="form.get('e_mail')?.hasError('pattern') && (form.get('e_mail')?.touched || form.get('e_mail')?.dirty)">
+                    Email is invalid!
+                </span>
+            </div>
         </label>
         <label >
-            Login
+            <span class="lnputName"> Password</span>
             <input type="password" formControlName="pass" placeholder="Enet a Yuor password" name="pass">
+            <div>
+                <span class="inputInvalid" *ngIf="form.get('pass')?.hasError('required') && (form.get('pass')?.touched || form.get('pass')?.dirty)">
+                    Enter a password. Password in required!
+                </span>
+                <span class="inputInvalid" *ngIf="form.get('pass')?.hasError('minlength') && (form.get('pass')?.touched || form.get('pass')?.dirty)">
+                    Password invalid minlenght  3 sybol!
+                </span>
+                <span class="inputInvalid" *ngIf="form.get('pass')?.hasError('maxlength') && (form.get('pass')?.touched || form.get('pass')?.dirty)">
+                    Password invalid maxlenght  20 sybol!
+                </span>
+            </div>
         </label>
-        <button [disabled]="form.invalid"></button>
+        <button [disabled]="form.invalid">Sand</button>
     </form>
 </section>

@@ -47,7 +47,7 @@ let routhes: Routes=[
         title: 'Category'
       },
       {
-        path: 'author/:id',
+        path: 'author/:userName',
         loadComponent: () =>import('./pages/author/author.component').then(m=>m.AuthorComponent),
         title: 'Author'
       },
@@ -61,6 +61,11 @@ let routhes: Routes=[
         loadComponent: () =>import('./pages/privacy-policy/privacy-policy.component').then(m=>m.PrivacyPolicyComponent),
         title: 'Privacy Policy'
       },
+      {
+        path:'login',
+        loadComponent: () =>import('./admin/login/login.component').then(m=>m.LoginComponent),
+        title: 'Login'
+      }
     ]
   },
   {

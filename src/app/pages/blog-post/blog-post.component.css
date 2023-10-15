@@ -102,6 +102,9 @@
     font-weight: 700;
     line-height: 32px; /* 32px */   
 }
+.block{
+    display: block;
+}
 .margin1{
     margin-bottom: 16px;
 }

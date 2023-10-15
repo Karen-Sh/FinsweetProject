@@ -1,0 +1,68 @@
+input.ng-dirty.ng-invalid {
+    border: 3px solid red;
+    color: red;
+}
+input.ng-dirty.ng-valid {
+    border: 3px solid green;
+    color: green;
+}
+input{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding:30px 0 30px 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 20px ;
+}
+input::placeholder{
+    font-size: 20px ;
+    font-weight: 500;
+    font-family: Inter;
+    color: black;
+    padding: 10px;
+}
+.inputInvalid{
+    color: red;
+    font-size: 16px;
+    font-style: italic;
+    font-family: Inter;
+}
+form{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #1369dc;
+    border-radius: 20px;
+    background-color: #1369dc;
+}
+.lnputName{
+    font-size: 20px;
+    font-family: Inter;
+    margin-bottom: 5px;
+    display: block;
+}
+.mrg{
+    margin-bottom: 20px;
+    display: block;
+}
+button{
+    color: var(--black, #232536);
+    font-family: Sen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    background: var(--yellow, #FFD050);
+    padding: 16px 80px;
+    margin-bottom: 0;
+    display: block;
+    border-radius: 40px;
+    margin: 20px auto;
+}
+section{
+    background-image: url('../../../assets/img/360_F.jpg');
+    background-size: cover;
+    padding: 200px 0;
+}

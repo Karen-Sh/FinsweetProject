@@ -17,19 +17,19 @@ import { Authers } from 'src/app/models/authers';
 })
 export class AuthorComponent implements OnInit {
   post:Post[]=[];
-  id!:number|null;
-  author!: Authers
+  name!:String|null;
+  author: Authers[]=[]
     constructor(public service: DataService, private routhe:ActivatedRoute){
-        this.id = this.routhe.snapshot.params['id']
+        this.name = this.routhe.snapshot.params['userName']
     }
   ngOnInit(): void {
-    this.service.GetJsonItem<Authers>(`${environment.authers.get}/${this.id}`).subscribe(data=>{
-      this.author = data
+    this.service.GetJsonItem<Authers[]>(`${environment.authers.get}`).subscribe(data=>{
+      this.author = data.filter(user=>user.title==this.name)
       console.log(this.author);
       
     })
     this.service.GetJsonItem<Post[]>(`${environment.post.get}`).subscribe((date)=>{
-      this.post = date.filter(post=>post.userName==this.author.title)
+      this.post = date.filter(post=>post.userName==this.name)
     })
   }
 }

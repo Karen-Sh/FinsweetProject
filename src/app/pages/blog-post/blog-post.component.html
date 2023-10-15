@@ -3,7 +3,11 @@
         <div class="header-container-block1">
             <img class="header-container-block1-img" [src]="postId.userImg" alt="photo">
             <div class="header-container-block1-text">
-                <h3 class="header-container-block1-title">{{postId.userName}}</h3>
+                <h3 class="header-container-block1-title">
+                    <a [routerLink]="['/author',postId.userName]">
+                        {{postId.userName}}
+                    </a>
+                </h3>
                 <p class="header-container-block1-text1">{{postId.data}}</p>
             </div>
         </div>
@@ -93,11 +97,13 @@
             What to read next
         </h2>
         <div class="section2-container-blocks">
-            <div *ngFor="let item of post">
+            <a class="block" [routerLink]="['/blogPost',item.id]" *ngFor="let item of post">
                 <div class="section2-container-blocks-block1">
                     <img  class="section2-container-blocks-block1-img" [src]="item.img" alt="photo">
                     <p class="section2-container-blocks-block1-text1">
-                        By <span style="color: #592EA9;">{{item.userName}}</span>   {{item.data}} 
+                        By <span style="color: #592EA9;">
+                            <a [routerLink]="['/author',item.userName]">{{item.userName}}</a>
+                        </span>   {{item.data}} 
                     </p>
                     <h3 class="section2-container-blocks-block1-title">
                         {{item.title}} 
@@ -106,7 +112,7 @@
                         {{item.post}}
                     </p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
