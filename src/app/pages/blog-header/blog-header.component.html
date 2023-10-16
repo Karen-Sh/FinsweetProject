@@ -4,7 +4,9 @@
             <p class="header-container-block-text">Posted on <b>{{post.cotegory}}</b></p>
             <h1 class="header-container-block-title">{{post.title}}</h1>
             <p class="header-container-block-text1">
-                By <span style="color:#592EA9;">{{post.userName}}</span>
+                By <span style="color:#592EA9;">
+                    <a [routerLink]="['/author',post.userName]">{{post.userName}}</a>
+                </span>
                 <time>{{post.data}}</time>
             </p>
             <p class="header-container-block-text3">

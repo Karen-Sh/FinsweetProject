@@ -11,7 +11,9 @@
                 <div *ngFor="let item of singlPost">
                     <img  class="section1-container-blocks-block1-img" src="assets/img/white.png" alt="Photo">
                     <p class="section1-container-blocks-block1-text1">
-                        By <span style="color:#592EA9;">{{item.userName}}</span>   {{item.data}}
+                        By <span style="color:#592EA9;">
+                            <a [routerLink]="['/author',item.userName]">{{item.userName}}</a>
+                        </span>   {{item.data}}
                     </p>
                     <p class="section1-container-blocks-block1-text2">
                         {{item.title}}

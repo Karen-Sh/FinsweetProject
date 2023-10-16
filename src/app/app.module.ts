@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -6,10 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule }  from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { AdminLayoutComponent } from './admin/admin-layout/admin-layout.component';
-import { AutherAdminComponent } from './admin/auther-admin/auther-admin.component';
-import { CategoryAdminComponent } from './admin/category-admin/category-admin.component';
-import { BlogAdminComponent } from './admin/blog-admin/blog-admin.component';
 
 let routhes: Routes=[
   {
@@ -61,10 +57,36 @@ let routhes: Routes=[
         loadComponent: () =>import('./pages/privacy-policy/privacy-policy.component').then(m=>m.PrivacyPolicyComponent),
         title: 'Privacy Policy'
       },
+    ]
+  },
+  {
+    path: 'admin',
+    loadComponent: () =>import('./admin/admin-layout/admin-layout.component').then(m => m.AdminLayoutComponent),
+    children:[
       {
-        path:'login',
-        loadComponent: () =>import('./admin/login/login.component').then(m=>m.LoginComponent),
-        title: 'Login'
+        path: 'login',
+        loadComponent: () => import('./admin/login/login.component').then(m => m.LoginComponent),
+        title: "Login"
+      },
+      {
+        path: 'dashbord',
+        loadComponent: () => import('./admin/dashbord/dashbord.component').then(m => m.DashbordComponent),
+        title: "Dashbord"
+      },
+      {
+        path: 'auther',
+        loadComponent: () => import('./admin/auther-admin/auther-admin.component').then(m => m.AutherAdminComponent),
+        title: "AutherAdmin"
+      },
+      {
+        path: 'blog',
+        loadComponent: () => import('./admin/blog-admin/blog-admin.component').then(m => m.BlogAdminComponent),
+        title: "BlogAdmin"
+      },
+      {
+        path: 'cotegory',
+        loadComponent: () => import('./admin/category-admin/category-admin.component').then(m => m.CategoryAdminComponent),
+        title: "CotegoryAdmin"
       }
     ]
   },
@@ -77,14 +99,10 @@ let routhes: Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
-    AutherAdminComponent,
-    CategoryAdminComponent,
-    BlogAdminComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routhes, {initialNavigation: 'enabledBlocking'}),
+    RouterModule.forRoot(routhes , {initialNavigation: 'enabledBlocking'}),
     HttpClientModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,

@@ -31,7 +31,7 @@ export class BlogComponent implements OnInit {
     this.reset()
   }
   reset(){
-    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_page=${this.pagesNumber}&_limit=5`).subscribe(data=>{
+    this.service.GetJsonItem<Post[]>(`${environment.post.get}?_page=${this.pagesNumber}&_limit=4`).subscribe(data=>{
       this.blog = data;
     });
   }

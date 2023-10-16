@@ -1,0 +1,8 @@
+.btn{
+    background-color: #ffffff;
+    font-weight: 600;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
