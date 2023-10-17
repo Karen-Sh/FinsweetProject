@@ -1,0 +1,23 @@
+.imadescss{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+.tdText{
+    font-size: 18px;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+}
+th{
+    font-weight: 600;
+    font-size: 22px;
+}
+td{
+    padding: 15px 0 15px 20px;
+}
+table{
+    background: #9ba7ea;
+}

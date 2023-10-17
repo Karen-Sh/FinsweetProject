@@ -69,9 +69,9 @@ let routhes: Routes=[
         title: "Login"
       },
       {
-        path: 'dashbord',
+        path: 'dashboard',
         loadComponent: () => import('./admin/dashbord/dashbord.component').then(m => m.DashbordComponent),
-        title: "Dashbord"
+        title: "Dashboard"
       },
       {
         path: 'auther',
@@ -102,7 +102,7 @@ let routhes: Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routhes , {initialNavigation: 'enabledBlocking'}),
+    RouterModule.forRoot(routhes , {initialNavigation: 'enabledBlocking', scrollPositionRestoration:'top'}),
     HttpClientModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
