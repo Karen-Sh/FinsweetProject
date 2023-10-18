@@ -1,13 +1,10 @@
 import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule }  from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { DialogFormsComponent } from './admin/dialog-forms/dialog-forms.component';
-import { NgModel } from '@angular/forms';
 
 let routhes: Routes=[
   {
