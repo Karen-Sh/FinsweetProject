@@ -1,5 +1,5 @@
 export interface Authers {
-    id: number,
+    id?: number,
     img: string,
     title: string,
     text: string,

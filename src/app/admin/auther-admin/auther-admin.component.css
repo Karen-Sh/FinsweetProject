@@ -11,6 +11,11 @@
     color: black;
     font-weight: 600;
 }
+.addBtn{
+    background: #9ba7ea;
+    text-align: right;
+    padding: 10px 20px;
+}
 th{
     font-weight: 600;
     font-size: 22px;

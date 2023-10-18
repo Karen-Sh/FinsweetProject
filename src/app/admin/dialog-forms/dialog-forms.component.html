@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Add</h1>
+<div mat-dialog-content>
+    See your details
+  <ul>
+    <li>
+        <mat-form-field style="width: 100%;">
+            <mat-label>Enter a your Name</mat-label>
+            <input id="name" name="name" type="text" matInput placeholder="Your Name">
+        </mat-form-field>
+    </li>
+    <li>
+        <mat-form-field style="width: 100%;">
+            <mat-label>Enter a your Description</mat-label>
+            <textarea id="textarea" name="text"  matInput placeholder="Description"></textarea>
+        </mat-form-field>
+    </li>
+    <li>
+        <mat-form-field style="width: 100%;" matNativeControl>
+            <mat-label>Enter a your Image Name</mat-label>
+            <input id="img" name="img" type="text" matInput placeholder="Image">
+        </mat-form-field>
+    </li>
+  </ul>
+  <button (click)="addNewUser()"> Save</button>
+</div>
