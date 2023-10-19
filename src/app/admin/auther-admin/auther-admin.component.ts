@@ -4,9 +4,13 @@ import { Authers } from 'src/app/models/authers';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 import {MatIconModule} from '@angular/material/icon';
-import {MatDialogModule } from '@angular/material/dialog';
+import {MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { NgIf } from '@angular/common';
 import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import { FormAurherComponent } from '../form-aurher/form-aurher.component';
+export interface DialogData {
+  animal: 'panda' | 'unicorn' | 'lion';
+}
 
 @Component({
   selector: 'app-auther-admin',
@@ -19,7 +23,8 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
 })
 export class AutherAdminComponent implements OnInit{
   author:Authers[]=[];
-  constructor(private service: DataService){}
+  forms!:boolean
+  constructor(private service: DataService, public dialog:MatDialog){}
   displayedColumns: string[] = [
     'position',
     'title', 
@@ -39,52 +44,49 @@ export class AutherAdminComponent implements OnInit{
   }
   del(el:number){
     this.service.DeleteItem(`${environment.authers.get}/${el}`).subscribe(()=>{
-      this.getitem();
+      if (confirm("Do you really want to delete?")) {
+        this.getitem();
+      }
     });  
   }
-  form!:boolean
-  post!:boolean
-  put!:boolean
-  addNewUser(){
-    this.form=true
-    this.post=true
-    this.put=false
-    let user:Authers={
-      "title": document.getElementsByTagName('input')[0].value,
-      "text":  document.getElementsByTagName('textarea')[0].value,
-      "img":   document.getElementsByTagName('input')[1].value,
-      "img1":  "../../../assets/img/Negative2.png",
-      "img2":  "../../../assets/img/Negative.png",
-      "img3":  "../../../assets/img/Negative3.png",
-      "img4":  "../../../assets/img/Negative1.png"
+  openDialog(): void {
+    this.dialog.open(FormAurherComponent, {
+      data: {animal: 'panda' },
+    });
+  // addNewUser(){
+  //   let user:Authers={
+  //     "title": document.getElementsByTagName('input')[0].value,
+  //     "text":  document.getElementsByTagName('textarea')[0].value,
+  //     "img":   document.getElementsByTagName('input')[1].value,
+  //     "img1":  "../../../assets/img/Negative2.png",
+  //     "img2":  "../../../assets/img/Negative.png",
+  //     "img3":  "../../../assets/img/Negative3.png",
+  //     "img4":  "../../../assets/img/Negative1.png"
 
-    }
-    this.service.AddItem<Authers>(environment.authers.get , user).subscribe(()=>{
-      this.getitem()
-    })
-  }
-  user!:Authers
-  additUser(id:number){
-    this.form=true
-    this.put=true
-    this.post=false
-    this.service.GetJsonItem<Authers>(`${environment.authers.get}/${id}`).subscribe(data=>{
-      this.user= data
-      document.getElementsByTagName('input')[0].value=    this.user.title;
-      document.getElementsByTagName('textarea')[0].value= this.user.text;
-      document.getElementsByTagName('input')[1].value=    this.user.img;
-    })
-    let user:Authers={
-      "title": document.getElementsByTagName('input')[0].value,
-      "text":  document.getElementsByTagName('textarea')[0].value,
-      "img":   document.getElementsByTagName('input')[1].value,
-      "img1":  "../../../assets/img/Negative2.png",
-      "img2":  "../../../assets/img/Negative.png",
-      "img3":  "../../../assets/img/Negative3.png",
-      "img4":  "../../../assets/img/Negative1.png"
-    }
-    this.service.AdditItem<Authers>(`${environment.authers.get}/${id}`,user).subscribe(()=>{
-      this.getitem();
-    })
+  //   }
+  //   this.service.AddItem<Authers>(environment.authers.get , user).subscribe(()=>{
+  //     this.getitem()
+  //   })
+  // }
+  // user!:Authers;
+  // additUser(){
+  //   this.service.GetJsonItem<Authers>(`${environment.authers.get}`).subscribe(data=>{
+  //     this.user= data
+  //     document.getElementsByTagName('input')[0].value=    this.user.title;
+  //     document.getElementsByTagName('textarea')[0].value= this.user.text;
+  //     document.getElementsByTagName('input')[1].value=    this.user.img;
+  //   })
+  //   let user:Authers={
+  //     "title": document.getElementsByTagName('input')[0].value,
+  //     "text":  document.getElementsByTagName('textarea')[0].value,
+  //     "img":   document.getElementsByTagName('input')[1].value,
+  //     "img1":  "../../../assets/img/Negative2.png",
+  //     "img2":  "../../../assets/img/Negative.png",
+  //     "img3":  "../../../assets/img/Negative3.png",
+  //     "img4":  "../../../assets/img/Negative1.png"
+  //   }
+  //   this.service.AdditItem<Authers>(`${environment.authers.get}`,user).subscribe(()=>{
+  //     this.getitem();
+  //   })
   }
 }

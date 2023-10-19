@@ -15,6 +15,7 @@
     background: #9ba7ea;
     text-align: right;
     padding: 10px 20px;
+    position: fixed;
 }
 th{
     font-weight: 600;
@@ -25,44 +26,4 @@ td{
 }
 table{
     background: #9ba7ea;
-}
-#forms{
-    width: 600px;
-    position: absolute;
-    top: 104px;
-    bottom: 0px;
-    left: 313px;
-    right: 0;
-    background-color: blue;
-    padding:50px 50px ;
-    height: 420px;
-    border-radius: 60px;
-}
-input {
-    display: block;
-    padding: 15px 20px;
-    width: 100%;
-}
-textarea{
-    display: block;
-    padding: 15px 20px;
-    width: 100%;
-}
-.mat-elevation-z8{
-    position: relative;
-}
-.marBot{
-    margin-bottom: 20px;
-}
-mat-label{
-    font-size: 18px;
-    font-style: italic;
-}
-.button{
-    padding: 15px 65px ;
-    background-color: yellow;
-    font-size: 20px;
-    font-weight:700;
-    border-radius: 45px;
-    margin-right: 20px;
 }

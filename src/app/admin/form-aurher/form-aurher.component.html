@@ -1,0 +1,39 @@
+<div  mat-dialog-content *ngIf="data.animal =='panda'">
+    <ul class="forms" >
+        <li>
+            <mat-form-field>
+                <mat-label>Full Name</mat-label>
+                <input matInput [formControl]="name" required  placeholder="Enter a your Full Name">
+            </mat-form-field>
+        </li>
+        <li>
+            <mat-form-field>
+                <mat-label>Message</mat-label>
+                <textarea matInput [formControl]="textarea" required placeholder="Enter a message "></textarea>
+            </mat-form-field>
+        </li>
+        <li>
+            <mat-form-field>
+                <mat-label>Images</mat-label>
+                <input matInput [formControl]="img" required placeholder="Enter a your Image">
+            </mat-form-field>
+        </li>
+        <li>
+            <mat-form-field>
+                <button mat-button>Seve</button>
+            </mat-form-field>
+        </li>
+    </ul>
+</div>
+  <!-- <mat-form-field>
+    <mat-label>Input</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Input</mat-label>
+    <input matInput>
+  </mat-form-field> -->

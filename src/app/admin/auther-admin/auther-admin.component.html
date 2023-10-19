@@ -1,5 +1,5 @@
 <div class="addBtn">
-  <button mat-button  style="background-color: #9ba7ea;" (click)="addNewUser()">
+  <button mat-button  style="background-color: #9ba7ea;" (click)="openDialog()">
     <mat-icon>person_add</mat-icon>
   </button>
 </div>
@@ -32,7 +32,7 @@
           <button style="background-color: #9ba7ea;" (click)="del(element.id)">
             <mat-icon color="warn" >delete</mat-icon>
           </button>
-          <button style="background-color: #9ba7ea;margin-left: 20px;" (click)="additUser(element.id)">
+          <button style="background-color: #9ba7ea;margin-left: 20px;">
             <mat-icon color="primary">edit</mat-icon>
           </button>
        </td>
@@ -41,20 +41,3 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row  *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-
-<form id="forms" *ngIf="form">
-   <div class="marBot">
-      <mat-label>Enter a your Full Name</mat-label>
-      <input name="name" type="text" matInput placeholder="Your Full Name">
-   </div>
-   <div class="marBot">
-      <mat-label>Enter a your Description</mat-label>
-      <textarea name="text"  matInput placeholder="Description"></textarea>
-   </div>
-   <div  class="marBot">
-      <mat-label>Enter a your Image Name</mat-label>
-      <input name="img" type="text" matInput placeholder="Image">
-   </div>
-   <button class="button" mat-button>Save</button>
-   <button (click)="form=false" style="background-color:  blue;"><mat-icon>close</mat-icon></button>
-</form>
