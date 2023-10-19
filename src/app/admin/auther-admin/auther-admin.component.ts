@@ -42,12 +42,13 @@ export class AutherAdminComponent implements OnInit{
       this.getitem();
     });  
   }
-  
+  form!:boolean
+  post!:boolean
+  put!:boolean
   addNewUser(){
-    // let form = document.getElementsByName('div')[1]
-    // form.style.display = 'block'
-    // console.log(form);
-    
+    this.form=true
+    this.post=true
+    this.put=false
     let user:Authers={
       "title": document.getElementsByTagName('input')[0].value,
       "text":  document.getElementsByTagName('textarea')[0].value,
@@ -62,8 +63,28 @@ export class AutherAdminComponent implements OnInit{
       this.getitem()
     })
   }
-  additclick(el:number){
-
+  user!:Authers
+  additUser(id:number){
+    this.form=true
+    this.put=true
+    this.post=false
+    this.service.GetJsonItem<Authers>(`${environment.authers.get}/${id}`).subscribe(data=>{
+      this.user= data
+      document.getElementsByTagName('input')[0].value=    this.user.title;
+      document.getElementsByTagName('textarea')[0].value= this.user.text;
+      document.getElementsByTagName('input')[1].value=    this.user.img;
+    })
+    let user:Authers={
+      "title": document.getElementsByTagName('input')[0].value,
+      "text":  document.getElementsByTagName('textarea')[0].value,
+      "img":   document.getElementsByTagName('input')[1].value,
+      "img1":  "../../../assets/img/Negative2.png",
+      "img2":  "../../../assets/img/Negative.png",
+      "img3":  "../../../assets/img/Negative3.png",
+      "img4":  "../../../assets/img/Negative1.png"
+    }
+    this.service.AdditItem<Authers>(`${environment.authers.get}/${id}`,user).subscribe(()=>{
+      this.getitem();
+    })
   }
-  additUser(){}
 }

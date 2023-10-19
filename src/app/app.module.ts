@@ -59,14 +59,14 @@ let routhes: Routes=[
     ]
   },
   {
+    path: 'login',
+    loadComponent: () => import('./admin/login/login.component').then(m => m.LoginComponent),
+    title: "Login"
+  },
+  {
     path: 'admin',
     loadComponent: () =>import('./admin/admin-layout/admin-layout.component').then(m => m.AdminLayoutComponent),
     children:[
-      {
-        path: 'login',
-        loadComponent: () => import('./admin/login/login.component').then(m => m.LoginComponent),
-        title: "Login"
-      },
       {
         path: 'dashboard',
         loadComponent: () => import('./admin/dashbord/dashbord.component').then(m => m.DashbordComponent),

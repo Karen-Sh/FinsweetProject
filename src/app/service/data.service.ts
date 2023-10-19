@@ -5,11 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  private url:string = ' http://localhost:3000';
   
-  constructor(public http: HttpClient) { 
-    
-  }
+  constructor(public http: HttpClient) {}
 
   GetJsonItem<Type>(url:string){
     return this.http.get<Type>(url);
@@ -21,5 +18,9 @@ export class DataService {
   AddItem<Type>(url:string,value:Type){
     let header = new HttpHeaders({'Content-type': 'application/json'});
     return this.http.post<Type>(url,value, {headers: header});
+  }
+  AdditItem<Type>(url:string, value:Type){
+    let header = new HttpHeaders({'Content-type': 'application/json'});
+    return this.http.put<Type>(url,value, {headers: header});
   }
 }

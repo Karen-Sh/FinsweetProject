@@ -32,7 +32,7 @@
           <button style="background-color: #9ba7ea;" (click)="del(element.id)">
             <mat-icon color="warn" >delete</mat-icon>
           </button>
-          <button style="background-color: #9ba7ea;margin-left: 20px;" (click)="additclick(element.id)">
+          <button style="background-color: #9ba7ea;margin-left: 20px;" (click)="additUser(element.id)">
             <mat-icon color="primary">edit</mat-icon>
           </button>
        </td>
@@ -42,26 +42,19 @@
     <tr mat-row  *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<div id="forms" *ngIf="">
-      <ul>
-        <li>
-            <mat-form-field style="width: 100%;">
-                <mat-label>Enter a your Name</mat-label>
-                <input id="name" name="name" type="text" matInput placeholder="Your Name">
-            </mat-form-field>
-        </li>
-        <li>
-            <mat-form-field style="width: 100%;">
-                <mat-label>Enter a your Description</mat-label>
-                <textarea id="textarea" name="text"  matInput placeholder="Description"></textarea>
-            </mat-form-field>
-        </li>
-        <li>
-            <mat-form-field style="width: 100%;">
-                <mat-label>Enter a your Image Name</mat-label>
-                <input id="img" name="img" type="text" matInput placeholder="Image">
-            </mat-form-field>
-        </li>
-      </ul>
-      <button>Save</button>
-</div>
+<form id="forms" *ngIf="form">
+   <div class="marBot">
+      <mat-label>Enter a your Full Name</mat-label>
+      <input name="name" type="text" matInput placeholder="Your Full Name">
+   </div>
+   <div class="marBot">
+      <mat-label>Enter a your Description</mat-label>
+      <textarea name="text"  matInput placeholder="Description"></textarea>
+   </div>
+   <div  class="marBot">
+      <mat-label>Enter a your Image Name</mat-label>
+      <input name="img" type="text" matInput placeholder="Image">
+   </div>
+   <button class="button" mat-button>Save</button>
+   <button (click)="form=false" style="background-color:  blue;"><mat-icon>close</mat-icon></button>
+</form>
