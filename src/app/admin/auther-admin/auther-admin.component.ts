@@ -6,7 +6,7 @@ import { environment } from 'src/environment/environment';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { NgIf } from '@angular/common';
-import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormAurherComponent } from '../form-aurher/form-aurher.component';
 export interface DialogData {
   animal: 'panda' | 'unicorn' | 'lion';
@@ -18,7 +18,7 @@ export interface DialogData {
   styleUrls: ['./auther-admin.component.css'],
   standalone: true,
   imports: [MatTableModule,MatIconModule,NgIf,
-            MatDialogModule,MatFormFieldModule,
+            MatDialogModule,
   ]
 })
 export class AutherAdminComponent implements OnInit{
@@ -49,10 +49,38 @@ export class AutherAdminComponent implements OnInit{
       }
     });  
   }
-  openDialog(): void {
-    this.dialog.open(FormAurherComponent, {
-      data: {animal: 'panda' },
+  openAddDialog(){
+    const dialogRef = this.dialog.open(FormAurherComponent, {
+    
     });
+  }
+  openDialog(el:Authers,id:number): void {
+    const dialogRef = this.dialog.open(FormAurherComponent, {
+    data:{
+      autherData:{...el},
+      action: "addit"
+    }
+    }); 
+    dialogRef.afterClosed().subscribe(res=>{
+      if (res&&res.data) {
+        const additAuther=res.data; 
+        console.log(res.data);
+              
+        if (res.action=="addit") {
+          dialogRef.componentInstance.form.patchValue({
+            title: additAuther.title,
+            text: additAuther.text,
+            img: additAuther.img
+            
+          });
+          this.service.AdditItem<Authers>(`${environment.authers.get}/${id}`, additAuther).subscribe(()=>{
+              this.getitem();  
+          })
+        }
+      }
+    })
+  }
+}
   // addNewUser(){
   //   let user:Authers={
   //     "title": document.getElementsByTagName('input')[0].value,
@@ -88,5 +116,4 @@ export class AutherAdminComponent implements OnInit{
   //   this.service.AdditItem<Authers>(`${environment.authers.get}`,user).subscribe(()=>{
   //     this.getitem();
   //   })
-  }
-}
+

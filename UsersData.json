@@ -27,14 +27,10 @@
   ],
   "authers": [
     {
-      "id": 1,
-      "img": "../../../assets/img/man-in.png",
-      "title": "Floyd_Miles",
+      "title": "gfewhryh",
       "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "img": "../../../assets/img/man-in.png",
+      "id": 1
     },
     {
       "id": 2,

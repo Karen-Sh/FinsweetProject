@@ -1,39 +1,33 @@
-<div  mat-dialog-content *ngIf="data.animal =='panda'">
-    <ul class="forms" >
-        <li>
+  <form  class="forms" [formGroup]="form" (ngSubmit)="save()">
+            
             <mat-form-field>
-                <mat-label>Full Name</mat-label>
-                <input matInput [formControl]="name" required  placeholder="Enter a your Full Name">
-            </mat-form-field>
-        </li>
-        <li>
+                <mat-label>Full name</mat-label>
+                <input matInput formControlName="title">
+            </mat-form-field> 
+
             <mat-form-field>
-                <mat-label>Message</mat-label>
-                <textarea matInput [formControl]="textarea" required placeholder="Enter a message "></textarea>
+                <mat-label>Description</mat-label>
+                <textarea matInput formControlName="text"></textarea>
             </mat-form-field>
-        </li>
-        <li>
             <mat-form-field>
-                <mat-label>Images</mat-label>
-                <input matInput [formControl]="img" required placeholder="Enter a your Image">
+                <mat-label>Img</mat-label>
+                <input matInput formControlName="img">
             </mat-form-field>
-        </li>
-        <li>
-            <mat-form-field>
-                <button mat-button>Seve</button>
-            </mat-form-field>
-        </li>
-    </ul>
-</div>
-  <!-- <mat-form-field>
-    <mat-label>Input</mat-label>
+
+            <button mat-button [disabled]="form.invalid" type="submit">Save</button>
+            <button mat-button  mat-dialog-close><mat-icon>close</mat-icon></button>
+  </form >
+<!--   
+  <mat-form-field>
+    <mat-label>Full name</mat-label>
     <input matInput>
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Textarea</mat-label>
+    <mat-label>Description</mat-label>
     <textarea matInput></textarea>
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Input</mat-label>
+    <mat-label>Img</mat-label>
     <input matInput>
-  </mat-form-field> -->
+  </mat-form-field>
+ <button mat-button>Save</button> -->

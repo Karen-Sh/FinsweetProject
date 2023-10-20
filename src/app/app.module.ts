@@ -104,7 +104,6 @@ let routhes: Routes=[
     HttpClientModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent],
