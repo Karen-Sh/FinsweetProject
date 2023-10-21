@@ -19,15 +19,15 @@
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit"
     },
     {
-      "id": 4,
-      "img": "../../../assets/img/cyborg (1).png",
       "category": "Technology",
-      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+      "img": "../../../assets/img/cyborg (1).png",
+      "id": 4
     }
   ],
   "authers": [
     {
-      "title": "gfewhryh",
+      "title": "Floyd_Miles",
       "text": "Content Writer @Company",
       "img": "../../../assets/img/man-in.png",
       "id": 1
@@ -36,51 +36,31 @@
       "id": 2,
       "img": "../../../assets/img/woman-in.png",
       "title": "Dianne_Russell",
-      "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "text": "Content Writer @Company"
     },
     {
       "id": 3,
       "img": "../../../assets/img/fashion.png",
       "title": "Jenny_Wilson",
-      "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "text": "Content Writer @Company"
     },
     {
       "id": 4,
       "img": "../../../assets/img/content.png",
       "title": "Leslie_Alexander",
-      "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "text": "Content Writer @Company"
     },
     {
       "id": 5,
       "img": "../../../assets/img/man-in (3).png",
       "title": "Guy_Hawkins",
-      "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "text": "Content Writer @Company"
     },
     {
       "id": 6,
       "img": "../../../assets/img/woman-in (2).png",
       "title": "Eleanor_Pena",
-      "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "text": "Content Writer @Company"
     },
     {
       "id": 7,
@@ -91,6 +71,18 @@
       "img2": "../../../assets/img/Negative.png",
       "img3": "../../../assets/img/Negative3.png",
       "img4": "../../../assets/img/Negative1.png"
+    },
+    {
+      "id": 8,
+      "img": "../../../assets/img/cheerful.png",
+      "title": "Jacob_Jones",
+      "text": "Content Writer @Company"
+    },
+    {
+      "title": "Karen",
+      "text": "ayo Chish e\n",
+      "img": "../../../assets/img/close-up (2).png",
+      "id": 9
     }
   ],
   "post": [

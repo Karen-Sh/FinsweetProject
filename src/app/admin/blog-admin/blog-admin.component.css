@@ -1,0 +1,46 @@
+.addBtn{
+   background-color:  #ffffff;
+   padding: 30px 20px;
+   position: relative;
+}
+.addBtn1{
+   position: fixed;
+   z-index: 2;
+}
+.imadescss{
+    width: 48px ;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+th{
+    font-size: 22px;
+    font-weight: 600;
+}
+td{
+    height: 50px;
+    width: 60px;
+    position: relative;
+    font-weight: 500;
+}
+.post{
+    width: 215px;
+    height: 80px;
+    overflow: scroll;
+    position: absolute; 
+    padding: 0;   
+}
+.post:hover{
+    overflow: visible;
+    z-index: 2;
+    position: unset;
+}
+.title{
+   width: 205px; 
+   height: 80px;
+   overflow-y: scroll;
+   padding: 0;
+}
+.action{
+    width: 100px;
+}

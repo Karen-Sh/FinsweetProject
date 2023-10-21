@@ -1,0 +1,20 @@
+th{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Sen;
+}
+td{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+/* table{
+    background-color: #9ba7ea;
+} */
+.addBtn{
+    position:relative;
+    padding: 20px 0 20px 15px;
+}
+.addBtn1{
+    position: fixed;
+}

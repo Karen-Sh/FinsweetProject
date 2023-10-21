@@ -1,1 +1,64 @@
-<p>blog-admin works!</p>
+<div class="addBtn">
+    <button mat-button  class="addBtn1" style="background-color: #ffffff;opacity: 0.8;" (click)="openAddDialog()">
+      <mat-icon>person_add</mat-icon>
+    </button>
+  </div>
+  <table mat-table [dataSource]="post" class="mat-elevation-z8" >
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="userImg">
+        <th mat-header-cell *matHeaderCellDef>User Images </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> 
+          <img class="imadescss" src="{{element.userImg}}" alt="photo">
+       </td>
+      </ng-container>
+
+      <ng-container matColumnDef="userName">
+        <th mat-header-cell *matHeaderCellDef>User Name </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> 
+            {{element.userName}}
+       </td>
+      </ng-container>
+
+      <ng-container matColumnDef="cotegory">
+        <th mat-header-cell *matHeaderCellDef>Category </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> {{element.cotegory}} </td>
+      </ng-container>
+      <ng-container matColumnDef="categoryImg">
+        <th mat-header-cell *matHeaderCellDef>Category Img </th>
+        <td mat-cell class="tdText" *matCellDef="let element">
+            <img src="{{element.categoryImg}}" alt="photo">
+        </td>
+      </ng-container>
+      <ng-container class="tr" matColumnDef="post">
+        <th mat-header-cell *matHeaderCellDef> Post </th>
+        <td mat-cell class="tdText post" *matCellDef="let element"> {{element.post}} </td>
+      </ng-container>
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td mat-cell class="tdText title" *matCellDef="let element"> {{element.title}} </td>
+      </ng-container>
+      <ng-container matColumnDef="img">
+        <th mat-header-cell *matHeaderCellDef> Images </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> 
+          <img class="imadescss" src="{{element.img}}" alt="photo">
+       </td>
+      </ng-container>
+      <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef> Action </th>
+          <td mat-cell  class="action" *matCellDef="let element" > 
+            <button style="background-color: #ffffff;" (click)="del(element.id)" >
+              <mat-icon color="warn" >delete</mat-icon>
+            </button>
+            <button style="background-color: #ffffff;margin-left: 20px;" (click)="openAdditDialog( element , element.id)">
+              <mat-icon color="primary">edit</mat-icon>
+            </button>
+         </td>
+        </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row  *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

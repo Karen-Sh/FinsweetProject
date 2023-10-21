@@ -1,0 +1,18 @@
+<form  class="forms" [formGroup]="form" (ngSubmit)="save()" *ngIf="action">         
+    <mat-form-field>
+        <mat-label>Full name</mat-label>
+        <input matInput formControlName="category">
+    </mat-form-field> 
+
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="text"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Img</mat-label>
+        <input matInput formControlName="img">
+    </mat-form-field>
+
+    <button mat-button [disabled]="form.invalid" type="submit">Save</button>
+    <button mat-button  mat-dialog-close><mat-icon>close</mat-icon></button>
+</form >

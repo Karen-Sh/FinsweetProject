@@ -97,6 +97,7 @@ let routhes: Routes=[
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,

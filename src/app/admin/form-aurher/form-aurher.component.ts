@@ -2,9 +2,9 @@ import { Component, Inject } from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import { AutherAdminComponent, DialogData } from '../auther-admin/auther-admin.component';
 import { NgIf } from '@angular/common';
-import { MatFormField, MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
+import {  MatFormFieldModule } from '@angular/material/form-field';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { MatButtonModule, MatIconButton } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule} from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { Authers } from 'src/app/models/authers';
@@ -19,9 +19,6 @@ import { Authers } from 'src/app/models/authers';
            FormsModule, MatButtonModule,ReactiveFormsModule,
            MatFormFieldModule,ReactiveFormsModule,MatIconModule
           ],
-//  providers: [
-//   {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {appearance: 'outline'}}
-//  ]
 })
 export class FormAurherComponent {
   action!:string
@@ -36,9 +33,9 @@ export class FormAurherComponent {
       this.action = data.action
   }
   form:FormGroup =this.fb.group({
-    title: [this.data.autherData.title,[Validators.required,Validators.minLength(3)]],
-    text: [this.data.autherData.text,[Validators.required,Validators.minLength(3)]],
-    img:  [this.data.autherData.img,[Validators.required]],
+    title: [this.data.action=='addit' ? this.data.autherData.title : '',[Validators.required,Validators.minLength(3)]],
+    text:  [this.data.action=='addit' ? this.data.autherData.text :  '',[Validators.required,Validators.minLength(3)]],
+    img:   [this.data.action=='addit' ? this.data.autherData.img :   '',[Validators.required]],
   })
   save(){
     this.dialog.close({
