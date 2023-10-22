@@ -1,34 +1,34 @@
 <form  class="forms" [formGroup]="form" (ngSubmit)="save()" *ngIf="action">         
     <mat-form-field>
         <mat-label>User Name</mat-label>
-        <input matInput formControlName="name">
+        <input matInput formControlName="userName">
     </mat-form-field> 
 
     <mat-form-field>
         <mat-label>User Images</mat-label>
-        <input matInput formControlName="img">
+        <input matInput formControlName="userImg">
     </mat-form-field>
 
     <mat-form-field>
         <mat-label>Category</mat-label>
-        <mat-select>
-            <mat-option  formControlName="select" *ngFor="let val of category" [value]="val.category">
+        <mat-select formControlName="cotegory">
+            <mat-option  *ngFor="let val of category" [value]="val.category">
                 {{val.category}}
               </mat-option>
           </mat-select>
     </mat-form-field>
     <mat-form-field>
         <mat-label>Category Img</mat-label>
-        <mat-select>
-            <mat-option  formControlName="selImg"  *ngFor="let item of category" [value]="item.img">
-            <img src="{{item.img}}" alt="photo">
-              </mat-option>
+        <mat-select  formControlName="categoryImg">
+            <mat-option   *ngFor="let item of category" [value]="item.img">
+              <img [src]="item.img" alt="photo"><br>{{item.img}}
+            </mat-option>
           </mat-select>
     </mat-form-field>
 
     <mat-form-field>
         <mat-label>Img Post</mat-label>
-        <input matInput formControlName="imgPost">
+        <input matInput formControlName="img">
     </mat-form-field>
 
     <mat-form-field>

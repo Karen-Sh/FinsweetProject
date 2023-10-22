@@ -87,15 +87,14 @@
   ],
   "post": [
     {
-      "id": 1,
-      "img": "../../../assets/img/two.png",
+      "userName": "Floyd_Miles fdbwrn",
       "userImg": "../../../assets/img/man-in.png",
       "cotegory": "BUSINESS",
       "categoryImg": "../../../assets/img/Icon (3).png",
-      "userName": "Floyd_Miles",
+      "img": "../../../assets/img/two.png",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
       "title": "Top 6 free website mockup tools 2022",
-      "data": "l   Jul 11, 2022",
-      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+      "id": 1
     },
     {
       "id": 2,
@@ -274,5 +273,30 @@
       "post": " Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     }
   ],
-  "users": []
+  "contactUs": [
+    {
+      "fullName": "Karen",
+      "email": "gbsfyjndugmm@fghhg.com",
+      "sel": "Query Related",
+      "message": "Ayo ayo\n",
+      "id": 1
+    },
+    {
+      "fullName": "Aram Manukyan",
+      "email": "gbsfyjnugmm@fghhg.com",
+      "sel": "Query Related",
+      "message": "Hello",
+      "id": 2
+    },
+    {
+      "fullName": "Mike Smith",
+      "email": "gbsfycjndugmm@fghhg.com",
+      "sel": "Query Related",
+      "message": "Hi im Mike",
+      "id": 3
+    }
+  ],
+  "users": [
+    
+  ]
 }

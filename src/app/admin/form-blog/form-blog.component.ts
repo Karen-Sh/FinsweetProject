@@ -40,17 +40,17 @@ export class FormBlogComponent implements OnInit {
   }
 
     form:FormGroup =this.fb.group({
-        name:      [this.data.action=='addit' ? this.data.blogData.userName : '',[Validators.required,Validators.minLength(3)]],
-        img:       [this.data.action=='addit' ? this.data.blogData.userImg :  '',[Validators.required]],
-        select:    [this.data.action=='addit' ? this.data.blogData.cotegory : '',[Validators.required]],
-        selImg:    [this.data.action=='addit' ? this.data.blogData.categoryImg : '',[Validators.required]],
-        imgPost:   [this.data.action=='addit' ? this.data.blogData.img :      '',[Validators.required]],
-        post:      [this.data.action=='addit' ? this.data.blogData.post :     '',[Validators.required,Validators.minLength(3)]],
-        title:     [this.data.action=='addit' ? this.data.blogData.title :    '',[Validators.required,Validators.minLength(3)]],
+      userName:    [this.data.action=='addit' ? this.data.blogData.userName :   '',[Validators.required,Validators.minLength(3)]],
+      userImg:     [this.data.action=='addit' ? this.data.blogData.userImg :    '',[Validators.required]],
+      cotegory:    [this.data.action=='addit' ? this.data.blogData.cotegory :   '',[Validators.required]],
+      categoryImg: [this.data.action=='addit' ? this.data.blogData.categoryImg :'',[Validators.required]],
+      img:         [this.data.action=='addit' ? this.data.blogData.img :        '',[Validators.required]],
+      post:        [this.data.action=='addit' ? this.data.blogData.post :       '',[Validators.required,Validators.minLength(3)]],
+      title:       [this.data.action=='addit' ? this.data.blogData.title :      '',[Validators.required,Validators.minLength(3)]],
     })
     save(){
       this.dialog.close({
-        data:this.form.value,
+        data:   this.form.value,
         action: this.action
       })
       this.form.reset()

@@ -67,7 +67,7 @@ let routhes: Routes=[
     loadComponent: () =>import('./admin/admin-layout/admin-layout.component').then(m => m.AdminLayoutComponent),
     children:[
       {
-        path: 'dashboard',
+        path: '',
         loadComponent: () => import('./admin/dashbord/dashbord.component').then(m => m.DashbordComponent),
         title: "Dashboard"
       },
@@ -85,6 +85,10 @@ let routhes: Routes=[
         path: 'cotegory',
         loadComponent: () => import('./admin/category-admin/category-admin.component').then(m => m.CategoryAdminComponent),
         title: "CotegoryAdmin"
+      },{
+        path: 'contactUs',
+        loadComponent: () => import('./admin/contact-us/contact-us.component').then(m => m.ContactUsComponent),
+        title: "ContactUs Admin"
       }
     ]
   },

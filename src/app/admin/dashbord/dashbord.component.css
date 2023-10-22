@@ -1,0 +1,65 @@
+.post{
+    background-color: #6b77ba;
+    font-size: 55px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    padding: 100px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d1c79;
+    width: 630px;
+}
+mat-icon{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    font-size: 100px;
+    display: block;
+    margin-left: 30px;
+}
+.category{
+    background-color: #938e26;
+    font-size: 55px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    padding: 100px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #520048;
+    width: 564px;
+}
+.auther{
+     background-color: #c9003e;
+    font-size: 55px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    padding: 91px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0176a9;
+    width: 552px;
+}
+.contact{
+    background-color: #384451;
+    font-size: 55px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    padding: 91px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dce2e5;
+    width: 642px;
+
+}
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+}

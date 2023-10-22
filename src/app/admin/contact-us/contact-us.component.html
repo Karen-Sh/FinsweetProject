@@ -1,0 +1,43 @@
+<table mat-table [dataSource]="contact" class="mat-elevation-z8" >
+
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell class="tdText" *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="fullName">
+      <th mat-header-cell *matHeaderCellDef>Full Name </th>
+      <td mat-cell class="tdText" *matCellDef="let element"> 
+        {{element.fullName}}
+     </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell class="tdText" *matCellDef="let element"> 
+          {{element.email}}
+     </td>
+    </ng-container>
+
+    <ng-container matColumnDef="sel">
+      <th mat-header-cell *matHeaderCellDef>Category </th>
+      <td mat-cell class="tdText" *matCellDef="let element"> {{element.sel}} </td>
+    </ng-container>
+    <ng-container matColumnDef="message">
+      <th mat-header-cell *matHeaderCellDef>Message </th>
+      <td mat-cell class="tdText" *matCellDef="let element">
+        {{element.message}}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <td mat-cell  class="action" *matCellDef="let element" > 
+          <button style="background-color: #ffffff;" (click)="del(element.id)" >
+            <mat-icon color="warn" >delete</mat-icon>
+          </button>
+       </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row  *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

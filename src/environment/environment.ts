@@ -8,5 +8,11 @@ export const environment = {
     },
     post: {
         get: host + 'post',
+    },
+    contactUs: {
+        get: host + 'contactUs',
+    },
+    user: {
+        get: host + 'users',
     }
 }

@@ -50,7 +50,27 @@ export class BlogAdminComponent implements OnInit{
        action: "add"
        }
     });
-
+    dialogRef.afterClosed().subscribe(res=>{
+      if (res&&res.data) {
+        const addPost=res.data; 
+              
+        if (res.action=="add") {
+          dialogRef.componentInstance.form.patchValue({
+            userName:    addPost.userName,
+            userImg:     addPost.userImg,
+            cotegory:    addPost.category,
+            categoryImg: addPost.categoryImg,
+            img:         addPost.img,
+            post:        addPost.post,
+            title:       addPost.title,
+            
+          });
+          this.service.AddItem<Post>(`${environment.post.get}`, addPost).subscribe(()=>{
+              this.itemDataGet();  
+          })
+        }
+      }
+    })
   }
   openAdditDialog( el:Post , id:number){
     const dialogRef = this.dialog.open(FormBlogComponent, {
@@ -65,13 +85,13 @@ export class BlogAdminComponent implements OnInit{
               
         if (res.action=="addit") {
           dialogRef.componentInstance.form.patchValue({
-            name:    additPost.userName,
-            img:     additPost.userImg,
-            select:  additPost.category,
-            selImg:  additPost.categoryImg,
-            imgPost: additPost.img,
-            post:    additPost.post,
-            title:   additPost.title,
+            userName:    additPost.userName,
+            userImg:     additPost.userImg,
+            cotegory:    additPost.category,
+            categoryImg: additPost.categoryImg,
+            img:         additPost.img,
+            post:        additPost.post,
+            title:       additPost.title,
             
           });
           this.service.AdditItem<Post>(`${environment.post.get}/${id}`, additPost).subscribe(()=>{

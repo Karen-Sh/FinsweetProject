@@ -42,7 +42,7 @@
 </section>
 <section class="section2">
     <div class="section2-container">
-        <form [formGroup]="form" (ngSubmit)="save()">
+        <form [formGroup]="form" id="form" (ngSubmit)="save()">
             <input class="section2-container-fullName input" formControlName="full_name" type="text" placeholder="Full Name" name="full_name">
             <div>
                 <span class="inputInvalid" *ngIf="form.get('full_name')?.hasError('required') && (form.get('full_name')?.touched || form.get('full_name')?.dirty)">
