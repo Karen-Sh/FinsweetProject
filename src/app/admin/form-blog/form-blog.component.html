@@ -1,0 +1,48 @@
+<form  class="forms" [formGroup]="form" (ngSubmit)="save()" *ngIf="action">         
+    <mat-form-field>
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName="name">
+    </mat-form-field> 
+
+    <mat-form-field>
+        <mat-label>User Images</mat-label>
+        <input matInput formControlName="img">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Category</mat-label>
+        <mat-select>
+            <mat-option  formControlName="select" *ngFor="let val of category" [value]="val.category">
+                {{val.category}}
+              </mat-option>
+          </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Category Img</mat-label>
+        <mat-select>
+            <mat-option  formControlName="selImg"  *ngFor="let item of category" [value]="item.img">
+            <img src="{{item.img}}" alt="photo">
+              </mat-option>
+          </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Img Post</mat-label>
+        <input matInput formControlName="imgPost">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Post</mat-label>
+        <textarea matInput formControlName="post"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+    </mat-form-field>
+
+
+    <button mat-button [disabled]="form.invalid" type="submit">Save</button>
+    <button mat-button  mat-dialog-close><mat-icon>close</mat-icon></button>
+</form >
+
