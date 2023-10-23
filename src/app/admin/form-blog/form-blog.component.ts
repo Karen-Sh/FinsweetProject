@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit ,Pipe, PipeDecorator} from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA,  MatDialogRef } from '@angular/material/dialog';
@@ -13,6 +13,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { DataService } from 'src/app/service/data.service';
 import { Category } from 'src/app/models/category';
 import { environment } from 'src/environment/environment';
+import { Authers } from 'src/app/models/authers';
 @Component({
   selector: 'app-form-blog',
   templateUrl: './form-blog.component.html',
@@ -25,11 +26,19 @@ import { environment } from 'src/environment/environment';
    ],
 })
 export class FormBlogComponent implements OnInit {
-  action!:string
-  category:Category[]=[]
+  action!:string;
+  dateN!:string;
+  category:Category[]=[];
+  authers: Authers[]=[];
+  
+  dateFull:Date = new Date()
+  year=this.dateFull.getFullYear.toString();
+  day=this.dateFull.getDate.toString();
+  mounth= this.dateFull.getMinutes.toString();
     constructor(public dialog: MatDialogRef<FormBlogComponent>, @Inject(MAT_DIALOG_DATA)  public data: {
       action:string
       blogData:Post
+      dateN:string
     },private fb:FormBuilder,private service:DataService ){
       this.action = this.data.action
     }
@@ -37,6 +46,11 @@ export class FormBlogComponent implements OnInit {
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(date=>{
       this.category =  date
     })
+    this.service.GetJsonItem<Authers[]>(environment.authers.get).subscribe(data=>{
+      this.authers =data
+    })
+    console.log(this.dateFull);
+    
   }
 
     form:FormGroup =this.fb.group({
@@ -51,8 +65,9 @@ export class FormBlogComponent implements OnInit {
     save(){
       this.dialog.close({
         data:   this.form.value,
-        action: this.action
-      })
+        action: this.action,
+        dateN: `${this.mounth}.${this.day}.${this.year}`
+      });
       this.form.reset()
     }
 }

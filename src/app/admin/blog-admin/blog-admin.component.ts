@@ -76,7 +76,8 @@ export class BlogAdminComponent implements OnInit{
     const dialogRef = this.dialog.open(FormBlogComponent, {
       data:{
        action: "addit",
-       blogData : {...el}
+       blogData : {...el},
+       dateN: ''
        }
     });
     dialogRef.afterClosed().subscribe(res=>{
@@ -92,7 +93,7 @@ export class BlogAdminComponent implements OnInit{
             img:         additPost.img,
             post:        additPost.post,
             title:       additPost.title,
-            
+            data:        res.dateN.value
           });
           this.service.AdditItem<Post>(`${environment.post.get}/${id}`, additPost).subscribe(()=>{
               this.itemDataGet();  
