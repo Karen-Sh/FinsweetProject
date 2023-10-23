@@ -24,19 +24,16 @@ export class DashbordComponent implements OnInit {
   ngOnInit(): void {
     this.service.GetJsonItem<Post[]>(environment.post.get).subscribe(post=>{
       this.post =post.length;
-      console.log(this.post);
     });
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(cat=>{
-      this.category =cat.length
-      console.log(this.category);  
+      this.category =cat.length 
     });
     this.service.GetJsonItem<Authers[]>(environment.authers.get).subscribe(auther=>{
       this.auther =auther.length
-      console.log(this.auther);  
+
     })
     this.service.GetJsonItem<ContactUs[]>(environment.contactUs.get).subscribe(con=>{
       this.contact =con.length
-      console.log(this.contact);  
     })
   }
 }

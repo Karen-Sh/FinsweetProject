@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaderResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -23,9 +23,5 @@ export class DataService {
     let header = new HttpHeaders({'Content-type': 'application/json'});
     return this.http.put<Type>(url,value, {headers: header});
   }
-  Login<Type>(url:string ,val: Type){
-    // localStorage.setItem('token')
-    let header = new HttpHeaders({'Authorization':`Bearer `})
-    return this.http.post<Type>(url, val, {headers: header});
-  }
+  
 }

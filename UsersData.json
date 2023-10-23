@@ -297,6 +297,11 @@
     }
   ],
   "users": [
-    
+    {
+      "email": "text@mail.com",
+      "password": "$2a$10$6w1RnLRH.SuTsAl.rqPSfuaXErPsBtHwkLJQORUJxgN.7c2DlhdA.",
+      "accessToken": "",
+      "id": 2
+    }
   ]
 }

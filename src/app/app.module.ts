@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule }  from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { loginGuard } from './guard/login.guard';
+import { adminGuard } from './guard/admin.guard';
 let routhes: Routes=[
   {
     path: '',
@@ -60,11 +62,13 @@ let routhes: Routes=[
   {
     path: 'login',
     loadComponent: () => import('./admin/login/login.component').then(m => m.LoginComponent),
-    title: "Login"
+    title: "Login",
+    canActivate:[loginGuard]
   },
   {
     path: 'admin',
     loadComponent: () =>import('./admin/admin-layout/admin-layout.component').then(m => m.AdminLayoutComponent),
+    canActivateChild:[adminGuard],
     children:[
       {
         path: '',

@@ -4,7 +4,7 @@ import { DashbordComponent } from '../dashbord/dashbord.component';
 import { CategoryAdminComponent } from '../category-admin/category-admin.component';
 import { AutherAdminComponent } from '../auther-admin/auther-admin.component';
 import { BlogAdminComponent } from '../blog-admin/blog-admin.component';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
@@ -27,5 +27,9 @@ import {MatIconModule} from '@angular/material/icon';
   ]
 })
 export class AdminLayoutComponent {
-
+  constructor(private router:Router){}
+  logOut(){
+    localStorage.removeItem('token');
+    this.router.navigate(['/login']);
+  }
 }

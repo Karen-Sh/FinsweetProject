@@ -12,7 +12,7 @@ export const environment = {
     contactUs: {
         get: host + 'contactUs',
     },
-    user: {
-        get: host + 'users',
+    login: {
+        get: host + 'login',
     }
 }
