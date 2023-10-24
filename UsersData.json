@@ -87,13 +87,14 @@
   ],
   "post": [
     {
-      "userName": "Floyd_Miles fdbwrn",
+      "userName": "Floyd_Miles",
       "userImg": "../../../assets/img/man-in.png",
-      "cotegory": "Floyd_Miles",
+      "cotegory": "Business",
       "categoryImg": "../../../assets/img/Icon (3).png",
       "img": "../../../assets/img/two.png",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
       "title": "Top 6 free website mockup tools 2022",
+      "data": "Oct 24, 2023",
       "id": 1
     },
     {
@@ -104,7 +105,7 @@
       "categoryImg": "../../../assets/img/Icon (3).png",
       "userName": "Floyd_Miles",
       "title": "Step-by-step guide to choosing great font pairs",
-      "data": "l   Jan 18, 2023",
+      "data": "Jan 18, 2023",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
     },
     {
@@ -115,30 +116,28 @@
       "categoryImg": "../../../assets/img/Icon (3).png",
       "userName": "Dianne_Russell",
       "title": "Ten free foogle fonts that you should use",
-      "data": "l   May 23, 2022",
+      "data": "May 23, 2022",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
     },
     {
-      "id": 4,
-      "img": "../../../assets/img/two.png",
+      "userName": "Dianne_Russell",
       "userImg": "../../../assets/img/woman-in.png",
       "cotegory": "BUSINESS",
       "categoryImg": "../../../assets/img/Icon (3).png",
-      "userName": "Dianne_Russell",
+      "img": "../../../assets/img/two.png",
+      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.",
       "title": "What did I learn from doing 50+ design sprints?",
-      "data": "l   Apr 17, 2021",
-      "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+      "id": 4
     },
     {
-      "id": 5,
-      "img": "../../../assets/img/two.png",
+      "userName": "Floyd_Miles",
       "userImg": "../../../assets/img/man-in.png",
       "cotegory": "Startup",
       "categoryImg": "../../../assets/img/shuttle (1).png",
-      "userName": "Floyd_Miles",
+      "img": "../../../assets/img/two.png",
+      "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "title": "Design tips for designers that cover everything you need",
-      "data": "l   Nov 36, 2023",
-      "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+      "id": 5
     },
     {
       "id": 6,
@@ -148,19 +147,19 @@
       "categoryImg": "../../../assets/img/Icon (3).png",
       "userName": "Jenny_Wilson",
       "title": "How to build rapport with your web design clients",
-      "data": "l   May 23, 2022",
+      "data": "May 23, 2022",
       "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 7,
-      "img": "../../../assets/img/photo-of1.png",
+      "userName": "Dianne_Russell",
       "userImg": "../../../assets/img/woman-in.png",
       "cotegory": "Startup",
       "categoryImg": "../../../assets/img/shuttle (1).png",
-      "userName": "Dianne_Russell",
+      "img": "../../../assets/img/photo-of1.png",
+      "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "title": "Logo design trends to avoid in 2022",
-      "data": "l   Apr 19, 2023",
-      "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+      "data": "9.24.2023",
+      "id": 7
     },
     {
       "id": 8,
@@ -170,19 +169,18 @@
       "categoryImg": "../../../assets/img/cyborg (1).png",
       "userName": "Jenny_Wilson",
       "title": "8 Figma design systems you can download for free today",
-      "data": "l   Dec 23, 2018",
+      "data": "Dec 23, 2018",
       "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
-      "id": 9,
-      "img": "../../../assets/img/two.png",
+      "userName": "Leslie_Alexander",
       "userImg": "../../../assets/img/content.png",
       "cotegory": "ECONOMY",
       "categoryImg": "../../../assets/img/economy (1).png",
-      "userName": "Leslie_Alexander",
+      "img": "../../../assets/img/two.png",
+      "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "title": "Font sizes in UI design: The complete guide to follow",
-      "data": "l   Dec 22, 2022",
-      "post": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+      "id": 9
     },
     {
       "id": 10,
@@ -192,7 +190,7 @@
       "categoryImg": "../../../assets/img/Icon (3).png",
       "userName": "Leslie_Alexander",
       "title": "Font sizes in UI design: The complete guide to follow",
-      "data": "l   May 23, 2022",
+      "data": "May 23, 2022",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -203,7 +201,7 @@
       "categoryImg": "../../../assets/img/economy (1).png",
       "userName": "Guy_Hawkins",
       "title": "How to build rapport with your web design clients",
-      "data": "l   Jan 25, 2022",
+      "data": "Jan 25, 2022",
       "post": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
@@ -214,7 +212,7 @@
       "categoryImg": "../../../assets/img/economy (1).png",
       "userName": "Eleanor_Pena",
       "title": "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor.",
-      "data": "l   Aug 7, 2022",
+      "data": "Aug 7, 2022",
       "post": "Duis aute irure dolor in reprehenderitin voluptate velit esse cillum doloreeu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     },
     {
@@ -225,7 +223,7 @@
       "categoryImg": "../../../assets/img/economy (1).png",
       "userName": "Eleanor_Pena",
       "title": "A UX Case Study Creating a Studious Environment for Students:",
-      "data": "l   Feb 14, 2022",
+      "data": "Feb 14, 2022",
       "post": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
     },
     {
@@ -236,7 +234,7 @@
       "categoryImg": "../../../assets/img/cyborg (1).png",
       "userName": "Guy_Hawkins",
       "title": "A UX Case Study Creating a Studious Environment for Students:",
-      "data": "l   May 23, 2022",
+      "data": "May 23, 2022",
       "post": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
     },
     {
@@ -247,7 +245,7 @@
       "categoryImg": "../../../assets/img/cyborg (1).png",
       "userName": "Robert_Fox",
       "title": "A UX Case Study Creating a Studious Environment for Students:",
-      "data": "l   Jun 26, 2022",
+      "data": "Jun 26, 2022",
       "post": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
     },
     {
@@ -258,7 +256,7 @@
       "categoryImg": "../../../assets/img/shuttle (1).png",
       "userName": "Robert_Fox",
       "title": "Step-by-step guide to choosing great font pairs",
-      "data": "l   Nov 5, 2022",
+      "data": "Nov 5, 2022",
       "post": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident."
     },
     {
@@ -269,7 +267,7 @@
       "categoryImg": "../../../assets/img/shuttle (1).png",
       "userName": "Jacob_Jones",
       "title": "Step-by-step guide to choosing great font pairs",
-      "data": "|  Apr 15, 2022",
+      "data": "Apr 15, 2022",
       "post": " Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     }
   ],

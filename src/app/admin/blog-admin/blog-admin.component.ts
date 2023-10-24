@@ -52,7 +52,7 @@ export class BlogAdminComponent implements OnInit{
     });
     dialogRef.afterClosed().subscribe(res=>{
       if (res&&res.data) {
-        const addPost=res.data; 
+        const addPost=res.date; 
               
         if (res.action=="add") {
           dialogRef.componentInstance.form.patchValue({
@@ -63,7 +63,7 @@ export class BlogAdminComponent implements OnInit{
             img:         addPost.img,
             post:        addPost.post,
             title:       addPost.title,
-            
+            data:        res.data.dateN
           });
           this.service.AddItem<Post>(`${environment.post.get}`, addPost).subscribe(()=>{
               this.itemDataGet();  
@@ -83,7 +83,8 @@ export class BlogAdminComponent implements OnInit{
     dialogRef.afterClosed().subscribe(res=>{
       if (res&&res.data) {
         const additPost=res.data; 
-              
+              console.log(additPost);
+              additPost['data'] = res.dateN
         if (res.action=="addit") {
           dialogRef.componentInstance.form.patchValue({
             userName:    additPost.userName,
@@ -93,8 +94,8 @@ export class BlogAdminComponent implements OnInit{
             img:         additPost.img,
             post:        additPost.post,
             title:       additPost.title,
-            data:        res.dateN.value
           });
+
           this.service.AdditItem<Post>(`${environment.post.get}/${id}`, additPost).subscribe(()=>{
               this.itemDataGet();  
           })

@@ -27,20 +27,19 @@ import { Authers } from 'src/app/models/authers';
 })
 export class FormBlogComponent implements OnInit {
   action!:string;
+  data!:string;
   dateN!:string;
   category:Category[]=[];
   authers: Authers[]=[];
   
-  dateFull:Date = new Date()
-  year=this.dateFull.getFullYear.toString();
-  day=this.dateFull.getDate.toString();
-  mounth= this.dateFull.getMinutes.toString();
-    constructor(public dialog: MatDialogRef<FormBlogComponent>, @Inject(MAT_DIALOG_DATA)  public data: {
+
+    constructor(public dialog: MatDialogRef<FormBlogComponent>, @Inject(MAT_DIALOG_DATA)  public date: {
       action:string
+      data:string;
       blogData:Post
       dateN:string
     },private fb:FormBuilder,private service:DataService ){
-      this.action = this.data.action
+      this.action = this.date.action
     }
   ngOnInit(): void {
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(date=>{
@@ -49,24 +48,39 @@ export class FormBlogComponent implements OnInit {
     this.service.GetJsonItem<Authers[]>(environment.authers.get).subscribe(data=>{
       this.authers =data
     })
-    console.log(this.dateFull);
     
   }
 
     form:FormGroup =this.fb.group({
-      userName:    [this.data.action=='addit' ? this.data.blogData.userName :   '',[Validators.required,Validators.minLength(3)]],
-      userImg:     [this.data.action=='addit' ? this.data.blogData.userImg :    '',[Validators.required]],
-      cotegory:    [this.data.action=='addit' ? this.data.blogData.cotegory :   '',[Validators.required]],
-      categoryImg: [this.data.action=='addit' ? this.data.blogData.categoryImg :'',[Validators.required]],
-      img:         [this.data.action=='addit' ? this.data.blogData.img :        '',[Validators.required]],
-      post:        [this.data.action=='addit' ? this.data.blogData.post :       '',[Validators.required,Validators.minLength(3)]],
-      title:       [this.data.action=='addit' ? this.data.blogData.title :      '',[Validators.required,Validators.minLength(3)]],
+      userName:    [this.date.action=='addit' ? this.date.blogData.userName :   '',[Validators.required,Validators.minLength(3)]],
+      userImg:     [this.date.action=='addit' ? this.date.blogData.userImg :    '',[Validators.required]],
+      cotegory:    [this.date.action=='addit' ? this.date.blogData.cotegory :   '',[Validators.required]],
+      categoryImg: [this.date.action=='addit' ? this.date.blogData.categoryImg :'',[Validators.required]],
+      img:         [this.date.action=='addit' ? this.date.blogData.img :        '',[Validators.required]],
+      post:        [this.date.action=='addit' ? this.date.blogData.post :       '',[Validators.required,Validators.minLength(3)]],
+      title:       [this.date.action=='addit' ? this.date.blogData.title :      '',[Validators.required,Validators.minLength(3)]],
     })
     save(){
+      const dateFull:Date = new Date()
+      const mounth= dateFull.getMonth();
+      let months = ''
+      const month=['Jan', 'Feb','Mar','Apr', 'May', 'June', 'July','Aug' , 'Sep','Oct','Nov' ,'Dec']
+      for (let i = 0; i < month.length; i++) {
+        if (dateFull.getMonth()== i) {
+          months+=month[i]
+          console.log(month[i]);
+          
+        }    
+      }
+      const year=dateFull.getFullYear();
+      const day=dateFull.getDate();
+      const data= `${months} ${day}, ${year}`;
+      
       this.dialog.close({
         data:   this.form.value,
         action: this.action,
-        dateN: `${this.mounth}.${this.day}.${this.year}`
+        dateN:  data
+        
       });
       this.form.reset()
     }
