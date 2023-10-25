@@ -107,7 +107,7 @@
     transition: 1s;
 }
 .section1-container-blocks-block2-block:hover{
-    scale: 1.1;
+    scale: 0.9;
     background: var(--light-yellow, #FBF6EA);
 }
 .a_block{
