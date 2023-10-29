@@ -14,5 +14,8 @@ export const environment = {
     },
     login: {
         get: host + 'login',
+    },
+    register:{
+        get: host + 'register'
     }
 }

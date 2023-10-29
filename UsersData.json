@@ -27,62 +27,52 @@
   ],
   "authers": [
     {
+      "img": "../../../assets/img/man-in.png",
       "title": "Floyd_Miles",
       "text": "Content Writer @Company",
-      "img": "../../../assets/img/man-in.png",
       "id": 1
     },
     {
-      "id": 2,
       "img": "../../../assets/img/woman-in.png",
       "title": "Dianne_Russell",
-      "text": "Content Writer @Company"
+      "text": "Content Writer @Company",
+      "id": 2
     },
     {
-      "id": 3,
       "img": "../../../assets/img/fashion.png",
       "title": "Jenny_Wilson",
-      "text": "Content Writer @Company"
+      "text": "Content Writer @Company",
+      "id": 3
     },
     {
-      "id": 4,
       "img": "../../../assets/img/content.png",
       "title": "Leslie_Alexander",
-      "text": "Content Writer @Company"
+      "text": "Content Writer @Company",
+      "id": 4
     },
     {
-      "id": 5,
       "img": "../../../assets/img/man-in (3).png",
       "title": "Guy_Hawkins",
-      "text": "Content Writer @Company"
+      "text": "Content Writer @Company",
+      "id": 5
     },
     {
-      "id": 6,
       "img": "../../../assets/img/woman-in (2).png",
       "title": "Eleanor_Pena",
-      "text": "Content Writer @Company"
+      "text": "Content Writer @Company",
+      "id": 6
     },
     {
-      "id": 7,
       "img": "../../../assets/img/content (2).png",
       "title": "Robert_Fox",
       "text": "Content Writer @Company",
-      "img1": "../../../assets/img/Negative2.png",
-      "img2": "../../../assets/img/Negative.png",
-      "img3": "../../../assets/img/Negative3.png",
-      "img4": "../../../assets/img/Negative1.png"
+      "id": 7
     },
     {
-      "id": 8,
       "img": "../../../assets/img/cheerful.png",
       "title": "Jacob_Jones",
-      "text": "Content Writer @Company"
-    },
-    {
-      "title": "Karen",
-      "text": "ayo Chish e\n",
-      "img": "../../../assets/img/close-up (2).png",
-      "id": 9
+      "text": "Content Writer @Company",
+      "id": 8
     }
   ],
   "post": [
@@ -285,21 +275,77 @@
       "sel": "Query Related",
       "message": "Hello",
       "id": 2
-    },
-    {
-      "fullName": "Mike Smith",
-      "email": "gbsfycjndugmm@fghhg.com",
-      "sel": "Query Related",
-      "message": "Hi im Mike",
-      "id": 3
     }
   ],
   "users": [
     {
-      "email": "text@mail.com",
-      "password": "$2a$10$6w1RnLRH.SuTsAl.rqPSfuaXErPsBtHwkLJQORUJxgN.7c2DlhdA.",
-      "accessToken": "",
+      "email": "karensh@mail.com",
+      "password": "$2a$10$buTjgJxO/NPQCjPVgmXi5uOE6wum/LBQfsFLx8IBWGPMb.fqJKtYa",
+      "id": 1
+    },
+    {
+      "email": "floyd_miles@mail.com",
+      "password": "$2a$10$Ew3juv6nkSYGpg2lSfc8rOxBGrmXE262hHpLq4FzLHliU7jjXisxO",
+      "img": "../../../assets/img/man-in.png",
+      "title": "Floyd_Miles",
+      "text": "Content Writer @Company",
       "id": 2
+    },
+    {
+      "email": "dianne_russell@mail.com",
+      "password": "$2a$10$6H0AJraYJ3JWEV4KKCU.hujK1bI7RcZnczcUZXHc/8/4UfdJXbVZy",
+      "img": "../../../assets/img/woman-in.png",
+      "title": "Dianne_Russell",
+      "text": "Content Writer @Company",
+      "id": 3
+    },
+    {
+      "email": "jenny_wilson@mail.com",
+      "password": "$2a$10$RZQKPaqXWNd01c78SQnQ4OI7e7a0o6A9p9LZtRs2FPd3ERhmhg./6",
+      "img": "../../../assets/img/fashion.png",
+      "title": "Jenny_Wilson",
+      "text": "Content Writer @Company",
+      "id": 4
+    },
+    {
+      "email": "leslie_alexander@mail.com",
+      "password": "$2a$10$7LaSLu0wDia7gDFOb4URZuaIlQgHHiMMvpRj/KTIYYHe5bm6lJal.",
+      "img": "../../../assets/img/content.png",
+      "title": "Leslie_Alexander",
+      "text": "Content Writer @Company",
+      "id": 5
+    },
+    {
+      "email": "guy_hawkins@mail.com",
+      "password": "$2a$10$AnR/gPTyRfKXZ/B3KIMSkuOe..ORmt9wH78AXW9CchlNazI3N1HEy",
+      "img": "../../../assets/img/man-in (3).png",
+      "title": "Guy_Hawkins",
+      "text": "Content Writer @Company",
+      "id": 6
+    },
+    {
+      "email": "eleanor_pena@mail.com",
+      "password": "$2a$10$3OdThIx7S4SfpWEG1eX7Ue3hpqLac17HCZwTTAJXZ0C64DzH9yOdy",
+      "img": "../../../assets/img/woman-in (2).png",
+      "title": "Eleanor_Pena",
+      "text": "Content Writer @Company",
+      "id": 7
+    },
+    {
+      "email": "robert_fox@mail.com",
+      "password": "$2a$10$9O3x.AW3ZERGrvJpFTqJvuPHcmC3jL9qke48iR9KuDrT.Kd9qoqBG",
+      "img": "../../../assets/img/content (2).png",
+      "title": "Robert_Fox",
+      "text": "Content Writer @Company",
+      "id": 8
+    },
+    {
+      "email": "jacob_jones@mail.com",
+      "password": "$2a$10$CBuQncE9dSh.hQRsR2Ktz.HQIMjzeRH.vbTL9QzcNekJjdTzivmXm",
+      "img": "../../../assets/img/cheerful.png",
+      "title": "Jacob_Jones",
+      "text": "Content Writer @Company",
+      "id": 9
     }
   ]
 }

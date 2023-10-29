@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Users } from 'src/app/models/users';
 import { DataService } from 'src/app/service/data.service';
 import { environment, host } from 'src/environment/environment';
 

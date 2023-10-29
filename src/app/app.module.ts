@@ -89,7 +89,13 @@ let routhes: Routes=[
         path: 'cotegory',
         loadComponent: () => import('./admin/category-admin/category-admin.component').then(m => m.CategoryAdminComponent),
         title: "CotegoryAdmin"
-      },{
+      },
+      {
+        path: 'register',
+        loadComponent: () => import('./admin/user-registration/user-registration.component').then(m => m.UserRegistrationComponent),
+        title: "Registration"
+      },
+      {
         path: 'contactUs',
         loadComponent: () => import('./admin/contact-us/contact-us.component').then(m => m.ContactUsComponent),
         title: "ContactUs Admin"

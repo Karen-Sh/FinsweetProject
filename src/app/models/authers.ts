@@ -1,6 +1,6 @@
 export interface Authers {
     id?: number,
-    img: string,
-    title: string,
-    text: string,
+    img: string | null | undefined,
+    title: string | null | undefined,
+    text: string | null | undefined,
 }
