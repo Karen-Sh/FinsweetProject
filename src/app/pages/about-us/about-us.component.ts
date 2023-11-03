@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Authers } from 'src/app/models/authers';
-import { JoinComponent } from '../join/join.component';
-import { ListOfAuthorsComponent } from '../list-of-authors/list-of-authors.component';
 import { NgFor } from '@angular/common';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
+import { JoinComponent } from 'src/app/components/join/join.component';
+import { ListOfAuthorsComponent } from 'src/app/components/list-of-authors/list-of-authors.component';
 
 @Component({
   selector: 'app-about-us',

@@ -1,0 +1,67 @@
+<form  class="forms" [formGroup]="form" (ngSubmit)="save()" *ngIf="action">         
+    <mat-form-field>
+        <mat-label>User Name</mat-label>
+        <mat-select formControlName="userName">
+            <mat-option  *ngFor="let item of authers" [value]="item.title">
+                {{item.title}}
+              </mat-option>
+          </mat-select>
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('userName')?.hasError('required') && (form.get('userName')?.touched || form.get('userName')?.dirty)">
+        Enter a Yuor Name ,UserName in required.
+    </span> 
+    <mat-form-field>
+        <mat-label>User Images</mat-label>
+        <input matInput formControlName="userImg">
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('userImg')?.hasError('required') && (form.get('userImg')?.touched || form.get('userImg')?.dirty)">
+        Enter a Images ,User Images in required.
+    </span> 
+    <mat-form-field>
+        <mat-label>Category</mat-label>
+        <mat-select formControlName="cotegory">
+            <mat-option  *ngFor="let val of category" [value]="val.category">
+                {{val.category}}
+              </mat-option>
+          </mat-select>
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('cotegory')?.hasError('required') && (form.get('cotegory')?.touched || form.get('cotegory')?.dirty)">
+        Enter a Category ,Category in required.
+    </span> 
+    <mat-form-field>
+        <mat-label>Category Img</mat-label>
+        <mat-select  formControlName="categoryImg">
+            <mat-option   *ngFor="let item of category" [value]="item.img">
+              <img [src]="item.img" alt="photo"><br>{{item.img}}
+            </mat-option>
+          </mat-select>
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('categoryImg')?.hasError('required') && (form.get('categoryImg')?.touched || form.get('categoryImg')?.dirty)">
+        Enter a Category Img ,Category Img in required.
+    </span>
+    <mat-form-field>
+        <mat-label>Img Post</mat-label>
+        <input matInput formControlName="img">
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('img')?.hasError('required') && (form.get('img')?.touched || form.get('img')?.dirty)">
+        Enter a  Img , Post Img in required.
+    </span>
+    <mat-form-field>
+        <mat-label>Post</mat-label>
+        <textarea matInput formControlName="post"></textarea>
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('post')?.hasError('required') && (form.get('post')?.touched || form.get('post')?.dirty)">
+        Enter a  Post , Post  in required.
+    </span>
+    <span class="inputInvalid" *ngIf="form.get('post')?.hasError('minlength') && (form.get('post')?.touched || form.get('post')?.dirty)">
+        Enter a Yuor post ,post in minlenght 3 sybol!
+    </span> 
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+    </mat-form-field>
+
+    <button mat-button [disabled]="form.invalid" type="submit">Save</button>
+    <button mat-button  mat-dialog-close><mat-icon>close</mat-icon></button>
+</form >
+

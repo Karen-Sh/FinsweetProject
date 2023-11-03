@@ -7,7 +7,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Category } from 'src/app/models/category';
-import { CategoryAdminComponent } from '../category-admin/category-admin.component';
+import { CategoryAdminComponent } from '../category-admin.component';
+
 
 @Component({
   selector: 'app-form-category',

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { JoinComponent } from '../join/join.component';
 import { Post } from 'src/app/models/post';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 import { NgForOf, NgIf } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { JoinComponent } from 'src/app/components/join/join.component';
 
 @Component({
   selector: 'app-blog-post',

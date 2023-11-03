@@ -9,7 +9,7 @@ import { DataService } from 'src/app/service/data.service';
 import { Authers } from 'src/app/models/authers';
 import { environment } from 'src/environment/environment';
 import { HttpClient } from '@angular/common/http';
-import { Router, RouterLink } from '@angular/router';
+import {  RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-user-registration',
@@ -34,7 +34,7 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class UserRegistrationComponent {
   stepper: any;
-  constructor(private fb: FormBuilder,private service:DataService,private router:Router,private http:HttpClient){
+  constructor(private fb: FormBuilder,private service:DataService,private http:HttpClient){
   }
   firstForm = this.fb.group({
     email: ['',[ Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
@@ -64,7 +64,5 @@ export class UserRegistrationComponent {
       this.http.post(environment.register.get,user).subscribe(()=>{
         this.firstForm.reset();
       })
-      localStorage.removeItem('token');
-      this.router.navigate(['/login']);
   }
 }

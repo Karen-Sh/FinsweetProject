@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     color: #2d1c79;
-    width: 630px;
+    width: 55%;
 }
 mat-icon{
     width: 100px;
@@ -30,7 +30,7 @@ mat-icon{
     justify-content: center;
     align-items: center;
     color: #520048;
-    width: 564px;
+    width: 45%;
 }
 .auther{
      background-color: #c9003e;
@@ -43,7 +43,7 @@ mat-icon{
     justify-content: center;
     align-items: center;
     color: #0176a9;
-    width: 552px;
+    width: 45%;
 }
 .contact{
     background-color: #384451;
@@ -56,7 +56,7 @@ mat-icon{
     justify-content: center;
     align-items: center;
     color: #dce2e5;
-    width: 642px;
+    width: 55%;
 
 }
 .blocks{

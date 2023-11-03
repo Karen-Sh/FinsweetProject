@@ -1,12 +1,12 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post';
-import { AuthorsComponent } from './authors/authors.component';
-import { PostsComponent } from '../posts/posts.component';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Authers } from 'src/app/models/authers';
+import { AuthorsComponent } from 'src/app/components/authors/authors.component';
+import { PostsComponent } from 'src/app/components/posts/posts.component';
 
 @Component({
   selector: 'app-author',

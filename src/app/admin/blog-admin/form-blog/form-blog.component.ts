@@ -8,12 +8,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Post } from 'src/app/models/post';
-import { BlogAdminComponent } from '../blog-admin/blog-admin.component';
 import {MatSelectModule} from '@angular/material/select';
 import { DataService } from 'src/app/service/data.service';
 import { Category } from 'src/app/models/category';
 import { environment } from 'src/environment/environment';
 import { Authers } from 'src/app/models/authers';
+import { BlogAdminComponent } from '../blog-admin.component';
 @Component({
   selector: 'app-form-blog',
   templateUrl: './form-blog.component.html',
@@ -42,17 +42,16 @@ export class FormBlogComponent implements OnInit {
       this.action = this.date.action
     }
   ngOnInit(): void {
-    this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(date=>{
-      this.category =  date
-    })
+    this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(data=>{
+      this.category =  data
+    });
     this.service.GetJsonItem<Authers[]>(environment.authers.get).subscribe(data=>{
       this.authers =data
-    })
-    
+    });
   }
 
     form:FormGroup =this.fb.group({
-      userName:    [this.date.action=='addit' ? this.date.blogData.userName :   '',[Validators.required,Validators.minLength(3)]],
+      userName:    [this.date.action=='addit' ? this.date.blogData.userName :   '',[Validators.required]],
       userImg:     [this.date.action=='addit' ? this.date.blogData.userImg :    '',[Validators.required]],
       cotegory:    [this.date.action=='addit' ? this.date.blogData.cotegory :   '',[Validators.required]],
       categoryImg: [this.date.action=='addit' ? this.date.blogData.categoryImg :'',[Validators.required]],
@@ -67,14 +66,12 @@ export class FormBlogComponent implements OnInit {
       const month=['Jan', 'Feb','Mar','Apr', 'May', 'June', 'July','Aug' , 'Sep','Oct','Nov' ,'Dec']
       for (let i = 0; i < month.length; i++) {
         if (dateFull.getMonth()== i) {
-          months+=month[i]
-          console.log(month[i]);
-          
-        }    
-      }
-      const year=dateFull.getFullYear();
-      const day=dateFull.getDate();
-      const data= `${months} ${day}, ${year}`;
+          months+=month[i];       
+        };
+      };
+      const year = dateFull.getFullYear();
+      const day  = dateFull.getDate();
+      const data = `${months} ${day}, ${year}`;
       
       this.dialog.close({
         data:   this.form.value,

@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/category';
 import { Post } from 'src/app/models/post';
-import { JoinComponent } from '../join/join.component';
-import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory.component';
-import { PostsComponent } from '../posts/posts.component';
 import { NgFor, NgIf } from '@angular/common';
-import { BlogHeaderComponent } from '../blog-header/blog-header.component';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 import { RouterLink } from '@angular/router';
+import { JoinComponent } from 'src/app/components/join/join.component';
+import { ChooseACatagoryComponent } from 'src/app/components/choose-a-catagory/choose-a-catagory.component';
+import { PostsComponent } from 'src/app/components/posts/posts.component';
+import { BlogHeaderComponent } from 'src/app/components/blog-header/blog-header.component';
 
 @Component({
   selector: 'app-blog',
@@ -34,6 +34,9 @@ export class BlogComponent implements OnInit {
     this.service.GetJsonItem<Post[]>(`${environment.post.get}?_page=${this.pagesNumber}&_limit=4`).subscribe(data=>{
       this.blog = data;
     });
+  }
+  item(){
+    
   }
   prev(){
     if (this.pagesNumber > 1) {

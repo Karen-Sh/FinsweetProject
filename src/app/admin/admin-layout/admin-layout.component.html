@@ -1,33 +1,33 @@
 <mat-toolbar color="primary" class="nav-bar">
     <img src="../../../assets/img/Logo.png" alt="photo">
-    <button mat-button class="btn" color="primary" (click)="logOut()">Log out</button>
+    <a mat-button class="btn" color="primary" (click)="logOut()">Log out</a>
 </mat-toolbar>
 <div class="blockcolor">
     Components
 </div>
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened>
-        <button mat-button  routerLink="/admin" class="compBtn">
+        <a mat-button  routerLink="/admin" class="compBtn">
             <mat-icon>dashboard</mat-icon> DashBoard
-        </button>
-        <button mat-button  routerLink="/admin/auther" class="compBtn">
+        </a>
+        <a mat-button  routerLink="/admin/auther" class="compBtn">
             <mat-icon>person</mat-icon>  Aurher
-        </button>
-        <button mat-button  routerLink="/admin/cotegory" class="compBtn">
+        </a>
+        <a mat-button  routerLink="/admin/cotegory" class="compBtn">
            <mat-icon>category</mat-icon> Cotegory
-        </button>
-        <button mat-button  routerLink="/admin/blog" class="compBtn">
+        </a>
+        <a mat-button  routerLink="/admin/blog" class="compBtn">
           <mat-icon>wysiwyg</mat-icon>  Blog
-        </button>
-        <button mat-button  routerLink="/admin/contactUs"  class="compBtn">
+        </a>
+        <a mat-button  routerLink="/admin/contactUs"  class="compBtn">
             <mat-icon>contact_emergency</mat-icon>  Contact Us
-        </button>
-        <button mat-button  routerLink="/admin/register"  class="compBtn">
+        </a>
+        <a mat-button  routerLink="/admin/register"  class="compBtn">
             <mat-icon>contact_emergency</mat-icon>  Registration
-        </button>
-        <button mat-button  routerLink="" class="compBtn">
+        </a>
+        <a mat-button  routerLink="" class="compBtn">
             <mat-icon>home</mat-icon>  Home
-        </button>
+        </a>
     </mat-drawer>
     <mat-drawer-content>
         <router-outlet></router-outlet>

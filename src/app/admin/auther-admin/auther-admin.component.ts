@@ -6,7 +6,7 @@ import { environment } from 'src/environment/environment';
 import { MatIconModule} from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { NgIf } from '@angular/common';
-import { FormAurherComponent } from '../form-aurher/form-aurher.component';
+import { FormAurherComponent } from './form-aurher/form-aurher.component';
 export interface DialogData {
   animal: 'panda' | 'unicorn' | 'lion';
 }

@@ -1,11 +1,14 @@
 .addBtn{
    background-color:  #ffffff;
-   padding: 30px 20px;
+   padding: 30px 20px 40px;
    position: relative;
 }
 .addBtn1{
    position: fixed;
-   z-index: 2;
+   z-index: 1;
+   background-color: #6b77ba;
+   padding: 10px 20px;
+   border-radius: 10px;
 }
 .imadescss{
     width: 48px ;

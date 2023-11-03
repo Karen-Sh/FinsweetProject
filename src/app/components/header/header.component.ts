@@ -6,18 +6,19 @@ import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 
 @Component({
-  selector: 'app-blog-header',
-  templateUrl: './blog-header.component.html',
-  styleUrls: ['./blog-header.component.css'],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
   standalone: true,
-  imports: [RouterModule,NgIf]
+  imports:[RouterModule,NgIf]
 })
-export class BlogHeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit{
   post!:Post;
-    constructor(private service: DataService){}
+  constructor(private service: DataService){}
   ngOnInit(): void {
-    this.service.GetJsonItem<Post>(`${environment.post.get}/16`).subscribe(data=>{
-      this.post =  data
+    this.service.GetJsonItem<Post>(`${environment.post.get}/1`).subscribe(data=>{
+      this.post =data;
     })
   }
+
 }

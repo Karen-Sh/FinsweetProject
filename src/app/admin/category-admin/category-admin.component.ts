@@ -6,7 +6,8 @@ import { Category } from 'src/app/models/category';
 import { environment } from 'src/environment/environment';
 import { MatTableModule} from '@angular/material/table';
 import { NgIf } from '@angular/common';
-import { FormCategoryComponent } from '../form-category/form-category.component';
+import { FormCategoryComponent } from './form-category/form-category.component';
+
 
 @Component({
   selector: 'app-category-admin',

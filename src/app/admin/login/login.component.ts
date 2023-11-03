@@ -13,7 +13,7 @@ import { environment, host } from 'src/environment/environment';
   standalone: true,
   imports:[ReactiveFormsModule,NgIf]
 })
-export class LoginComponent {
+export class LoginComponent  {
     constructor(private fb:FormBuilder, private service:DataService, private router:Router){}
     form:FormGroup =this.fb.group({
       e_mail:['',[Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
@@ -22,15 +22,14 @@ export class LoginComponent {
     input= document.getElementsByTagName('input')
     save(){
       const log ={
-        email: this.input[0].value,
-        password: this.input[1].value,
+        email: this.form.get('e_mail')?.value,
+        password: this.form.get('pass')?.value,
         accessToken: ''
       }
      this.service.AddItem(environment.login.get, log).subscribe(data=>{
         localStorage.setItem('token',JSON.stringify(data.accessToken));
         this.router.navigate(['/admin'])
      })
-      this.form.reset()
     }
 }
 

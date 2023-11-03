@@ -1,6 +1,5 @@
 import { Component, Inject } from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
-import { AutherAdminComponent, DialogData } from '../auther-admin/auther-admin.component';
 import { NgIf } from '@angular/common';
 import {  MatFormFieldModule } from '@angular/material/form-field';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -8,16 +7,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule} from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { Authers } from 'src/app/models/authers';
+import { AutherAdminComponent } from '../auther-admin.component';
 
 @Component({
   selector: 'app-form-aurher',
   templateUrl: './form-aurher.component.html',
   styleUrls: ['./form-aurher.component.css'],
   standalone: true,
-  imports:[MatDialogModule,AutherAdminComponent,NgIf,
+  imports:[MatDialogModule,NgIf,
            MatFormFieldModule, MatInputModule, 
            FormsModule, MatButtonModule,ReactiveFormsModule,
-           MatFormFieldModule,ReactiveFormsModule,MatIconModule
+           MatFormFieldModule,ReactiveFormsModule,MatIconModule,AutherAdminComponent
           ],
 })
 export class FormAurherComponent {

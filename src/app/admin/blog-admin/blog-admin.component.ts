@@ -5,8 +5,8 @@ import { MatTableModule } from '@angular/material/table';
 import { Post } from 'src/app/models/post';
 import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
-import { FormBlogComponent } from '../form-blog/form-blog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormBlogComponent } from './form-blog/form-blog.component';
 
 @Component({
   selector: 'app-blog-admin',

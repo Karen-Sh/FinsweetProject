@@ -1,16 +1,17 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Authers } from 'src/app/models/authers';
-import { HeaderComponent } from '../header/header.component';
-import { ListOfAuthorsComponent } from '../list-of-authors/list-of-authors.component';
-import { JoinComponent } from '../join/join.component';
-import { ChooseACatagoryComponent } from '../choose-a-catagory/choose-a-catagory.component';
+
 import { DataService } from 'src/app/service/data.service';
 import { Category } from 'src/app/models/category';
-import { PostsComponent } from '../posts/posts.component';
 import { environment } from 'src/environment/environment';
 import { Post } from 'src/app/models/post';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from 'src/app/components/header/header.component';
+import { PostsComponent } from 'src/app/components/posts/posts.component';
+import { ListOfAuthorsComponent } from 'src/app/components/list-of-authors/list-of-authors.component';
+import { JoinComponent } from 'src/app/components/join/join.component';
+import { ChooseACatagoryComponent } from 'src/app/components/choose-a-catagory/choose-a-catagory.component';
 
 @Component({
   selector: 'app-home',
