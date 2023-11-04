@@ -7,13 +7,15 @@ import { DataService } from 'src/app/service/data.service';
 import { environment } from 'src/environment/environment';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormBlogComponent } from './form-blog/form-blog.component';
+import { MatButtonModule } from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-blog-admin',
   templateUrl: './blog-admin.component.html',
   styleUrls: ['./blog-admin.component.css'],
   standalone: true,
-  imports: [MatIconModule,MatTableModule,FormBlogComponent,MatDialogModule]
+  imports: [MatIconModule,MatTableModule,FormBlogComponent,MatDialogModule,MatButtonModule, MatTooltipModule]
 })
 export class BlogAdminComponent implements OnInit{
   post:Post[]=[]
@@ -30,9 +32,7 @@ export class BlogAdminComponent implements OnInit{
     'action'
   ];
   ngOnInit(): void {
-    this.service.GetJsonItem<Post[]>(environment.post.get).subscribe(data=>{
-      this.post = data
-    })
+    this.itemDataGet()
   }
   itemDataGet(){
     this.service.GetJsonItem<Post[]>(environment.post.get).subscribe(data=>{
@@ -40,9 +40,11 @@ export class BlogAdminComponent implements OnInit{
     })
   }
   del(id:number){
-    this.service.DeleteItem(`${environment.post.get}/${id}`).subscribe(()=>{
-      this.itemDataGet();
-    })
+    if (confirm('Do you really want to delete')) {
+      this.service.DeleteItem(`${environment.post.get}/${id}`).subscribe(()=>{
+        this.itemDataGet();
+      })
+    }
   }
   openAddDialog(){
     const dialogRef = this.dialog.open(FormBlogComponent, {
@@ -52,8 +54,9 @@ export class BlogAdminComponent implements OnInit{
     });
     dialogRef.afterClosed().subscribe(res=>{
       if (res&&res.data) {
-        const addPost=res.date; 
-              
+        const addPost=res.data;  
+        addPost['data'] = res.dateN  ;
+        addPost['defImg'] = '../../../assets/img/userdef.jpg'       
         if (res.action=="add") {
           dialogRef.componentInstance.form.patchValue({
             userName:    addPost.userName,
@@ -63,12 +66,13 @@ export class BlogAdminComponent implements OnInit{
             img:         addPost.img,
             post:        addPost.post,
             title:       addPost.title,
-            data:        res.data.dateN
           });
           this.service.AddItem<Post>(`${environment.post.get}`, addPost).subscribe(()=>{
               this.itemDataGet();  
+              alert('Your data has been successfully saved')  
           })
         }
+
       }
     })
   }
@@ -83,7 +87,6 @@ export class BlogAdminComponent implements OnInit{
     dialogRef.afterClosed().subscribe(res=>{
       if (res&&res.data) {
         const additPost=res.data; 
-              console.log(additPost);
               additPost['data'] = res.dateN
         if (res.action=="addit") {
           dialogRef.componentInstance.form.patchValue({
@@ -98,6 +101,7 @@ export class BlogAdminComponent implements OnInit{
 
           this.service.AdditItem<Post>(`${environment.post.get}/${id}`, additPost).subscribe(()=>{
               this.itemDataGet();  
+              alert('Your data has been successfully changed')
           })
         }
       }

@@ -12,7 +12,7 @@
       <ng-container matColumnDef="userImg">
         <th mat-header-cell *matHeaderCellDef>User Images </th>
         <td mat-cell class="tdText" *matCellDef="let element"> 
-          <img class="imadescss" src="{{element.userImg}}" alt="photo">
+          <img class="imadescss" [src]="element.userImg || element.defImg" alt="photo">
        </td>
       </ng-container>
 
@@ -35,16 +35,25 @@
       </ng-container>
       <ng-container class="tr" matColumnDef="post">
         <th mat-header-cell *matHeaderCellDef> Post </th>
-        <td mat-cell class="tdText post" *matCellDef="let element"> {{element.post}} </td>
+        <td mat-cell class="tdText post" *matCellDef="let element" matTooltip="{{element.post}}">
+         <div>
+          {{element.post}}
+         </div>
+        </td>
       </ng-container>
       <ng-container matColumnDef="title">
         <th mat-header-cell *matHeaderCellDef> Title </th>
-        <td mat-cell class="tdText title" *matCellDef="let element"> {{element.title}} </td>
+        <td mat-cell class="tdText title" *matCellDef="let element" matTooltip="{{element.title}}"> 
+          <div>
+            {{element.title}} 
+           </div>
+        </td>
+
       </ng-container>
       <ng-container matColumnDef="img">
         <th mat-header-cell *matHeaderCellDef> Images </th>
         <td mat-cell class="tdText" *matCellDef="let element"> 
-          <img class="imadescss" src="{{element.img}}" alt="photo">
+          <img class="imadescss" [src]="element.img || element.defImg" alt="photo">
        </td>
       </ng-container>
       <ng-container matColumnDef="action">

@@ -9,13 +9,12 @@
 }
 .blockcolor{
     background-color: #6b77ba;
-    padding:30px 0;
+    padding:20px 0;
     font-size: 30px;
     padding-left: 20px;
 }
 .example-container {
-    width: 100%;
-    /* height: 587px; */
+    height: 100%;
     margin: 10px;
     border: 3px solid #555;
     margin: 0;
@@ -25,6 +24,9 @@ mat-drawer{
     background-color: #303030;
     padding: 20px 0;
 }
+/* mat-drawer-content{
+    height: 100%;
+} */
 .compBtn{
     display: block;
     text-align: left;

@@ -7,5 +7,6 @@ export interface Post{
     userName?: string,
     data?: string,
     title :string,
-    post: string
+    post: string,
+    defImg?:string
 }

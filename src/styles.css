@@ -11,10 +11,10 @@
 button{
     border: none;
     cursor: pointer;
-    transition: 1.5s;
+    transition: 1.3s;
 }
 button:hover{
-    scale: 1.2;
+    scale: 0.8;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

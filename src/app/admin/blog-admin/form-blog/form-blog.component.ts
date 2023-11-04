@@ -78,7 +78,7 @@ export class FormBlogComponent implements OnInit {
         action: this.action,
         dateN:  data
         
-      });
+      });    
       this.form.reset()
     }
 }

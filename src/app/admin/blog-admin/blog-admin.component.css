@@ -21,49 +21,12 @@ th{
     font-weight: 600;
 }
 td{
+    /* width: 60px; */
     height: 50px;
-    width: 60px;
-    position: relative;
     font-weight: 500;
 }
-.post{
-    width: 215px;
-    height: 80px;
-    overflow-y: scroll;
-    position: absolute; 
-    padding: 0;   
+div{
+  height: 20px;
+  width: 120px;
+  overflow: hidden;
 }
-/* .post:hover{
-    overflow: visible;
-    z-index: 2;
-    position: unset;
-} */
-.title{
-   width: 205px; 
-   height: 80px;
-   /* overflow-y: scroll; */
-   padding: 0;
-}
-.action{
-    width: 100px;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 3px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
