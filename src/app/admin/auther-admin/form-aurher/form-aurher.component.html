@@ -4,16 +4,29 @@
                 <mat-label>Full name</mat-label>
                 <input matInput formControlName="title">
             </mat-form-field> 
-
+            <span class="inputInvalid" *ngIf="form.get('title')?.hasError('required') && (form.get('title')?.touched || form.get('title')?.dirty)">
+                Enter a  Full name , Full name  in required.
+            </span>
+            <span class="inputInvalid" *ngIf="form.get('title')?.hasError('minlength') && (form.get('title')?.touched || form.get('title')?.dirty)">
+                Enter a Full name ,Full name in minlenght 3 sybol!
+            </span>
             <mat-form-field>
                 <mat-label>Description</mat-label>
                 <textarea matInput formControlName="text"></textarea>
             </mat-form-field>
+            <span class="inputInvalid" *ngIf="form.get('text')?.hasError('required') && (form.get('text')?.touched || form.get('text')?.dirty)">
+                Enter a  Description , Description  in required.
+            </span>
+            <span class="inputInvalid" *ngIf="form.get('text')?.hasError('minlength') && (form.get('text')?.touched || form.get('text')?.dirty)">
+                Enter a Description ,Description in minlenght 3 sybol!
+            </span>
             <mat-form-field>
                 <mat-label>Img</mat-label>
                 <input matInput formControlName="img">
             </mat-form-field>
-
+            <span class="inputInvalid" *ngIf="form.get('img')?.hasError('required') && (form.get('img')?.touched || form.get('img')?.dirty)">
+                Enter a  Img , Img  in required.
+            </span>
             <button mat-button [disabled]="form.invalid" type="submit">Save</button>
             <button mat-button  mat-dialog-close><mat-icon>close</mat-icon></button>
   </form >

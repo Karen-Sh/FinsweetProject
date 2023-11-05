@@ -12,6 +12,9 @@ export const environment = {
     contactUs: {
         get: host + 'contactUs',
     },
+    sub: {
+        get: host + 'subscribe',
+    },
     login: {
         get: host + 'login',
     },

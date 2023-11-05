@@ -63,3 +63,6 @@ mat-icon{
     display: flex;
     flex-wrap: wrap;
 }
+.active{
+    color: red;
+}

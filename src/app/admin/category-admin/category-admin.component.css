@@ -18,3 +18,13 @@ td{
 .addBtn1{
     position: fixed;
 }
+.imadescss{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.desc{
+    width: 140px;
+    height: 20px;
+    overflow: hidden;
+}

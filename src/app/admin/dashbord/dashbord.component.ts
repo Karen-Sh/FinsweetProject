@@ -6,14 +6,14 @@ import { Category } from 'src/app/models/category';
 import { Authers } from 'src/app/models/authers';
 import { ContactUs } from 'src/app/models/contactUs';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-dashbord',
   templateUrl: './dashbord.component.html',
   styleUrls: ['./dashbord.component.css'],
   standalone: true,
-  imports : [MatIconModule,RouterLink]
+  imports : [MatIconModule,RouterModule,]
 })
 export class DashbordComponent implements OnInit {
   post!:number

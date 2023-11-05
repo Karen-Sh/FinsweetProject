@@ -15,9 +15,9 @@
                 Subscribe to our news letter 
                 to get latest updates and news
             </h2>
-            <form  class="footer-container-forms">
-                <input  class="footer-container-emailBlock-input" type="email" placeholder="Enter Your Email" name="e_mail">
-                <button class="footer-container-emailBlock-button" routerLink="/contact">
+            <form  class="footer-container-forms" [formGroup]="form" (ngSubmit)="seve()" >
+                <input  class="footer-container-emailBlock-input" formControlName="e_mail" type="email" placeholder="Enter Your Email" name="e_mail">
+                <button class="footer-container-emailBlock-button" [disabled]="form.invalid"  >
                     Subscribe
                 </button>
             </form>

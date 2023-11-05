@@ -16,13 +16,17 @@
   
     <ng-container matColumnDef="text">
       <th mat-header-cell *matHeaderCellDef> Description </th>
-      <td mat-cell class="tdText" *matCellDef="let element"> {{element.text}} </td>
+      <td mat-cell class="tdText tdDes " *matCellDef="let element" matTooltip="{{element.text}}"> 
+        <div class="descr">
+          {{element.text}} 
+        </div>
+      </td>
     </ng-container>
   
     <ng-container matColumnDef="img">
       <th mat-header-cell *matHeaderCellDef> Images </th>
       <td mat-cell class="tdText" *matCellDef="let element"> 
-        <img class="imadescss" src="{{element.img}}" alt="photo">
+        <img class="imadescss" [src]="element.img || element.defImg" (error)="element.img=element.defImg " alt="photo">
      </td>
     </ng-container>
     <ng-container matColumnDef="action">

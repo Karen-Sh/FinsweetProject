@@ -48,14 +48,15 @@
 }
 .footer-container-emailBlock-input{
     width: 297px; /*323px*/
-    border: 1px solid var(--dark-grey, #4C4C4C);
+    border: 1px solid #ffffff;
     padding: 20px 0 20px 24.92px;    
     margin-bottom: 20px;
-    opacity: 0.05;
-    background: var(--light, #FFF);
+    opacity: 1;
+    background-color:  #FFF;
+    color: black;
 }
 .footer-container-emailBlock-input::placeholder{
-    color: var(--medium-grey, #6D6E76);
+    color:  black;
     font-family: Inter;
     font-size: 16px; /*16px*/
     font-style: normal;
@@ -114,6 +115,9 @@
 }
 .footer-container-socialBlock-links1:hover{
     scale: 1.5;
+}
+.footer-container-forms{
+    background-color: #2e3040;
 }
 @media screen and (min-width: 540px) {
     .footer{

@@ -96,6 +96,11 @@ let routhes: Routes=[
         title: "Registration"
       },
       {
+        path: 'subscribe',
+        loadComponent: () =>  import('./admin/subscribe/subscribe.component').then(m=>m.SubscribeComponent),
+        title: 'Subscribe'
+      },
+      {
         path: 'contactUs',
         loadComponent: () => import('./admin/contact-us/contact-us.component').then(m => m.ContactUsComponent),
         title: "ContactUs Admin"
@@ -110,8 +115,7 @@ let routhes: Routes=[
 ]
 @NgModule({
   declarations: [
-    AppComponent,
-
+    AppComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { NgIf } from '@angular/common';
 import { FormAurherComponent } from './form-aurher/form-aurher.component';
+import { MatTooltipModule} from '@angular/material/tooltip';;
 export interface DialogData {
   animal: 'panda' | 'unicorn' | 'lion';
 }
@@ -17,7 +18,7 @@ export interface DialogData {
   styleUrls: ['./auther-admin.component.css'],
   standalone: true,
   imports: [MatTableModule,MatIconModule,NgIf,
-            MatDialogModule,
+            MatDialogModule, MatTooltipModule
   ]
 })
 export class AutherAdminComponent implements OnInit{
@@ -56,7 +57,8 @@ export class AutherAdminComponent implements OnInit{
     });
     dialogRef.afterClosed().subscribe(res=>{
       if (res && res.data) {
-        const addAuther=res.data;             
+        const addAuther=res.data;
+        addAuther['defImg'] = '../../../assets/img/png-clipart.png'              
         if (res.action=="add") {
           dialogRef.componentInstance.form.patchValue({
             title: addAuther.title,

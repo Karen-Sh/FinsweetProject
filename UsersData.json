@@ -23,6 +23,12 @@
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
       "img": "../../../assets/img/cyborg (1).png",
       "id": 4
+    },
+    {
+      "category": "fwdg",
+      "text": "gkjlh\n",
+      "img": "../../../assets/img/category.png",
+      "id": 5
     }
   ],
   "authers": [
@@ -259,6 +265,18 @@
       "title": "Step-by-step guide to choosing great font pairs",
       "data": "Apr 15, 2022",
       "post": " Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+      "userName": "Dianne_Russell",
+      "userImg": "xdvfbgnhmj",
+      "cotegory": "Business",
+      "categoryImg": "../../../assets/img/shuttle (1).png",
+      "img": "fngfhmjx,k",
+      "post": "dvsbfgnfhjmg",
+      "title": "bfdgnFHMj,gk",
+      "data": "Nov 5, 2023",
+      "defImg": "../../../assets/img/png-clipart.png",
+      "id": 18
     }
   ],
   "contactUs": [
@@ -274,6 +292,16 @@
       "email": "gbsfyjnugmm@fghhg.com",
       "sel": "Query Related",
       "message": "Hello",
+      "id": 2
+    }
+  ],
+  "subscribe": [
+    {
+      "e_mail": "karensh@mail.com",
+      "id": 1
+    },
+    {
+      "e_mail": "karensh@mail.com",
       "id": 2
     }
   ],

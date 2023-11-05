@@ -7,6 +7,7 @@ import { environment } from 'src/environment/environment';
 import { MatTableModule} from '@angular/material/table';
 import { NgIf } from '@angular/common';
 import { FormCategoryComponent } from './form-category/form-category.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { FormCategoryComponent } from './form-category/form-category.component';
   templateUrl: './category-admin.component.html',
   styleUrls: ['./category-admin.component.css'],
   standalone: true,
-  imports: [MatIconModule,MatDialogModule,MatTableModule,NgIf,FormCategoryComponent]
+  imports: [MatIconModule,MatDialogModule,MatTableModule,NgIf,FormCategoryComponent,MatTooltipModule]
 })
 export class CategoryAdminComponent implements OnInit{
   category:Category[]=[]
@@ -28,9 +29,7 @@ export class CategoryAdminComponent implements OnInit{
     'action'
   ];
   ngOnInit(): void {
-    this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(data=>{
-      this.category =data
-    })
+    this.reset()
   }
   reset(){
     this.service.GetJsonItem<Category[]>(environment.category.get).subscribe(data=>{
@@ -38,9 +37,11 @@ export class CategoryAdminComponent implements OnInit{
     })
   }
   del(el:number){
-    this.service.DeleteItem(`${environment.category.get}/${el}`).subscribe(()=>{
-        this.reset()
-    })
+    if (confirm('Do you really want to delete')) {
+      this.service.DeleteItem(`${environment.category.get}/${el}`).subscribe(()=>{
+          this.reset()
+      })
+    }
   }
   openAddDialog(){
    const dialogRef = this.dialog.open(FormCategoryComponent, {
@@ -50,7 +51,8 @@ export class CategoryAdminComponent implements OnInit{
     });
     dialogRef.afterClosed().subscribe(res=>{
       if (res&&res.data) {
-        const addCategory=res.data;            
+        const addCategory=res.data; 
+        addCategory['defCat'] = '../../../assets/img/category.png';          
         if (res.action=="add") {
           dialogRef.componentInstance.form.patchValue({
             category: addCategory.category,
@@ -59,7 +61,8 @@ export class CategoryAdminComponent implements OnInit{
             
           });
           this.service.AddItem<Category>(`${environment.category.get}`, addCategory).subscribe(()=>{
-              this.reset();  
+              this.reset();
+              alert('Your category has been successfully saved');  
           })
         }
       }
@@ -83,8 +86,9 @@ export class CategoryAdminComponent implements OnInit{
             img: additCategory.img
             
           });
-          this.service.AdditItem<Category>(`${environment.category.get}/${id}`, additCategory).subscribe(()=>{
+          this.service.AdditItem<Category>(`${environment.category.get}/${id}`, additCategory).subscribe(()=>{  
               this.reset();  
+              alert('Your category has been successfully changed');
           })
         }
       }

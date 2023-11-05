@@ -56,7 +56,7 @@ export class BlogAdminComponent implements OnInit{
       if (res&&res.data) {
         const addPost=res.data;  
         addPost['data'] = res.dateN  ;
-        addPost['defImg'] = '../../../assets/img/userdef.jpg'       
+        addPost['defImg'] = '../../../assets/img/png-clipart.png'       
         if (res.action=="add") {
           dialogRef.componentInstance.form.patchValue({
             userName:    addPost.userName,

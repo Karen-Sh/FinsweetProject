@@ -13,3 +13,7 @@ input{
     width: 100%;
     padding: 10px 20px;
 }
+span{
+   color: red;
+   display: block;
+}

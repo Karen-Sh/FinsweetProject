@@ -22,8 +22,14 @@ th{
     font-size: 22px;
 }
 td{
-    padding: 15px 0 15px 20px;
+    width: 140px;
+    padding: 10px 20px ;
 }
 table{
     background: #9ba7ea;
+}
+.descr{
+    width: 140px;
+    height: 20px;
+    overflow: hidden;
 }

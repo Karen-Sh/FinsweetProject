@@ -14,19 +14,20 @@
     padding-left: 20px;
 }
 .example-container {
-    height: 100%;
+    height: 100vh;
     margin: 10px;
     border: 3px solid #555;
     margin: 0;
 }
 mat-drawer{
     width: 20%;
+    /* height: 100%; */
     background-color: #303030;
     padding: 20px 0;
 }
-/* mat-drawer-content{
+mat-drawer-content{
     height: 100%;
-} */
+}
 .compBtn{
     display: block;
     text-align: left;
@@ -39,4 +40,7 @@ mat-drawer{
     border-radius: 15px;
     padding: 15px 0 15px 20px;
     height: unset;
+}
+.active{
+    background-color:#3f51b5;
 }

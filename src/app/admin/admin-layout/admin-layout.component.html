@@ -7,23 +7,26 @@
 </div>
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened>
-        <a mat-button  routerLink="/admin" class="compBtn">
+        <a mat-button  routerLink="/admin" class="compBtn"            routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
             <mat-icon>dashboard</mat-icon> DashBoard
         </a>
-        <a mat-button  routerLink="/admin/auther" class="compBtn">
+        <a mat-button  routerLink="/admin/auther" class="compBtn"     routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
             <mat-icon>person</mat-icon>  Aurher
         </a>
-        <a mat-button  routerLink="/admin/cotegory" class="compBtn">
+        <a mat-button  routerLink="/admin/cotegory" class="compBtn"   routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
            <mat-icon>category</mat-icon> Cotegory
         </a>
-        <a mat-button  routerLink="/admin/blog" class="compBtn">
+        <a mat-button  routerLink="/admin/blog" class="compBtn"       routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
           <mat-icon>wysiwyg</mat-icon>  Blog
         </a>
-        <a mat-button  routerLink="/admin/contactUs"  class="compBtn">
+        <a mat-button  routerLink="/admin/contactUs"  class="compBtn" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
             <mat-icon>contact_emergency</mat-icon>  Contact Us
         </a>
-        <a mat-button  routerLink="/admin/register"  class="compBtn">
+        <a mat-button  routerLink="/admin/register"  class="compBtn"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
             <mat-icon>contact_emergency</mat-icon>  Registration
+        </a>
+        <a mat-button  routerLink="/admin/subscribe"  class="compBtn"  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <mat-icon>contact_emergency</mat-icon>  Subscribe
         </a>
         <a mat-button  routerLink="" class="compBtn">
             <mat-icon>home</mat-icon>  Home

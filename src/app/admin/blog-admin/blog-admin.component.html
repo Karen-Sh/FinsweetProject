@@ -12,7 +12,7 @@
       <ng-container matColumnDef="userImg">
         <th mat-header-cell *matHeaderCellDef>User Images </th>
         <td mat-cell class="tdText" *matCellDef="let element"> 
-          <img class="imadescss" [src]="element.userImg || element.defImg" alt="photo">
+          <img class="imadescss" [src]="element.userImg || element.defImg" (error)="element.userImg=element.defImg" alt="photo">
        </td>
       </ng-container>
 
@@ -53,7 +53,7 @@
       <ng-container matColumnDef="img">
         <th mat-header-cell *matHeaderCellDef> Images </th>
         <td mat-cell class="tdText" *matCellDef="let element"> 
-          <img class="imadescss" [src]="element.img || element.defImg" alt="photo">
+          <img class="imadescss" [src]="element.img || element.defImg" (error)="element.img=element.defImg" alt="photo">
        </td>
       </ng-container>
       <ng-container matColumnDef="action">
