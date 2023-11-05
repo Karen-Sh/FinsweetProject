@@ -1,0 +1,51 @@
+<form  class="forms" [formGroup]="form" (ngSubmit)="save()">         
+    <mat-form-field>
+        <mat-label>Full name</mat-label>
+        <input matInput formControlName="title">
+    </mat-form-field> 
+    <span class="inputInvalid" *ngIf="form.get('title')?.hasError('required') && (form.get('title')?.touched || form.get('title')?.dirty)">
+        Enter a Full name , Full name  in required.
+    </span>
+    <span class="inputInvalid" *ngIf="form.get('title')?.hasError('minlength') && (form.get('title')?.touched || form.get('title')?.dirty)">
+        Enter a Full name , Full name in minlenght 3 sybol!
+    </span> 
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="text"></textarea>
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('text')?.hasError('required') && (form.get('text')?.touched || form.get('text')?.dirty)">
+        Enter a  Description , Description  in required.
+    </span>
+    <span class="inputInvalid" *ngIf="form.get('text')?.hasError('minlength') && (form.get('text')?.touched || form.get('text')?.dirty)">
+        Enter a Description , Description in minlenght 3 sybol!
+    </span> 
+    <mat-form-field>
+        <mat-label>Img</mat-label>
+        <input matInput formControlName="img">
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('img')?.hasError('required') && (form.get('img')?.touched || form.get('img')?.dirty)">
+        Enter a  Img , Img  in required.
+    </span>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('email')?.hasError('required') && (form.get('email')?.touched || form.get('email')?.dirty)">
+        Enter a  Email , Email  in required.
+    </span>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password">
+    </mat-form-field>
+    <span class="inputInvalid" *ngIf="form.get('password')?.hasError('required') && (form.get('password')?.touched || form.get('password')?.dirty)">
+        Enter a  Password , Password  in required.
+    </span>
+    <span class="inputInvalid" *ngIf="form.get('password')?.hasError('minlenght') && (form.get('password')?.touched || form.get('password')?.dirty)">
+        Enter a  Password , Password  in minlenght 3 sybol!
+    </span>
+    <span class="inputInvalid" *ngIf="form.get('password')?.hasError('maxlenght') && (form.get('password')?.touched || form.get('password')?.dirty)">
+        Enter a  Password , Password  in maxlenght 20 sybol!
+    </span>
+    <button mat-button [disabled]="form.invalid" type="submit">Save</button>
+    <button mat-button  mat-dialog-close><mat-icon>close</mat-icon></button>
+</form >

@@ -20,5 +20,8 @@ export const environment = {
     },
     register:{
         get: host + 'register'
+    },
+    user:{
+        get: host + 'users'
     }
 }

@@ -28,6 +28,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 28px */
+    overflow: hidden;
+    width: 120px;
+    height: 20px;
 }
 .section3-container-blocks-block1{
     padding: 32px;

@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import {FormBuilder, Validators, FormsModule, ReactiveFormsModule, FormGroup} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 import {MatButtonModule} from '@angular/material/button';
@@ -10,6 +10,13 @@ import { Authers } from 'src/app/models/authers';
 import { environment } from 'src/environment/environment';
 import { HttpClient } from '@angular/common/http';
 import {  RouterLink } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
+import { NgIf } from '@angular/common';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { Users } from 'src/app/models/users';
+import { FormRegisterComponent } from './form-register/form-register.component';
 
 @Component({
   selector: 'app-user-registration',
@@ -17,52 +24,102 @@ import {  RouterLink } from '@angular/router';
   styleUrls: ['./user-registration.component.css'],
   standalone: true,
   imports:[
-    MatStepperModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    RouterLink
-  ],
-  providers: [
-    {
-      provide: STEPPER_GLOBAL_OPTIONS,
-      useValue: {showError: true},
-    },
-  ],
+    MatInputModule, MatButtonModule,
+    RouterLink, MatIconModule,
+    MatDialogModule,MatTableModule,
+    NgIf,MatTooltipModule
+  ]
 })
-export class UserRegistrationComponent {
-  stepper: any;
-  constructor(private fb: FormBuilder,private service:DataService,private http:HttpClient){
+export class UserRegistrationComponent  implements OnInit{
+  users:Users[] = []
+  action!:string
+  el!:Users
+  num!:number
+  // dataAdmin!:Users
+  displayedColumns: string[] = [
+    'position',
+    'title',
+    'text', 
+    'img',
+    'email',
+    'action'
+  ];
+  constructor(private service:DataService,private http:HttpClient,public dialog:MatDialog){
   }
-  firstForm = this.fb.group({
-    email: ['',[ Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
-    password: ['',[Validators.required,Validators.minLength(6),Validators.maxLength(20)]]
-  });
-  secondForm = this.fb.group({
-    name: ['', [Validators.required,Validators.minLength(3)]],
-    description: ['',[Validators.required,Validators.minLength(3)]],
-    img:['',[Validators.required]]
-  });
-  save(){
-     let reg:Authers = {
-      img: this.secondForm.get('img')?.value,
-      title: this.secondForm.get('name')?.value,
-      text: this.secondForm.get('description')?.value
-      };
-      this.service.AddItem<Authers>(environment.authers.get, reg).subscribe(()=>{
-        this.secondForm.reset();
-      });
-      let user={
-        email: this.firstForm.get('email')?.value,
-        password:this.firstForm.get('password')?.value,
-        img: this.secondForm.get('img')?.value,
-        title: this.secondForm.get('name')?.value,
-        text: this.secondForm.get('description')?.value
+  ngOnInit(): void {
+    this.get()
+  }
+  get(){
+    this.service.GetJsonItem<Users[]>(environment.user.get).subscribe(data=>{
+      this.users = data
+      this.num =data.length
+    })
+  }
+  del(id:number){
+      if (confirm('Do you really want to delete')) {
+    this.service.DeleteItem(`${environment.user.get}/${id}`).subscribe(()=>{
+          this.get()
+        })
       }
-      this.http.post(environment.register.get,user).subscribe(()=>{
-        this.firstForm.reset();
-      })
+  }
+  openAddDialog(){
+    const dialogRef = this.dialog.open(FormRegisterComponent, {
+      data:{
+       action: "add"
+       }
+    });
+    dialogRef.afterClosed().subscribe(res=>{
+      if (res&&res.data) {
+        const addAdmin=res.data; 
+        // console.log(res);
+        addAdmin['defImg'] = '../../../assets/img/png-clipart.png';          
+        if (res.action == "add") {
+          let us = {
+            title: addAdmin.title,
+            text: addAdmin.text,
+            img: addAdmin.img,
+            email: addAdmin.email,
+            password: addAdmin.password,
+            defImg: addAdmin.defImg
+          }
+          console.log(us);
+          
+          this.http.post(environment.register.get , us).subscribe(()=>{
+              this.get();
+              alert('Your category has been successfully saved');  
+          })
+        }
+      }
+    })
+  }
+  openAdditDialog( el:Users , id:number){
+    const dialogRef = this.dialog.open(FormRegisterComponent, {
+      data:{
+       action: "edit",
+       dataAdmin:{...el}
+       }
+    });
+    dialogRef.afterClosed().subscribe(res=>{
+      if (res&&res.data) {
+        const editAdmin=res.data; 
+        editAdmin['defImg'] = '../../../assets/img/png-clipart.png';          
+        if (res.action == "edit") {
+          let us:Users = {
+            title: editAdmin.title,
+            text: editAdmin.text,
+            img: editAdmin.img,
+            email: editAdmin.email,
+            password: editAdmin.password,
+            defImg: editAdmin.defImg
+          }
+          console.log(us);
+          
+          this.service.AdditItem<Users>(`${environment.user.get}/${id}` , us).subscribe(()=>{
+              this.get();
+              alert('Your category has been successfully saved');  
+          })
+        }
+      }
+    })
   }
 }

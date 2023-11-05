@@ -26,7 +26,7 @@
     },
     {
       "category": "fwdg",
-      "text": "gkjlh\n",
+      "text": "gkjlhKOVNIWNEFKOBMKOGRNMKOMKOMKOMKOVMFEIOMIJVIOKOFNMVONFDONIBNIEFDINQOVNEFIOJDOKQMKOFEMDOK\n\n",
       "img": "../../../assets/img/category.png",
       "id": 5
     }
@@ -303,77 +303,25 @@
     {
       "e_mail": "karensh@mail.com",
       "id": 2
+    },
+    {
+      "e_mail": "test@mail.com",
+      "id": 3
+    },
+    {
+      "e_mail": "hamo@mail.com",
+      "id": 4
     }
   ],
   "users": [
     {
+      "title": "Karen Sh",
+      "text": "Admin",
+      "img": "vfee",
       "email": "karensh@mail.com",
-      "password": "$2a$10$buTjgJxO/NPQCjPVgmXi5uOE6wum/LBQfsFLx8IBWGPMb.fqJKtYa",
+      "password": "$2a$10$Qe28529YrBu9gyrjtfwf6Ocp8W6iN8mfNRfEDl79nFtZH4TvFvHTi",
+      "defImg": "../../../assets/img/png-clipart.png",
       "id": 1
-    },
-    {
-      "email": "floyd_miles@mail.com",
-      "password": "$2a$10$Ew3juv6nkSYGpg2lSfc8rOxBGrmXE262hHpLq4FzLHliU7jjXisxO",
-      "img": "../../../assets/img/man-in.png",
-      "title": "Floyd_Miles",
-      "text": "Content Writer @Company",
-      "id": 2
-    },
-    {
-      "email": "dianne_russell@mail.com",
-      "password": "$2a$10$6H0AJraYJ3JWEV4KKCU.hujK1bI7RcZnczcUZXHc/8/4UfdJXbVZy",
-      "img": "../../../assets/img/woman-in.png",
-      "title": "Dianne_Russell",
-      "text": "Content Writer @Company",
-      "id": 3
-    },
-    {
-      "email": "jenny_wilson@mail.com",
-      "password": "$2a$10$RZQKPaqXWNd01c78SQnQ4OI7e7a0o6A9p9LZtRs2FPd3ERhmhg./6",
-      "img": "../../../assets/img/fashion.png",
-      "title": "Jenny_Wilson",
-      "text": "Content Writer @Company",
-      "id": 4
-    },
-    {
-      "email": "leslie_alexander@mail.com",
-      "password": "$2a$10$7LaSLu0wDia7gDFOb4URZuaIlQgHHiMMvpRj/KTIYYHe5bm6lJal.",
-      "img": "../../../assets/img/content.png",
-      "title": "Leslie_Alexander",
-      "text": "Content Writer @Company",
-      "id": 5
-    },
-    {
-      "email": "guy_hawkins@mail.com",
-      "password": "$2a$10$AnR/gPTyRfKXZ/B3KIMSkuOe..ORmt9wH78AXW9CchlNazI3N1HEy",
-      "img": "../../../assets/img/man-in (3).png",
-      "title": "Guy_Hawkins",
-      "text": "Content Writer @Company",
-      "id": 6
-    },
-    {
-      "email": "eleanor_pena@mail.com",
-      "password": "$2a$10$3OdThIx7S4SfpWEG1eX7Ue3hpqLac17HCZwTTAJXZ0C64DzH9yOdy",
-      "img": "../../../assets/img/woman-in (2).png",
-      "title": "Eleanor_Pena",
-      "text": "Content Writer @Company",
-      "id": 7
-    },
-    {
-      "email": "robert_fox@mail.com",
-      "password": "$2a$10$9O3x.AW3ZERGrvJpFTqJvuPHcmC3jL9qke48iR9KuDrT.Kd9qoqBG",
-      "img": "../../../assets/img/content (2).png",
-      "title": "Robert_Fox",
-      "text": "Content Writer @Company",
-      "id": 8
-    },
-    {
-      "email": "jacob_jones@mail.com",
-      "password": "$2a$10$CBuQncE9dSh.hQRsR2Ktz.HQIMjzeRH.vbTL9QzcNekJjdTzivmXm",
-      "img": "../../../assets/img/cheerful.png",
-      "title": "Jacob_Jones",
-      "text": "Content Writer @Company",
-      "id": 9
     }
   ]
 }

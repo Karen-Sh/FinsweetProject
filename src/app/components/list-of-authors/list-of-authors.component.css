@@ -20,6 +20,9 @@
     font-weight: 400;
     line-height: 20px; /* 20px */ 
     margin-bottom: 15px;   
+    overflow: hidden;
+    width: 250px;
+    height: 20px;
 }
 .section5-container-blocks-block1{
     background: var(--light-grey, #F4F4F4);
@@ -51,7 +54,6 @@
     border-radius: 50%;
     object-fit: cover;
 }
-
 @media screen and (min-width: 540px){
     .section5-container-blocks-block1{
         margin: 10px 0;

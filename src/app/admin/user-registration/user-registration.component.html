@@ -1,54 +1,56 @@
-<mat-stepper #stepper>
-    <mat-step [stepControl]="firstForm" errorMessage="Name is required.">
-      <form [formGroup]="firstForm">
-        <ng-template matStepLabel>Enter a your email and password</ng-template>
-        <mat-form-field>
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="Enter a your Email" formControlName="email" required>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="Enter a your Password" type="password" formControlName="password" required>
-          </mat-form-field>
-        <div>
-          <p>Go to a different step to see the error state</p>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step [stepControl]="secondForm" errorMessage="Address is required.">
-      <form [formGroup]="secondForm">
-        <ng-template matStepLabel>Enter a your information</ng-template>
-        <mat-form-field>
-          <mat-label>Full_Name</mat-label>
-          <input matInput placeholder="Full Name" formControlName="name"
-                 required>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Description</mat-label>
-            <input matInput placeholder="Description" formControlName="description"
-                   required>
-        </mat-form-field>
-        <mat-form-field>
-            <mat-label>Images</mat-label>
-            <input matInput placeholder="Images" formControlName="img"
-                   required>
-        </mat-form-field>
-        <div>
-          <p>Go to a different step to see the error state</p>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Done</ng-template>
-      <p>You are now done.</p>
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button (click)="stepper.reset()">Reset</button>
-        <button mat-button (click)="save()">Save</button>
-      </div>
-    </mat-step>
-  </mat-stepper>
+<div class="adminlenght">
+  Admins {{num}}
+</div>
+
+<div class="addBtn">
+    <button mat-button  class="addBtn1" style="background-color: #ffffff;opacity: 0.8;" (click)="openAddDialog()">
+      <mat-icon>add_circle</mat-icon>
+    </button>
+  </div>
+  <table mat-table [dataSource]="users" class="mat-elevation-z8"  >
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>Full Name </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> {{element.title}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="text">
+        <th mat-header-cell *matHeaderCellDef> Description </th>
+        <td mat-cell class="tdText" *matCellDef="let element" matTooltip="{{element.text}}">
+           <div class="desc">
+            {{element.text}} 
+           </div>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="img">
+        <th mat-header-cell *matHeaderCellDef> Images </th>
+        <td mat-cell class="tdText" *matCellDef="let element"> 
+          <img class="imadescss" [src]="element.img||element.defImg" (error)="element.img=element.defImg" alt="photo">
+       </td>
+      </ng-container>
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell class="tdText" *matCellDef="let element">
+            {{element.email}} 
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef> Action </th>
+          <td mat-cell  *matCellDef="let element" > 
+            <button style="background-color: #ffffff;" (click)="del(element.id)" >
+              <mat-icon color="warn" >delete</mat-icon>
+            </button>
+            <button style="background-color: #ffffff;margin-left: 20px;" (click)="openAdditDialog( element , element.id)">
+              <mat-icon color="primary">edit</mat-icon>
+            </button>
+         </td>
+        </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row  *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
   
