@@ -28,6 +28,7 @@ export class LoginComponent  {
       }
      this.service.AddItem(environment.login.get, log).subscribe(data=>{
         localStorage.setItem('token',JSON.stringify(data.accessToken));
+        localStorage.setItem('email',JSON.stringify(data));
         this.router.navigate(['/admin'])
      })
     }

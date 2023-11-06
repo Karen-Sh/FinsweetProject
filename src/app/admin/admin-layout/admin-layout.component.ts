@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LoginComponent } from '../login/login.component';
 import { DashbordComponent } from '../dashbord/dashbord.component';
 import { CategoryAdminComponent } from '../category-admin/category-admin.component';
@@ -11,6 +11,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import { RouterLink } from '@angular/router';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
+import { DataService } from 'src/app/service/data.service';
+import { environment } from 'src/environment/environment';
+import { Users } from 'src/app/models/users';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-admin-layout',
@@ -24,11 +28,20 @@ import {MatIconModule} from '@angular/material/icon';
     RouterLink,MatDividerModule,
     MatButtonModule,MatToolbarModule,
     MatSidenavModule,MatIconModule,
-    RouterModule
+    RouterModule,NgIf
   ]
 })
-export class AdminLayoutComponent {
-  constructor(private router:Router){}
+export class AdminLayoutComponent implements OnInit {
+  data:string|null = localStorage.getItem('email');
+  users= JSON.parse(`${this.data}`).valueOf();
+  id:number= this.users.user.id
+  admin!:Users
+  constructor(private router:Router,private service: DataService){}
+  ngOnInit(): void {
+    this.service.GetJsonItem<Users>(`${environment.user.get}/${this.id}`).subscribe(data=>{
+      this.admin =data      
+    })
+  }
   logOut(){
     localStorage.removeItem('token');
     this.router.navigate(['/login']);

@@ -9,24 +9,23 @@
 }
 .blockcolor{
     background-color: #6b77ba;
-    padding:20px 0;
+    padding:20px 30px;
     font-size: 30px;
     padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 .example-container {
-    height: 100vh;
     margin: 10px;
+    height: 100vh;
     border: 3px solid #555;
     margin: 0;
 }
 mat-drawer{
-    width: 20%;
-    /* height: 100%; */
+    width: 25%;
+
     background-color: #303030;
     padding: 20px 0;
-}
-mat-drawer-content{
-    height: 100%;
 }
 .compBtn{
     display: block;
