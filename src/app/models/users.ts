@@ -4,5 +4,5 @@ export interface Users{
     img:string;
     title: string;
     text: string;
-    defImg?:string
+    defImg:string
 }

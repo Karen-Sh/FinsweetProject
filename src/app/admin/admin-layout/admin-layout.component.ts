@@ -38,10 +38,13 @@ export class AdminLayoutComponent implements OnInit {
   admin!:Users
   constructor(private router:Router,private service: DataService){}
   ngOnInit(): void {
-    this.service.GetJsonItem<Users>(`${environment.user.get}/${this.id}`).subscribe(data=>{
-      this.admin =data      
-    })
+    this.user()
   }
+  user(){
+    this.service.GetJsonItem<Users>(`${environment.user.get}/${this.id}`).subscribe(data=>{
+      this.admin = data      
+    })
+  };
   logOut(){
     localStorage.removeItem('token');
     this.router.navigate(['/login']);

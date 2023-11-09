@@ -43,7 +43,7 @@
     <span class="inputInvalid" *ngIf="form.get('password')?.hasError('minlenght') && (form.get('password')?.touched || form.get('password')?.dirty)">
         Enter a  Password , Password  in minlenght 3 sybol!
     </span>
-    <span class="inputInvalid" *ngIf="form.get('password')?.hasError('maxlenght') && (form.get('password')?.touched || form.get('password')?.dirty)">
+    <span class="inputInvalid" *ngIf="form.get('password')?.hasError('maxlength') && (form.get('password')?.touched || form.get('password')?.dirty)">
         Enter a  Password , Password  in maxlenght 20 sybol!
     </span>
     <button mat-button [disabled]="form.invalid" type="submit">Save</button>

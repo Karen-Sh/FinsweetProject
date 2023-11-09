@@ -265,18 +265,6 @@
       "title": "Step-by-step guide to choosing great font pairs",
       "data": "Apr 15, 2022",
       "post": " Duis aute irure dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
-    },
-    {
-      "userName": "Dianne_Russell",
-      "userImg": "dvfbdgnfhmj,k",
-      "cotegory": "Startup",
-      "categoryImg": "../../../assets/img/Icon (3).png",
-      "img": "cvxbnmc,.knlm;",
-      "post": "zxc vbnm,.",
-      "title": "zcxvbnjm",
-      "data": "Nov 6, 2023",
-      "defImg": "../../../assets/img/png-clipart.png",
-      "id": 18
     }
   ],
   "contactUs": [
@@ -308,10 +296,6 @@
       "id": 1
     },
     {
-      "e_mail": "karensh@mail.com",
-      "id": 2
-    },
-    {
       "e_mail": "test@mail.com",
       "id": 3
     },
@@ -322,15 +306,19 @@
     {
       "e_mail": "aram@mail.com",
       "id": 5
+    },
+    {
+      "e_mail": "davit@mail.com",
+      "id": 6
     }
   ],
   "users": [
     {
       "title": "Karen Sh",
       "text": "Admin",
-      "img": "vfee",
+      "img": "../../../assets/img/p",
       "email": "karensh@mail.com",
-      "password": "$2a$10$Qe28529YrBu9gyrjtfwf6Ocp8W6iN8mfNRfEDl79nFtZH4TvFvHTi",
+      "password": "$2a$10$uNGP4PtWHf6g6LSIGM5KuOpRtZ2MFmaFeJqcvZxjCYa.a/n6hHEuO",
       "defImg": "../../../assets/img/png-clipart.png",
       "id": 1
     }
