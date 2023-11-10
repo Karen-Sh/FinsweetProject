@@ -31,13 +31,14 @@ export class ContactComponent implements OnInit {
       text= document.getElementsByTagName('textarea')
       save(){
         const  contact :ContactUs ={
-          fullName: this.input[0].value,
-          email:    this.input[1].value,
-          sel:      this.sel[0].value,
-          message:  this.text[0].value
+          fullName: this.form.get('full_name')?.value,
+          email:    this.form.get('e_mail')?.value,
+          sel:      this.form.get('select')?.value,
+          message:  this.form.get('textarea')?.value
         }
         this.service.AddItem<ContactUs>(environment.contactUs.get, contact).subscribe(()=>{
           this.form.reset() 
+          alert('Thank you for your feedback, we appreciate your concern and activity.')
         })
         this.form.reset() 
       }

@@ -29,11 +29,10 @@
     font-weight: 400;
     line-height: 28px; /* 28px */
     overflow: hidden;
-    width: 120px;
-    height: 20px;
+    height: 59px;
 }
 .section3-container-blocks-block1{
-    padding: 32px;
+    padding: 41px 32px;;
     width: 270px;
     margin-bottom: 15px; /* 0px */
     border: 1px solid var(--medium-grey, #6D6E76); 

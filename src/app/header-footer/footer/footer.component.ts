@@ -15,14 +15,15 @@ import { environment } from 'src/environment/environment';
 export class FooterComponent {
     constructor(private fb:FormBuilder,private service:DataService){}
     form:FormGroup =this.fb.group({
-      e_mail: ['',[Validators.required , Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]]
+      e_mail: ['',[Validators.required , Validators.pattern("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-z]{2,4}$")]]
     })
     seve(){
       let fol:Subscribe = {
         e_mail : this.form.get('e_mail')?.value,
-      }
+      };
       this.service.AddItem<Subscribe>(environment.sub.get,fol).subscribe(data=>{
-        this.form.reset()
-      })
+        this.form.reset();
+      });
+      alert('Thank you for subscribing, we are very glad that you are with us.');
     }
 }
